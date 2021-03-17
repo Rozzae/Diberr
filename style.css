@@ -1717,29 +1717,7 @@ ol.carousel-indicators {
 }
 
 /* solutions */
-.solutionborder{
-  border: 1px solid var(--main);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 356px;
 
-  
-
-
-}
-
-.upperrow{
-  width: 60%;
-}
-
-.solutionborder img{
-  height: 100%;
-width: 420px;
-
-
-}
 /* end */
 
 /* programs */
@@ -1915,6 +1893,30 @@ padding: 20px 0px;
 }
 
 /* solutioncompetencymanagement */
+
+.solutionborder{
+  border: 1px solid var(--main);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 356px;
+
+  
+
+
+}
+
+.upperrow{
+  width: 60%;
+}
+
+.solutionborder img{
+  height: 100%;
+width: 420px;
+
+
+}
 
 .formheadersolutioncompetencymanagement{
   font-family: Roboto;
@@ -2311,6 +2313,7 @@ color: #000;
 
 @media (max-width: 601px) {
 
+  
   .logoimage{
     width: 70px;
     height: 70px;
@@ -2563,7 +2566,18 @@ color: #000;
     gap: 10px;
   }
 
+  
+.solutionborder{
+
+  height: auto;
+  
+
+
 }
+
+}
+
+
 
 
 
