@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solution</title>
+
+    <script
+      src="https://kit.fontawesome.com/0da91a7850.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light py-lg-4 row">
+        <button
+          class="navbar-toggler text-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-md-6" id="navbarText">
+          <ul class="navbar-nav ml-lg-5">
+            <li class="nav-item ml-lg-5">
+              <a class="nav-link text-light" href="#"><u>Diberr Software</u></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#"
+                ><u>Diberr Consulting </u></a
+              >
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="btn navheaderbuttonsmall">
+          LMS Login <i class="fas fa-long-arrow-alt-right"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse col-md-6 justify-content-end pr-lg-5"
+          id="navbarText"
+        >
+          <ul class="navbar-nav mr-5">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Covid19 </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">News & Events </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Get in Touch</a>
+            </li>
+          </ul>
+          <button type="button" class="btn loginbtn">
+            LMS Login <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid px-lg-5">
+      <div class="container-fluid topsection">
+        <div class="row d-flex justify-content-between" id="firstsection">
+          <div class="col ml-lg-4">
+            <a href="/index.html">
+              <img
+                src="/images/logo.png"
+                class="img-fluid logoimage"
+                alt="Logo image"
+            /></a>
+          </div>
+          <div class="col-lg-6 mt-4 fontfamily">
+            <div class="row px-lg-4 mx-4 justify-content-md-end">
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle text-dark"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Courses
+                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="/businesscourses.html"
+                    >Business Essential courses</a
+                  >
+                  <a
+                    class="dropdown-item active"
+                    href="/coursesbusinessimprovement.html"
+                    >Business Improvement Courses</a
+                  >
+                  <a class="dropdown-item" href="#">Business</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle text-dark"
+                  href="#"
+                  role="button"
+                  id="dropdownPrograms"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Programs
+                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#"
+                    >Business Process Improvement</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    >Business Improvement Courses</a
+                  >
+                  <a class="dropdown-item" href="/programs.html">Programs</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle text-dark"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Products
+                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item active" href="/businesscourses.html"
+                    >Business Essential courses</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="/coursesbusinessimprovement.html"
+                    >Business Improvement Courses</a
+                  >
+                  <a class="dropdown-item" href="#">Business</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle text-dark"
+                  href="#"
+                  role="button"
+                  id="dropdownPrograms"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Solutions
+                  <i class="fas fa-arrow-down mr-1 ml-2"></i>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="/solutions.html"
+                    >Solutions</a
+                  >
+                  <a class="dropdown-item" href="/solutioncompetencymanagement.html"
+                    >Competency Management</a
+                  >
+                  <a class="dropdown-item" href="#">Business</a>
+                </div>
+              </div>
+              <a href="#" class="text-dark ml-3"> Blog</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid-sm mt-5 pt-3 px-lg-4 mx-lg-5">
+        <div class="row">
+          <div class="programtextbusinessimprovement">
+            <h3 class="mint header">Solution</h3>
+            <h2 class="">Competency Management Solution</h2>
+            <p class="businessimprovementsubheader mt-4">
+              Our team of learning experts have designed a suite of practical
+              programs that develop both your execution excellence capabilities
+              and enable you to stay a step ahead.
+            </p>
+          </div>
+        </div>
+
+        <div class="row mt-3 relativecontainer">
+          <img
+            src="/images/backgroundcircles.png"
+            alt=""
+            class="img-fluid backgroundprogramstwo"
+          />
+          <img
+            src="/images/Factoryworkers.png"
+            alt=""
+            class="img-fluid"
+            id="factoryworkersprograms"
+          />
+        </div>
+      </div>
+
+      <div class="container-fluid px-lg-5 mx-lg-3 pt-5">
+        <div class="row businessimprovementspacing">
+          <div class="col-lg-8">
+            <p class="smallerparagraphbusinessimprovement">
+              A key driver of High Performance Organization is their talented
+              workforce. To be successful in today’s business arena,
+              organizations must intentionally synchronize their talent with
+              business strategy. Diberr Academy in conjunction with Diberr
+              Consulting has helped organizations and professionals assess their
+              talent, design training programs, and develop technical
+              capabilities.
+            </p>
+            <p class="smallerparagraphbusinessimprovement">
+              A key driver of High Performance Organization is their talented
+              workforce. To be successful in today’s business arena,
+              organizations must intentionally synchronize their talent with
+              business strategy. Diberr Academy in conjunction with Diberr
+              Consulting has helped organizations and professionals assess their
+              talent, design training programs, and develop technical
+              capabilities.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container-fluid-sm px-lg-5 mx-lg-2 mt-5">
+        <div class="accordion" id="accordionExample">
+          <div class="card programsbusinesssimprovementcollapsebox">
+            <div
+              class="card-header programscollapsebox"
+              id="programsheadingOne"
+            >
+              <h2 class="mb-0 programsbusinessimprovementboxesspacing">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#programscollapseOne"
+                  aria-expanded="true"
+                  aria-controls="programscollapseOne"
+                >
+                  <h3>Case Studies</h3>
+                </button>
+                <i
+                  class="fas fa-arrow-up"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#programscollapseOne"
+                  aria-expanded="true"
+                  aria-controls="programscollapseOne"
+                ></i>
+              </h2>
+            </div>
+
+            <div
+              id="programscollapseOne"
+              class="collapse show"
+              aria-labelledby="programsheadingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body cardbordertop ml-3">
+                Our team of learning experts have designed a suite of practical
+                programs that develop both your execution excellence
+                capabilities and enable you to stay a step ahead.
+              </div>
+            </div>
+          </div>
+          <div class="card programsbusinesssimprovementcollapsebox">
+            <div
+              class="card-header programscollapsebox"
+              id="programsheadingTwo"
+            >
+              <h2 class="mb-0 programsbusinessimprovementboxesspacing">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#programscollapseTwo"
+                  aria-expanded="false"
+                  aria-controls="programscollapseTwo"
+                >
+                  <h3>Application Toolkit</h3>
+                </button>
+                <i
+                  class="fas fa-arrow-up"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#programscollapseTwo"
+                  aria-expanded="true"
+                  aria-controls="programscollapseTwo"
+                ></i>
+              </h2>
+            </div>
+            <div
+              id="programscollapseTwo"
+              class="collapse"
+              aria-labelledby="programsheadingTwo"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body ml-3">
+                Our team of learning experts have designed a suite of practical
+                programs that develop both your execution excellence
+                capabilities and enable you to stay a step ahead.
+              </div>
+            </div>
+          </div>
+          <div class="card programsbusinesssimprovementcollapsebox">
+            <div
+              class="card-header programscollapsebox"
+              id="programsheadingThree"
+            >
+              <h2 class="mb-0 programsbusinessimprovementboxesspacing">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#programscollapseThree"
+                  aria-expanded="false"
+                  aria-controls="programscollapseThree"
+                >
+                  <h3>Results Mentorship</h3>
+                </button>
+                <i
+                  class="fas fa-arrow-up"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#programscollapseThree"
+                  aria-expanded="true"
+                  aria-controls="programscollapseThree"
+                ></i>
+              </h2>
+            </div>
+            <div
+              id="programscollapseThree"
+              class="collapse"
+              aria-labelledby="programsheadingThree"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body ml-3">
+                Our team of learning experts have designed a suite of practical
+                programs that develop both your execution excellence
+                capabilities and enable you to stay a step ahead.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+            <h3 class="formheadercoursecalender mb-4">3 Steps to a sustainable  Solution</h3>
+            <p class="biggerparagraphbusinessimprovement">
+                Developing manager/team lead’s ability to organize and lead teams to produce and sustain extraordinary results. This program is an expanded 
+            </p>
+            <div class="row solutionborder py-5">
+                <div class="upperrow col-lg-6">
+                  <h1 class="display-lg-4 my-lg-4">
+                    Performance Refactoring
+                  </h1>
+                  <p class="mt-4 mb-5 pt-5" id="competencyparagraph">
+                    A key driver of High Performance Organization is their
+                    talented workforce. To be successful in today’s business
+                    arena, organizations must intentionally synchronize their
+                    talent with business strategy. Diberr Academy in conjunction
+                    with Diberr Consulting has helped organizations and
+                    professionals assess their talent, design training programs,
+                    and develop technical capabilities.
+                  </p>
+                </div>
+        
+                <div class="bottomrow col-lg-6 justify-content-end">
+                  <img
+                    src="/images/Factoryworkers.png"
+                    alt=""
+                    class="img-fluid h-100 pt-lg-5"
+                  />
+                </div>
+              </div>
+            <div class="row solutionborder py-5">
+                <div class="upperrow col-lg-6">
+                  <h1 class="display-lg-4 my-lg-4">
+                    Performance Refactoring
+                  </h1>
+                  <p class="mt-4 mb-5 pt-5" id="competencyparagraph">
+                    A key driver of High Performance Organization is their
+                    talented workforce. To be successful in today’s business
+                    arena, organizations must intentionally synchronize their
+                    talent with business strategy. Diberr Academy in conjunction
+                    with Diberr Consulting has helped organizations and
+                    professionals assess their talent, design training programs,
+                    and develop technical capabilities.
+                  </p>
+                </div>
+        
+                <div class="bottomrow col-lg-6 justify-content-end">
+                  <img
+                    src="/images/Factoryworkers.png"
+                    alt=""
+                    class="img-fluid h-75 pt-lg-5"
+                  />
+                </div>
+              </div>
+        </div>
+        <div class="container-fluid px-lg-2 mt-5 globalborderbottom">
+          <h3 class="formheadercoursecalender mb-4">Program Features</h3>
+
+          <div class="programbusinessboxes d-flex flex-wrap justify-content-between">
+            <div class="programbusinessbox">
+              <p class="highlightheader">Highlight 1</p>
+              <p>
+                If you are requesting a custom session, please select “Custom
+                Session” in the field to select schedule
+              </p>
+            </div>
+            <div class="programbusinessbox">
+              <p class="highlightheader">Highlight 1</p>
+              <p>
+                If you are requesting a custom session, please select “Custom
+                Session” in the field to select schedule
+              </p>
+            </div>
+            <div class="programbusinessbox">
+              <p class="highlightheader">Highlight 1</p>
+              <p>
+                If you are requesting a custom session, please select “Custom
+                Session” in the field to select schedule
+              </p>
+            </div>
+            <div class="programbusinessbox">
+              <p class="highlightheader">Highlight 1</p>
+              <p>
+                If you are requesting a custom session, please select “Custom
+                Session” in the field to select schedule
+              </p>
+            </div>
+            <div class="programbusinessbox">
+              <p class="highlightheader">Highlight 1</p>
+              <p>
+                If you are requesting a custom session, please select “Custom
+                Session” in the field to select schedule
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="container-fluid px-2 mt-3">
+            <div class="middlerowcontentfour globalborderbottom">
+                <h2 class="mint header">Instructors</h2>
+
+                <div class="row instructors py-4">
+                  <div class="col-3">
+                    <img
+                      src="/images/locationsimage.png"
+                      alt="instructorprofile"
+                      class="img-fluid w-100"
+                    />
+                    <h2 class="mint header mt-4">Deji Jemiyo</h2>
+                    <p class="instructorstitlebusinessimprovement">
+                      High Performance Coach, Diberr Consulting
+                    </p>
+                  </div>
+                  <div class="col-3">
+                    <img
+                      src="/images/locationsimage.png"
+                      alt="instructorprofile"
+                      class="img-fluid w-100"
+                    />
+                    <h2 class="mint header mt-4">Deji Jemiyo</h2>
+                    <p class="instructorstitlebusinessimprovement">
+                      High Performance Coach, Diberr Consulting
+                    </p>
+                  </div>
+                  <div class="col-3">
+                    <img
+                      src="/images/locationsimage.png"
+                      alt="instructorprofile"
+                      class="img-fluid w-100"
+                    />
+                    <h2 class="mint header mt-4">Deji Jemiyo</h2>
+                    <p class="instructorstitlebusinessimprovement">
+                      High Performance Coach, Diberr Consulting
+                    </p>
+                  </div>
+                  <div class="col-3">
+                    <img
+                      src="/images/locationsimage.png"
+                      alt="instructorprofile"
+                      class="img-fluid w-100"
+                    />
+                    <h2 class="mint header mt-4">Deji Jemiyo</h2>
+                    <p class="instructorstitlebusinessimprovement">
+                      High Performance Coach, Diberr Consulting
+                    </p>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="container-fluid px-2 mt-5">
+            <div class="bottommiddlerow ">
+                <div class="bottommiddletitle py-4">
+                  <h2 class="header">
+                    Register for Business Process Improvement / Re-engineering
+                  </h2>
+                  <p>
+                    If you are requesting a custom session, please select
+                    “Custom Session” in the field to select schedule
+                  </p>
+                </div>
+                <form class="middlerowform">
+                  <div class="form-row mt-4">
+                    <div class="form-group col-md-4 mr-md-4">
+                      <label for="companyname">Company Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="companyname"
+                        placeholder="Ignore, if booking as an individual"
+                      />
+                    </div>
+                    <div class="form-group col-md-4 ml-md-4">
+                      <label for="companylocation">Location</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="companylocation"
+                        placeholder="Country, State/Province"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row mt-4">
+                    <div class="form-group col-md-4 mr-md-4">
+                      <label for="companyname">Name of Contact Person</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="companyname"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div class="form-group col-md-4 ml-md-4">
+                      <label for="companylocation"></label>
+                      <input
+                        type="text"
+                        class="form-control mt-lg-3"
+                        id="companylocation"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row mt-4">
+                    <div class="form-group col-md-4 mr-md-4">
+                      <label for="companyname">Telephone Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="companyname"
+                        placeholder="Please, add country code"
+                      />
+                    </div>
+                    <div class="form-group col-md-4 ml-md-4">
+                      <label for="companylocation">Email</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="companylocation"
+                        placeholder="Enter your email Address"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row mt-4">
+                    <div class="form-group col-md-4 mr-md-4">
+                      <label for="companyname">Select Schedule</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="companyname"
+                        placeholder="Which of the schedules are you booking for?"
+                      />
+                    </div>
+                    <div class="form-group col-md-4 ml-md-4">
+                      <label for="companylocation">Number of Attendees</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="companylocation"
+                        placeholder="Select the Number of Attendees"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="attendeestextarea">Name of Attendees</label>
+                    <textarea
+                      class="form-control"
+                      id="attendeestextarea"
+                      placeholder="Select the Number of Attendees"
+                    ></textarea>
+                  </div>
+
+                  <button type="button" class="btn mt-4 registerbtn">
+                    Register<i class="fas fa-long-arrow-alt-right ml-3"></i>
+                  </button>
+                </form>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid-sm darkreviews mt-5">
+      <div class="row reviewscontent px-5 py-lg-5 mx-lg-5 mb-4">
+        <div
+          id="carouselLearningIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators ml-md-3" id="carousellearning">
+            <li
+              data-target="#carouselLearningIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li
+              data-target="#carouselLearningIndicators"
+              data-slide-to="1"
+            ></li>
+            <li
+              data-target="#carouselLearningIndicators"
+              data-slide-to="2"
+            ></li>
+          </ol>
+          <div class="carousel-inner container-fluid-sm mt-4" id="cardsreviews">
+            <div class="carousel-item active">
+              <div class="row col-md-12 mt-lg-4">
+                <h1 class="col-lg-11 learningexperts mt-5">
+                  Our team of learning experts have designed a suite of
+                  practical programs that develop both your execution excellence
+                  capabilities and enable you to stay a step ahead.
+                </h1>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-lg-3 mint">
+                  <h3 class="darkteamlearning">JOHN DEFTERIOUS</h3>
+                </div>
+              </div>
+
+              <div class="row">
+                <p class="col-lg-3 darkoccupation">CEO, Half & Half</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row col-md-12 mt-lg-5">
+                <h1 class="col-lg-11 learningexperts mt-5">
+                  We are the best at what we do Lorem ipsum dolor, sit amet
+                  conseicta eveniet voluptatum, obcaecati dignissimos dolor!
+                </h1>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-lg-3 mint">
+                  <h3 class="darkteamlearning text-uppercase">Priscilla M</h3>
+                </div>
+              </div>
+
+              <div class="row">
+                <p class="col-lg-3 darkoccupation">CEO, Figure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid subscribetonewsletter px-lg-5 mx-lg-5 mt-4">
+      <div class="row mt-5">
+        <div class="col-lg-12">
+          <p class="newsletter h1">
+            Subscribe to the Diberr Academy Newsletter and get fresh insights
+            from our thought leaders direct to your inbox
+          </p>
+        </div>
+
+        <div class="col-lg-11">
+          <form class="newsletterform">
+            <div class="form-row mt-4">
+              <div class="form-group col-md-5 pr-md-5">
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control" id="inputName" />
+              </div>
+              <div class="form-group col-md-5">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" />
+              </div>
+              <button type="submit" class="btn mt-4" id="subscribebtn">
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/jquery-3.6.0.min.js"></script>
+  <script src="/script.js"></script>
+  <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+</html>
