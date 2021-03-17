@@ -1720,11 +1720,22 @@ ol.carousel-indicators {
 .solutionborder{
   border: 1px solid var(--main);
   border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 356px;
+
+  
+
 
 }
 
+.upperrow{
+  width: 60%;
+}
+
 .solutionborder img{
-  height: 342px;
+  height: 100%;
 width: 420px;
 
 
@@ -1902,6 +1913,62 @@ padding: 20px 0px;
   width: 100%;
   justify-content: space-between;
 }
+
+/* solutioncompetencymanagement */
+
+.formheadersolutioncompetencymanagement{
+  font-family: Roboto;
+font-size: 30px;
+font-style: normal;
+font-weight: 900;
+line-height: 35px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+
+.circle{
+  height: 56px;
+width: 56px;
+border-radius: 0px;
+background-color: var(--main);
+border-radius: 50px;
+list-style: none;
+}
+
+.circle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  left: 50%;
+  border: 4px dotted var(--main);
+  border-width: 0 0 0 2px;
+  width: 3px;
+  height: 100%;
+}
+
+.circles{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+.competencycirclestext{
+  font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 21px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+
+
 
 /* end */
 /* #inputState.form-control{
@@ -2497,4 +2564,6 @@ color: #000;
   }
 
 }
+
+
 
