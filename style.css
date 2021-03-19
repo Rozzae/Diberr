@@ -1933,7 +1933,7 @@ padding: 20px 0px;
 .solutionborderone{
   border: 1px solid var(--main);
   border-radius: 10px;
-  height: 500px;
+  /* height: 500px; */
 
 
 
