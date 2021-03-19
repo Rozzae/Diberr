@@ -421,6 +421,17 @@ h2.team {
     background: #EDEEEE;
 border-radius: 10px;
 }
+.form-newsletter{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.emailnewsletter, .namenewsletter{
+  width: 40%;
+
+}
 .newsletterform label{
 
     font-family: Roboto;
@@ -1506,6 +1517,18 @@ text-align: left;
 
   
 }
+.card-subtitle-main {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  
+
+  
+}
 
 
 .card-body.lastcards {
@@ -1606,6 +1629,7 @@ text-align: left;
   bottom: 230px;
   top: 400px;
   border-radius: none;
+  width: 85%;
   height: 1000px;
 }
 
@@ -2108,6 +2132,26 @@ text-align: left;
   flex-direction: row;
 }
 
+.form-newsletter{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.emailnewsletter, .namenewsletter{
+  width: 80%;
+
+}
+
+#subscribebtn{
+  width: 30%;
+
+
+}
+
+
 /* .fontfamilygrid{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -2311,6 +2355,17 @@ color: #000;
 
 
 
+@media (max-width: 470px) {
+
+  #subscribebtn{
+    width: 80%;
+    padding: 10px 10px;
+    font-size: 20px;
+    line-height: 25px;
+   
+  }
+
+}
 @media (max-width: 601px) {
 
   
