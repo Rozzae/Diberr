@@ -19,20 +19,19 @@
     />
   </head>
   <body>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light py-lg-4 row">
-        <button
-          class="navbar-toggler text-light"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+
+      <nav class="navbar navbar-expand-lg navbar-light py-lg-4">
+        <a class="navbar-brand logo-icon-mobile" href="#">      <button type="button" class="btn navheaderbuttonsmall">
+          LMS Login <i class="fas fa-long-arrow-alt-right"></i>
+        </button></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse col-md-6" id="navbarText">
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+  
+          <div class="navbarleftandright">
           <ul class="navbar-nav ml-lg-5">
             <li class="nav-item ml-lg-5">
               <a class="nav-link text-light" href="#"><u>Diberr Software</u></a>
@@ -43,15 +42,9 @@
               >
             </li>
           </ul>
-        </div>
-        <button type="button" class="btn navheaderbuttonsmall">
-          LMS Login <i class="fas fa-long-arrow-alt-right"></i>
-        </button>
-        <div
-          class="collapse navbar-collapse col-md-6 justify-content-end pr-lg-5"
-          id="navbarText"
-        >
-          <ul class="navbar-nav mr-5">
+  
+          <ul class="navbar-nav rightcontent">
+            
             <li class="nav-item">
               <a class="nav-link text-light" href="#">About </a>
             </li>
@@ -64,15 +57,121 @@
             <li class="nav-item">
               <a class="nav-link text-light" href="#">Get in Touch</a>
             </li>
+            <button type="button" class="btn loginbtn">
+              LMS Login <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
           </ul>
-          <button type="button" class="btn loginbtn">
-            LMS Login <i class="fas fa-long-arrow-alt-right"></i>
-          </button>
+          
+        </div>
+          <ul class="navbarmobile">
+  
+            <div class="navitemdropdownspacing">
+            <div class="navitemdropdowns">
+            <li class="nav-item active">
+              <div class="dropdown">
+                <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Courses
+                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item active" href="businesscourses.html">Business Essential courses</a>
+                  <a class="dropdown-item" href="coursesbusinessimprovement.html">Business Improvement Courses</a>
+                  <a class="dropdown-item" href="#">Business</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownPrograms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Programs
+                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Business Process Improvement</a>
+                  <a class="dropdown-item" href="programsbusinessimprovement.html">Business Improvement Courses</a>
+                  <a class="dropdown-item" href="programs.html">Programs</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Products
+                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item active" href="businesscourses.html">Business Essential courses</a>
+                  <a class="dropdown-item" href="coursesbusinessimprovement.html">Business Improvement Courses</a>
+                  <a class="dropdown-item" href="#">Business</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownPrograms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Solutions
+                  <i class="fas fa-arrow-down mr-1 ml-2"></i>
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="solutions.html"
+                    >Solutions</a
+                  >
+                  <a class="dropdown-item" href="solutioncompetencymanagement.html"
+                    >Competency Management</a
+                  >
+                  <a class="dropdown-item" href="#">Business</a>
+                </div>
+              </div>
+            </li>
+   
+  
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownPrograms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More Information
+                  <i class="fas fa-arrow-down mr-1 ml-2"></i>
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item text-dark" href="#">About</a>
+                  <a class="dropdown-item text-dark" href="#">Covid19</a>
+                  <a class="dropdown-item text-dark" href="#">News & Events</a>
+                  <a class="dropdown-item text-dark" href="#">Get in Touch</a>
+                </div>
+              </div>
+            </li>
+  
+            <li class="nav-item p-0 m-0">
+              <a class="nav-link text-light" href="#">Blog</a>
+            </li>
+  
+          </div>
+          <!-- <li class="nav-item">
+            <div class="dropdown">
+              <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownPrograms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Info
+                <i class="fas fa-arrow-down mr-1 ml-2"></i>
+              </a>
+            
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item text-dark" href="#">About</a>
+                <a class="dropdown-item text-dark" href="#">Covid19</a>
+                <a class="dropdown-item text-dark" href="#">News & Events</a>
+                <a class="dropdown-item text-dark" href="#">Get in Touch</a>
+              </div>
+            </div>
+          </li> -->
+          </div>
+          </ul>
         </div>
       </nav>
-    </div>
+
     <div class="container-fluid px-lg-5">
-      <div class="container-fluid topsection">
+      <div class="container-fluid mt-4 topsection">
         <div class="row d-flex justify-content-between" id="firstsection">
           <div class="col ml-lg-4">
             <a href="index.html">
@@ -190,12 +289,12 @@
         </div>
       </div>
 
-      <div class="container-fluid-sm mt-5 pt-3 px-lg-4 mx-lg-5">
+      <div class="container-fluid-sm mt-lg-5 pt-3 px-lg-4 mx-lg-5">
         <div class="row">
-          <div class="programtextbusinessimprovement">
-            <h3 class="mint header">Program</h3>
-            <h2 class="">Business Process Improvement / Re-engineering</h2>
-            <p class="businessimprovementsubheader mt-4">
+          <div class="programtextbusinessimprovement px-3">
+            <h3 class="mint header p-0 m-0">Program</h3>
+            <h2 class="mt-2">Business Process Improvement / Re-engineering</h2>
+            <p class="businessimprovementsubheader mt-4 col-lg-10 p-0">
               Our team of learning experts have designed a suite of practical
               programs that develop both your execution excellence capabilities
               and enable you to stay a step ahead.
@@ -212,7 +311,7 @@
           <img
             src="images/Factoryworkers.png"
             alt=""
-            class="img-fluid"
+            class="img-fluid h-75"
             id="factoryworkersprograms"
           />
         </div>
@@ -226,6 +325,8 @@
               programs that develop both your execution excellence capabilities
               and enable you to stay a step ahead.
             </p>
+
+            <div class="paragraphspacing">
             <p class="smallerparagraphbusinessimprovement">
               A key driver of High Performance Organization is their talented
               workforce. To be successful in today’s business arena,
@@ -244,6 +345,7 @@
               talent, design training programs, and develop technical
               capabilities.
             </p>
+          </div>
           </div>
 
           <div class="col-lg-4">
@@ -476,10 +578,10 @@
         <div class="container-fluid px-2 mt-5">
             <div class="bottommiddlerow ">
                 <div class="bottommiddletitle py-4">
-                  <h2 class="header">
+                  <h2 class="header p-0 m-0">
                     Register for Business Process Improvement / Re-engineering
                   </h2>
-                  <p>
+                  <p class="mt-2">
                     If you are requesting a custom session, please select
                     “Custom Session” in the field to select schedule
                   </p>

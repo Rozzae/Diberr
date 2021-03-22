@@ -18,6 +18,23 @@
   background: var(--main);
 }
 
+.navbarmobile{
+  display: none;
+}
+
+.navbarleftandright{
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.rightcontent{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 html{
   overflow-x: hidden;
@@ -29,7 +46,9 @@ html{
   line-height: 19px;
   letter-spacing: -0.03em;
   text-align: left;
+  list-style-type: none;
 }
+
 
 .fontfamily {
   font-family: Roboto;
@@ -39,6 +58,13 @@ html{
   line-height: 19px;
   letter-spacing: -0.03em;
   text-align: right;
+}
+
+button.navbar-toggler{
+  border: none;
+}
+button.navbar-toggler i{
+  color: #fff;
 }
 
 
@@ -59,6 +85,10 @@ button.btn.loginbtn {
 }
 button.btn.loginbtn:hover {
   opacity: 0.7;
+}
+
+a.navbar-brand.logo-icon-mobile{
+  display: none;
 }
 
 button.btn.navheaderbuttonsmall{
@@ -97,6 +127,7 @@ opacity: 0.7;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: -0.03em;
+  max-width: 200px;
 }
 
 #middlesection p.h1 {
@@ -209,10 +240,10 @@ letter-spacing: -0.03em;
 
 .formheader {
   font-family: Roboto;
-  font-size: 16px;
-  font-style: bold;
+  font-size: 25px;
+  font-style: normal;
   font-weight: 900;
-  line-height: 18px;
+  line-height: 29px;
   letter-spacing: -0.03em;
   text-align: left;
   
@@ -221,16 +252,17 @@ letter-spacing: -0.03em;
   color: #37a3a5;
 }
 
-.formparagraph {
+.card-title-upcomingcourses{
   font-family: Roboto;
-  font-style: black;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: -0.03em;
-
-  color: #000000;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: 18px;
+letter-spacing: -0.03em;
+text-align: left;
+color: var(--main);
 }
+
 
 .border-form {
   border-bottom: 2px solid var(--mint);
@@ -246,11 +278,22 @@ letter-spacing: -0.03em;
 text-align: left;
 
   padding: 12px;
-  width: 250px;
+  max-width: 550px;
   border: none;
   -webkit-appearance: button;
   appearance: button;
   outline: none;
+}
+
+.formh4{
+  font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 900;
+line-height: 16px;
+letter-spacing: -0.03em;
+text-align: left;
+
 }
 
 .smallerdates{
@@ -402,7 +445,9 @@ h2.team {
   color: var(--mint);
 }
 
-.newsletter.h1 {
+
+
+p.newsletter.h1{
   font-family: Roboto;
   font-size: 70px;
   font-style: normal;
@@ -411,8 +456,7 @@ h2.team {
   letter-spacing: -0.03em;
   text-align: left;
   
-
-  color: #bbb6b6;
+color: #bbb6b6;
 }
 
 .newsletterform input[type="text"], input[type="email"]{
@@ -461,6 +505,20 @@ margin-top: 28px;
 } */
 
 button#mainbutton {
+  background-color: var(--main);
+  color: #fff;
+  border-radius: 20px;
+  padding: 15px 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  transition: transform 0.2s ease-in;
+}
+
+button#coursemainbutton {
   background-color: var(--main);
   color: #fff;
   border-radius: 20px;
@@ -802,6 +860,7 @@ input[type='email'] {
   text-align: center;
   margin-top: 30px;
   vertical-align: middle;
+  color: #fff;
 }
 
 .locationsimage .card.col-sm img{
@@ -883,7 +942,7 @@ padding: 30 100px;
 
 .businessimprovementsubheader{
   font-family: Roboto;
-  width: 70%;
+
 font-size: 20px;
 font-style: light;
 font-weight: 300;
@@ -1828,6 +1887,16 @@ text-align: left;
   text-align: left;
   
 }
+.programtextbusinessimprovement h3{
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 29px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  
+}
 
 .backgroundprogramstwo{
   position: absolute;
@@ -1836,7 +1905,8 @@ text-align: left;
 
 #factoryworkersprograms{
   width: 1000vh;
-  height: 70vh;
+  height: auto;
+  
   
 }
 
@@ -1915,6 +1985,8 @@ padding: 20px 0px;
   width: 100%;
   justify-content: space-between;
 }
+
+
 
 /* solutioncompetencymanagement */
 
@@ -2002,6 +2074,25 @@ text-align: left;
 
 }
 
+.backgroundcompetencymanagertwo{
+  position: absolute;
+  right: 600px;
+}
+
+.smallerparagraphcompetency{
+  font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 26px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+
+.carousel-caption.main {
+  display: none;
+}
 
 
 /* end */
@@ -2017,9 +2108,6 @@ text-align: left;
   background-color: #c4c4c4;
 }
 
-.carousel-caption.main{
-  visibility: hidden;
-}
 
 @media (max-width: 1250px) {
 
@@ -2095,16 +2183,40 @@ text-align: left;
   }
 
   .carousel-caption.main{
-    visibility: visible;
-    background-color: rgba(233, 233, 233, 0.7);
+    display: block;
+    background-color: rgba(233, 233, 233, 0.9);
     color: #000;
+    width: 100%;
+    right: 0%;
+    bottom: -220px;
+    left: 0%;
+    z-index: 10;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .carousel-caption.main.mint{
+    font-family: Roboto;
+font-size: 25px;
+font-style: normal;
+font-weight: 900;
+line-height: 29px;
+letter-spacing: -0.03em;
+
+  }
+
+  button#mainbutton {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 14px;
   }
   
 
 
 
   .carousel-inner img {
-    height: 50vh;
+    height: 35vh;
   }
 
   .fontfamily{
@@ -2115,7 +2227,50 @@ text-align: left;
 
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+
+
+.navbarleftandright{
+  display: none;
+}
+
+.navitemdropdowns{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  color: #fff;
+  
+}
+
+.navitemdropdowns .nav-item{
+  padding: 10px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+
+
+.navitemdropdownspacing{
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-lg-6.fontfamily{
+  display: none;
+}
+
+
+
+.nav-item .info{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 10px;
+  list-style-type: none;
+}
+.navbarmobile{
+  display: block;
+}
 #middlesection{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -2127,7 +2282,7 @@ text-align: left;
 
 .cardbackground{
   width: 90%;
-  bottom: 230px;
+  top: 230px;
   display: flex;
   flex-direction: column;
   height: max-content;
@@ -2186,6 +2341,16 @@ button.btn.navheaderbuttonsmall{
   display: block;
 }
 
+a.navbar-brand.logo-icon-mobile{
+  display: block;
+
+}
+
+/* a.navbar-brand.logo-icon-mobile img{
+  width: 100px;
+  height: 50px;
+} */
+
 
 
 
@@ -2194,14 +2359,110 @@ button.btn.navheaderbuttonsmall{
 @media (max-width: 601px) {
 
   .logoimage{
-    width: 70px;
-    height: 70px;
+    width: 150px;
+    height: 150px;
   }
 
-  .solutionborder{
+  #middlesection p.h1 {
+    font-size: 28px;
+    font-style: bold;
+    line-height: 46px;
+    text-align: left;
+  
+  }
+
+  #exploreworldclass, #headerconstant{
+  font-size: 36px;
+  line-height: 36px;
+  padding-bottom: 10px;
+  }
+  .businessheader{
+  font-size: 36px;
+  line-height: 36px;
+  padding-bottom: 10px;
+  }
+
+  .formheader{
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+
+  .instructors p.instructorstitlebusinessimprovement{
+    font-size: 13px;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  .instructors h2.header{
+    text-align: center;
+  }
+
+  .boxes.responsivegrid.topbox{
+    padding: 0 30px;
+  }
+
+  #competencymanagement {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .upperrow p.h3.mt-5.mint.formheader{
+    font-size: 20px;
+  }
+
+  .bottommiddletitle.header{
+  font-size: 20px;
+  line-height: 25px;
+  margin-left: 0px;
+  
+  
+  }
+
+  button.btn.btn-link.btn-block.text-left.collapsed{
+  font-size: 17px;
+  line-height: 21px;
+
+  
+  }
+
+  .explorecoursestext h2{
+    font-size: 30px;
+    line-height: 39px;
+    
+  }
+  
+
+  .paragraphspacing{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
+    gap: 30px;
+
+  }
+  /* .carousel-caption.main {
+    position: absolute;
+    width: 100%;
+    right: 0%;
+    bottom: -220px;
+    left: 0%;
+    z-index: 10;
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+  } */
+
+
+  /* button#mainbutton {
+    padding: 10px 20px;
+    margin-bottom: 90px;
+    font-size: 12px;
+    line-height: 14px;
+  } */
+
+  .solutionborder{
+display: flex;
+flex-direction: column;
   }
 
   .solutionborder p#competencyparagraph{
@@ -2215,15 +2476,13 @@ line-height: 18px;
     line-height: 39px;
   }
 
+
   .formparagraph{
     border-bottom: 1px solid var(--mint);
     padding-top: 30px;
   }
 
-  .reviews h1 {
-    font-size: 20px;
-    line-height: 27px;
-  }
+
 
   .teamlearning{
     padding-left: 20px;
@@ -2253,11 +2512,7 @@ line-height: 18px;
   }
 
   
-.programtextbusinessimprovement h2{
-  font-size: 25px;
-  line-height: 30px;
-  
-}
+
 
 
 #factoryworkersprograms{
@@ -2376,13 +2631,26 @@ color: #000;
 }
 @media (max-width: 601px) {
 
-  
-  .logoimage{
-    width: 70px;
-    height: 70px;
+  .reviews h1 {
+    font-size: 20px;
+    line-height: 27px;
   }
 
+  .programtextbusinessimprovement h2{
+    font-size: 25px;
+    line-height: 30px;
+    
+  }
 
+  p.newsletter.h1 {
+    font-size: 35px;
+    line-height: 39px;
+  }
+
+h1.learningexperts  {
+    font-size: 20px;
+    line-height: 27px;
+  }
   .fontfamily .justify-content-md-end {
     /* background-color: var(--main); */
     display: flex;
@@ -2524,10 +2792,13 @@ color: #000;
   top: 20px;
   border-radius: 0px;
   padding: 30 100px;
-  background-color: rgba(194, 194, 194, 0.5);
-
+  
+  /* background-color: rgba(255, 255, 255, 0.5); */
+color: #fff;
   
   }
+
+
 
   .businessimprovementcourses::before{
     content: '';
@@ -2537,13 +2808,21 @@ color: #000;
     width: 100%;
     height: 81%;
     background-image: url(images/Factoryworkers.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: -2;
 }
 
-  /* .businessimprovementcourses::after{
+  .businessimprovementcourses::after{
     content: "";
-    background-image: url(/images/Factoryworkers.png);
-  } */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 81%;
+    background: rgba(56, 56, 56, 0.7);
+    z-index: -1;
+  }
   .businessimprovementcourses img {
     /* position: absolute;
     z-index: -1;
