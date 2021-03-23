@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-appearance: none;
 }
 
 .mainbackground{
@@ -2270,6 +2271,7 @@ letter-spacing: -0.03em;
 }
 .navbarmobile{
   display: block;
+  
 }
 #middlesection{
   display: grid;
