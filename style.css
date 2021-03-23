@@ -2281,6 +2281,14 @@ letter-spacing: -0.03em;
 
 #dropdowncourseheadingOne, #dropdowncourseheadingTwo, #dropdowncourseheadingThree, #dropdowncourseheadingFour, #dropdowncourseheadingFive{
   -webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+#accordionExample{
+  -webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
 }
 
 #middlesection{
