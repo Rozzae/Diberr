@@ -2272,23 +2272,27 @@ letter-spacing: -0.03em;
 .navbarmobile{
   display: block;
   -webkit-appearance: none;
+  border-radius: 0;
   
 }
 
 .collapse{
   -webkit-appearance: none;
+  border-radius: 0;
 }
 
 #dropdowncourseheadingOne, #dropdowncourseheadingTwo, #dropdowncourseheadingThree, #dropdowncourseheadingFour, #dropdowncourseheadingFive{
   -webkit-appearance: none;
 -moz-appearance: none;
 appearance: none;
+border-radius: 0;
 }
 
 #accordionExample{
   -webkit-appearance: none;
 -moz-appearance: none;
 appearance: none;
+border-radius: 0;
 }
 
 #middlesection{
