@@ -2276,6 +2276,11 @@ letter-spacing: -0.03em;
   
 }
 
+li.nav-item{
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 .collapse{
   -webkit-appearance: none;
   border-radius: 0;
