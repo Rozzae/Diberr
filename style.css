@@ -2271,6 +2271,7 @@ letter-spacing: -0.03em;
 }
 .navbarmobile{
   display: block;
+  -webkit-appearance: none;
   
 }
 #middlesection{
