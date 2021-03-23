@@ -2274,6 +2274,10 @@ letter-spacing: -0.03em;
   -webkit-appearance: none;
   
 }
+
+.collapse{
+  -webkit-appearance: none;
+}
 #middlesection{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
