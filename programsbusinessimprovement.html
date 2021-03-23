@@ -21,13 +21,13 @@
   <body>
 
       <nav class="navbar navbar-expand-lg navbar-light py-lg-4">
-        <a class="navbar-brand logo-icon-mobile" href="#">      <button type="button" class="btn navheaderbuttonsmall">
-          LMS Login <i class="fas fa-long-arrow-alt-right"></i>
-        </button></a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
-      
+        <a class="navbar-brand logo-icon-mobile" href="#">      <button type="button" class="btn navheaderbuttonsmall">
+          LMS Login <i class="fas fa-long-arrow-alt-right"></i>
+        </button></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
   
   
@@ -63,110 +63,226 @@
           </ul>
           
         </div>
-          <ul class="navbarmobile">
-  
-            <div class="navitemdropdownspacing">
-            <div class="navitemdropdowns">
-            <li class="nav-item active">
-              <div class="dropdown">
-                <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Courses
-                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
-                </a>
-              
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item active" href="businesscourses.html">Business Essential courses</a>
-                  <a class="dropdown-item" href="coursesbusinessimprovement.html">Business Improvement Courses</a>
-                  <a class="dropdown-item" href="#">Business</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownPrograms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Programs
-                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
-                </a>
-              
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Business Process Improvement</a>
-                  <a class="dropdown-item" href="programsbusinessimprovement.html">Business Improvement Courses</a>
-                  <a class="dropdown-item" href="programs.html">Programs</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Products
-                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
-                </a>
-              
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item active" href="businesscourses.html">Business Essential courses</a>
-                  <a class="dropdown-item" href="coursesbusinessimprovement.html">Business Improvement Courses</a>
-                  <a class="dropdown-item" href="#">Business</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownPrograms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Solutions
-                  <i class="fas fa-arrow-down mr-1 ml-2"></i>
-                </a>
-              
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="solutions.html"
-                    >Solutions</a
+        <ul class="navbarmobile">
+
+          <div class="navitemdropdownspacing">
+            <div class="navitemdropdowns w-100" id="accordionExample">
+              <li class="nav-item active">
+                <div class="">
+                  <div id="dropdowncourseheadingOne">
+                    <p>
+                      <a
+                        class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#dropdowncoursecollapseOne"
+                        aria-expanded="false"
+                        aria-controls="dropdowncoursecollapseOne"
+                      >
+                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                          <p>Course</p>
+                          <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div
+                    class="collapse"
+                    id="dropdowncoursecollapseOne"
+                    aria-labelledby="dropdowncourseheadingOne"
+                    data-parent="#accordionExample"
                   >
-                  <a class="dropdown-item" href="solutioncompetencymanagement.html"
-                    >Competency Management</a
+  
+                  <div class="d-flex flex-column">
+                    <a class="text-light py-2" href="businesscourses.html"
+                      >Business Essential courses</a
+                    >
+                    <a
+                      class="text-light py-2"
+                      href="coursesbusinessimprovement.html"
+                      >Business Improvement Courses</a
+                    >
+                    <a class="text-light py-2" href="#">Business</a>
+                  </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="">
+                  <div id="dropdowncourseheadingTwo">
+                    <p>
+                      <a
+                        class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#dropdowncoursecollapseTwo"
+                        aria-expanded="false"
+                        aria-controls="dropdowncoursecollapseTwo"
+                      >
+                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                          <p>Programs</p>
+                          <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div
+                    class="collapse"
+                    id="dropdowncoursecollapseTwo"
+                    aria-labelledby="dropdowncourseheadingTwo"
+                    data-parent="#accordionExample"
                   >
-                  <a class="dropdown-item" href="#">Business</a>
-                </div>
-              </div>
-            </li>
-   
   
-            <li class="nav-item">
-              <div class="dropdown">
-                <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownPrograms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  More Information
-                  <i class="fas fa-arrow-down mr-1 ml-2"></i>
-                </a>
+                  <div class="d-flex flex-column">
+                    <a class="text-light py-2" href="programsbusinessimprovement.html"
+                      >Business Process Improvement</a
+                    >
+                    <a
+                      class="text-light py-2"
+                      href="programsbusinessimprovement.html"
+                      >Business Improvement Courses</a
+                    >
+                    <a class="text-light py-2" href="programs.html">Programs</a>
+                  </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="">
+                  <div id="dropdowncourseheadingThree">
+                    <p>
+                      <a
+                        class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#dropdowncoursecollapseThree"
+                        aria-expanded="false"
+                        aria-controls="dropdowncoursecollapseThree"
+                      >
+                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                          <p>Products</p>
+                          <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div
+                    class="collapse"
+                    id="dropdowncoursecollapseThree"
+                    aria-labelledby="dropdowncourseheadingThree"
+                    data-parent="#accordionExample"
+                  >
+  
+                  <div class="d-flex flex-column">
+                    <a class="text-light py-2" href="programsbusinessimprovement.html"
+                      >Business Process Improvement</a
+                    >
+                    <a
+                      class="text-light py-2"
+                      href="programsbusinessimprovement.html"
+                      >Business Improvement Courses</a
+                    >
+                    <a class="text-light py-2" href="programs.html">Products</a>
+                  </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="">
+                  <div id="dropdowncourseheadingFour">
+                    <p>
+                      <a
+                        class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#dropdowncoursecollapseFour"
+                        aria-expanded="false"
+                        aria-controls="dropdowncoursecollapseFour"
+                      >
+                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                          <p>Solutions</p>
+                          <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div
+                    class="collapse"
+                    id="dropdowncoursecollapseFour"
+                    aria-labelledby="dropdowncourseheadingFour"
+                    data-parent="#accordionExample"
+                  >
+  
+                  <div class="d-flex flex-column">
+                    <a class="text-light py-2" href="solutions.html"
+                      >Solutions</a
+                    >
+                    <a
+                      class="text-light py-2"
+                      href="solutioncompetencymanagement.html"
+                      >Competency Management</a
+                    >
+                    <a class="text-light py-2" href="programs.html">Programs</a>
+                  </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="">
+                  <div id="dropdowncourseheadingFour">
+                    <p>
+                      <a
+                        class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#dropdowncoursecollapseFive"
+                        aria-expanded="false"
+                        aria-controls="dropdowncoursecollapseFive"
+                      >
+                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                          <p>More Information</p>
+                          <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div
+                    class="collapse"
+                    id="dropdowncoursecollapseFive"
+                    aria-labelledby="dropdowncourseheadingFive"
+                    data-parent="#accordionExample"
+                  >
+  
+                  <div class="d-flex flex-column">
+                    <a class="text-light py-2" href="#"
+                      >Dibber Software</a
+                    >
+                    <a class="text-light py-2" href="#"
+                      >Dibber Consulting</a
+                    >
+                    <a class="text-light py-2" href="#"
+                      >About</a
+                    >
+                    <a
+                      class="text-light py-2"
+                      href="#"
+                      >Covid19</a
+                    >
+                    <a class="text-light py-2" href="#">News & Events</a>
+                    <a class="text-light py-2" href="#">Get in Touch</a>
+                  </div>
+                  </div>
+                </div>
+              </li>
+  
               
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item text-dark" href="#">About</a>
-                  <a class="dropdown-item text-dark" href="#">Covid19</a>
-                  <a class="dropdown-item text-dark" href="#">News & Events</a>
-                  <a class="dropdown-item text-dark" href="#">Get in Touch</a>
-                </div>
-              </div>
-            </li>
   
-            <li class="nav-item p-0 m-0">
-              <a class="nav-link text-light" href="#">Blog</a>
-            </li>
-  
-          </div>
-          <!-- <li class="nav-item">
-            <div class="dropdown">
-              <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownPrograms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Info
-                <i class="fas fa-arrow-down mr-1 ml-2"></i>
-              </a>
-            
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item text-dark" href="#">About</a>
-                <a class="dropdown-item text-dark" href="#">Covid19</a>
-                <a class="dropdown-item text-dark" href="#">News & Events</a>
-                <a class="dropdown-item text-dark" href="#">Get in Touch</a>
-              </div>
+              <li class="nav-item p-0 m-0">
+                <a class="nav-link text-light" href="#">Blog</a>
+              </li>
             </div>
-          </li> -->
           </div>
-          </ul>
+        </ul>
         </div>
       </nav>
 

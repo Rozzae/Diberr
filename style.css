@@ -2245,7 +2245,7 @@ letter-spacing: -0.03em;
 .navitemdropdowns .nav-item{
   padding: 10px;
   color: #fff;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 
@@ -2420,6 +2420,9 @@ a.navbar-brand.logo-icon-mobile{
   
   }
 
+  .btn.requestproposal {
+display: none;
+  }
   button.btn.btn-link.btn-block.text-left.collapsed{
   font-size: 17px;
   line-height: 21px;
@@ -2433,6 +2436,11 @@ a.navbar-brand.logo-icon-mobile{
     
   }
   
+  .emailnewsletter, .namenewsletter{
+    width: 100%;
+    margin-bottom: 20px;
+  
+  }
 
   .paragraphspacing{
     display: grid;
@@ -2755,11 +2763,6 @@ h1.learningexperts  {
     margin-top: 20px;
   }
 
-  .gridmiddlerow{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
 
 
   .imagebehind .factoryworkers{
