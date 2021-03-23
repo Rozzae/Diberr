@@ -2278,6 +2278,11 @@ letter-spacing: -0.03em;
 .collapse{
   -webkit-appearance: none;
 }
+
+#dropdowncourseheadingOne, #dropdowncourseheadingTwo, #dropdowncourseheadingThree, #dropdowncourseheadingFour, #dropdowncourseheadingFive{
+  -webkit-appearance: none;
+}
+
 #middlesection{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
