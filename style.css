@@ -2354,6 +2354,7 @@ ol.carousel-indicators {
 
 @media (max-width: 601px) {
   .logoimage {
+    margin-top: 70px;
     width: 150px;
     height: 150px;
   }
