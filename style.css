@@ -24,15 +24,19 @@
 }
 
 .navbarleftandright {
-  width: 97%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
 
 .rightcontent {
-  width: 40%;
+  width: 35%;
   display: flex;
   justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
 
 html {
@@ -40,7 +44,7 @@ html {
 }
 
 .nav-item {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 100;
   line-height: 19px;
   letter-spacing: -0.03em;
@@ -65,22 +69,24 @@ button.navbar-toggler i {
   color: #fff;
 }
 
-button.btn.loginbtn {
-  border: 1px solid #fff;
-  border-radius: 20px;
-  padding: 15px 30px;
+a.loginbtn {
+  /* border: 1px solid #fff;
+  border-radius: 20px; */
+  padding: 10px 0px;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 900;
   line-height: 16px;
   letter-spacing: -0.03em;
   text-align: left;
   color: #fff;
-  margin-right: 20px;
   transition: transform 0.8s ease-in;
+  text-decoration: none;
 }
-button.btn.loginbtn:hover {
+a.loginbtn:hover {
+  color: #37a3a5;
+  text-decoration: none;
   opacity: 0.7;
 }
 
@@ -110,6 +116,13 @@ button.btn.navheaderbuttonsmall:hover {
 }
 
 #middlesection {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding: 0;
   color: var(--main);
 }
 
@@ -129,7 +142,7 @@ button.btn.navheaderbuttonsmall:hover {
 
 #middlesection p.h1 {
   font-family: Roboto;
-  font-size: 48px;
+  font-size: 40px;
   font-style: bold;
   font-weight: 900;
   line-height: 56px;
@@ -137,11 +150,11 @@ button.btn.navheaderbuttonsmall:hover {
   text-align: left;
 }
 
-#exploreworldclass {
+.mainheader1 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 112.19%;
   letter-spacing: -0.03em;
 }
@@ -166,17 +179,25 @@ button.btn.navheaderbuttonsmall:hover {
   text-align: left;
 }
 
-.paragraph {
+.subheader {
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 23px;
   letter-spacing: -0.03em;
   text-align: left;
   color: #000;
-
-  
+}
+.paragraph {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #000;
 }
 .form {
   background-color: #fff;
@@ -188,13 +209,12 @@ button.btn.navheaderbuttonsmall:hover {
 
 .formparagraph {
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: 19px;
   letter-spacing: -0.03em;
   text-align: left;
-
 }
 
 .cardimage {
@@ -221,9 +241,9 @@ button.btn.navheaderbuttonsmall:hover {
   display: flex;
   flex-wrap: wrap;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 500;
   line-height: 19px;
   letter-spacing: -0.03em;
   text-align: center;
@@ -237,14 +257,18 @@ button.btn.navheaderbuttonsmall:hover {
   padding: 1rem;
   background: var(--mint);
   margin: 10px;
-  height: 95px;
-  width: 99px;
+  height: 89px;
+  width: 89px;
   color: #fff;
   border-radius: 10px;
   transition: transform 0.2s ease-in;
 }
 
-.formheader {
+.boxshadow {
+  box-shadow: 0 0.1rem 0.2rem rgb(0 0 0 / 15%) !important;
+}
+
+.mainheader2 {
   font-family: Roboto;
   font-size: 25px;
   font-style: normal;
@@ -256,9 +280,21 @@ button.btn.navheaderbuttonsmall:hover {
   color: #37a3a5;
 }
 
+.mainheader3 {
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  text-align: left;
+
+  color: #37a3a5;
+}
+
 .card-title-upcomingcourses {
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 900;
   line-height: 18px;
@@ -273,14 +309,14 @@ button.btn.navheaderbuttonsmall:hover {
 
 .form-row select#inputState {
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: 23px;
   letter-spacing: -0.03em;
   text-align: left;
   display: inline-block;
-  padding: 12px;
+  padding: 23px 12px;
   max-width: 550px;
   border: none;
   /* -webkit-appearance: button;
@@ -301,7 +337,7 @@ select#inputState {
 .border-form label:after {
   content: '\f063';
   font-family: 'FontAwesome';
-  font-size: 11px;
+  font-size: 16px;
   color: var(--main);
   right: 19px;
   top: 40px;
@@ -319,6 +355,12 @@ select#inputState {
   position: absolute;
   pointer-events: none;
   display: block;
+}
+
+.formlabel label {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
 }
 
 .formh4 {
@@ -360,6 +402,7 @@ select#inputState {
   border-radius: 20px;
 }
 
+
 .secondbox {
   display: flex;
   flex-direction: column;
@@ -372,10 +415,11 @@ select#inputState {
   border-radius: 10px;
   transition: transform 0.2s ease-in;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 500;
   line-height: 19px;
+  letter-spacing: -0.03em;
   letter-spacing: -0.03em;
   text-align: left;
 }
@@ -445,6 +489,17 @@ h2.team {
   width: 85px;
   height: 85px;
   border-radius: 50%;
+}
+
+.smallheader{
+  font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: 18px;
+letter-spacing: -0.03em;
+text-align: left;
+
 }
 
 /* .cardcircleimage{
@@ -743,7 +798,6 @@ button.readmorebtn:hover {
   text-align: left;
 }
 
-
 .coursecategories {
   background-color: var(--main);
   color: #fff;
@@ -812,15 +866,14 @@ button.readmorebtn:hover {
   vertical-align: middle;
 }
 
-p.highorganization{
+p.highorganization {
   font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 300;
-line-height: 21px;
-letter-spacing: -0.03em;
-text-align: left;
-
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+  text-align: left;
 }
 
 .dateallcourses {
@@ -835,12 +888,11 @@ text-align: left;
 
 .locations h2 {
   font-family: Roboto;
-  font-size: 50px;
   font-style: normal;
   font-weight: 900;
-  line-height: 56px;
+  font-size: 40px;
+  line-height: 112.19%;
   letter-spacing: -0.03em;
-  text-align: left;
   color: var(--mint);
 }
 
@@ -1212,21 +1264,20 @@ p.instructorstitle {
   text-align: center;
 }
 
-.faqspacing{
+.faqspacing {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.faqspacing p{
+.faqspacing p {
   font-family: Roboto;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 21px;
-letter-spacing: -0.03em;
-text-align: left;
-
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+  text-align: left;
 }
 
 .subheadermiddlerow {
@@ -1307,8 +1358,6 @@ textarea#attendeestextarea.form-control {
   letter-spacing: -0.03em;
   text-align: left;
 }
-
-
 
 .bottommiddletitle.header {
   font-family: Roboto;
@@ -1396,7 +1445,7 @@ textarea#attendeestextarea.form-control {
 
 .explorecoursestext h2 {
   font-family: Roboto;
-  font-size: 50px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 900;
   line-height: 59px;
@@ -1577,12 +1626,11 @@ input[type='email'] {
 
 .locations h2 {
   font-family: Roboto;
-  font-size: 50px;
   font-style: normal;
   font-weight: 900;
-  line-height: 56px;
+  font-size: 40px;
+  line-height: 112.19%;
   letter-spacing: -0.03em;
-  text-align: left;
   color: var(--mint);
 }
 
@@ -1662,12 +1710,12 @@ input[type='email'] {
 }
 
 .card-body.lastcards {
-  width: 411px;
+  max-width: 380px;
   height: auto;
   border-radius: 10px;
   background-color: var(--mint);
   color: #fff;
-  padding: 20px 50px;
+  padding: 20px 20px;
 }
 
 .card-title {
@@ -1691,12 +1739,16 @@ input[type='email'] {
 }
 .card-text-main {
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: 19px;
   letter-spacing: -0.03em;
   text-align: left;
+}
+
+.card-body.cardbackground{
+  border-radius: 0 !important;
 }
 
 .teamlearning {
@@ -1719,7 +1771,7 @@ input[type='email'] {
   text-align: left;
 }
 
-.blogtitle {
+/* .blogtitle {
   font-family: Roboto;
   font-size: 40px;
   font-style: normal;
@@ -1727,7 +1779,7 @@ input[type='email'] {
   line-height: 45px;
   letter-spacing: -0.03em;
   text-align: left;
-}
+} */
 
 .col-lg-11 {
   font-family: Roboto;
@@ -1771,13 +1823,14 @@ input[type='email'] {
 
 .backgroundcircles {
   position: absolute;
-  right: -50px;
+  right: -190px;
+  transform: rotate(180deg);
   top: -20px;
   z-index: -3;
 }
 .backgroundcirclesprograms {
   position: absolute;
-  left: -50px;
+  left: -120px;
   top: 130px;
   z-index: -1;
 }
@@ -1956,6 +2009,7 @@ ol.carousel-indicators {
 
 .backgroundprogramstwo {
   position: absolute;
+  transform: rotate(180deg);
   right: -100px;
 }
 
@@ -2249,7 +2303,7 @@ ol.carousel-indicators {
   }
 
   .navitemdropdowns .nav-item {
-    padding: 10px;
+    padding: 2px;
     color: #fff;
     margin-top: 5px;
   }
@@ -2384,6 +2438,10 @@ ol.carousel-indicators {
     width: 100%;
   }
 
+  .totalcontainer {
+    padding: 0px 22px;
+  }
+
   /* main page index.html mobile */
 
   #exploreworldclass,
@@ -2427,6 +2485,16 @@ ol.carousel-indicators {
     line-height: 15px;
   }
 
+  p.header2.mint {
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
+
   h2.team {
     font-size: 17px;
     line-height: 23px;
@@ -2449,7 +2517,7 @@ ol.carousel-indicators {
 
   /* business essential courses responsive */
 
-   h2.header {
+  h2.header {
     font-size: 18px;
     line-height: 20px;
     margin-left: 15;
@@ -2460,7 +2528,7 @@ ol.carousel-indicators {
     font-size: 30px;
   }
 
-  .businessheader{
+  .businessheader {
     font-size: 18px;
     line-height: 20px;
   }
@@ -2469,7 +2537,8 @@ ol.carousel-indicators {
     font-size: 17px;
     line-height: 23px;
   }
-  .locations .purple, .locations .locationsstate {
+  .locations .purple,
+  .locations .locationsstate {
     font-size: 17px;
     line-height: 23px;
     padding: 10px;
@@ -2497,13 +2566,13 @@ ol.carousel-indicators {
 
   /* business improvement courses mobile responsive */
 
-   h3.smallercoursetext {
+  h3.smallercoursetext {
     font-size: 15px;
     margin: 0;
     padding-top: 10px;
   }
 
-  .faqspacing{
+  .faqspacing {
     padding-left: 10px;
   }
   .instructors p.instructorstitlebusinessimprovement {
@@ -2520,47 +2589,43 @@ ol.carousel-indicators {
     padding: 0 30px;
   }
 
-
-  p.highorganization{
-  font-size: 14px;
-  padding: 0 10px;
-  
+  p.highorganization {
+    font-size: 14px;
+    padding: 0 10px;
   }
   /* course calender mobile */
   .formheadercoursecalender {
     font-size: 20px;
     line-height: 25px;
-
   }
 
   .coursecalenderbox {
     font-size: 15px;
     line-height: 24px;
     margin: 20px;
-  
+
     height: 71px;
     width: 90%;
     border-radius: 10px;
     display: flex;
     align-items: center;
   }
-  
+
   .boxesspacing {
     display: flex;
     width: 90%;
     justify-content: space-between;
   }
-  
+
   .coursecalenderbox .fa-circle {
     font-size: 10px;
     width: 7%;
     display: flex;
   }
-  
 
   /* program business improvement */
 
-  .gridinstructors{
+  .gridinstructors {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2661,8 +2726,13 @@ ol.carousel-indicators {
   p.darkoccupation {
     padding-left: 30px;
   }
-  .blogtitle {
+
+  .mainheader1 {
     font-size: 30px;
+    line-height: 40px;
+  }
+  .mainheader2 {
+    font-size: 20px;
     line-height: 40px;
   }
 
@@ -2681,7 +2751,7 @@ ol.carousel-indicators {
 
   .businessimprovementspacing {
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
   }
 
   .programbusinessboxes {

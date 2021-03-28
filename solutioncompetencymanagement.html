@@ -20,20 +20,26 @@
   </head>
   <body>
 
-      <nav class="navbar navbar-expand-lg navbar-light py-lg-4">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <a class="navbar-brand logo-icon-mobile" href="#">      <button type="button" class="btn navheaderbuttonsmall">
-          LMS Login <i class="fas fa-long-arrow-alt-right"></i>
-        </button></a>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-  
-  
-          <div class="navbarleftandright">
-          <ul class="navbar-nav ml-lg-5">
-            <li class="nav-item ml-lg-5">
+    <nav class="navbar navbar-expand-lg navbar-light p-0 m-0">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <a class="navbar-brand logo-icon-mobile" href="#">
+        <button type="button" class="btn navheaderbuttonsmall">
+          LMS Login <i class="fas fa-long-arrow-alt-right"></i></button
+      ></a>
+      <div class="collapse navbar-collapse px-lg-5 mx-lg-5 totalcontainer" id="navbarSupportedContent">
+        <div class="navbarleftandright">
+          <ul class="navbar-nav ml-lg-0">
+            <li class="nav-item ml-lg-0">
               <a class="nav-link text-light" href="#"><u>Diberr Software</u></a>
             </li>
             <li class="nav-item">
@@ -42,9 +48,8 @@
               >
             </li>
           </ul>
-  
+
           <ul class="navbar-nav rightcontent">
-            
             <li class="nav-item">
               <a class="nav-link text-light" href="#">About </a>
             </li>
@@ -57,14 +62,13 @@
             <li class="nav-item">
               <a class="nav-link text-light" href="#">Get in Touch</a>
             </li>
-            <button type="button" class="btn loginbtn">
-              LMS Login <i class="fas fa-long-arrow-alt-right"></i>
-            </button>
+            <a class="loginbtn">
+              <i class="fas fa-chalkboard-teacher pr-2"></i>
+              LMS Login 
+            </a>
           </ul>
-          
         </div>
         <ul class="navbarmobile">
-
           <div class="navitemdropdownspacing">
             <div class="navitemdropdowns w-100" id="accordionExample">
               <li class="nav-item active">
@@ -78,7 +82,9 @@
                         aria-expanded="false"
                         aria-controls="dropdowncoursecollapseOne"
                       >
-                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                        <div
+                          class="d-flex justify-content-between text-light w-100 border-bottom"
+                        >
                           <p>Course</p>
                           <i class="fas fa-arrow-down mr-3 ml-2"></i>
                         </div>
@@ -86,23 +92,22 @@
                     </p>
                   </div>
                   <div
-                    class="collapse"
+                    class="collapse ml-4"
                     id="dropdowncoursecollapseOne"
                     aria-labelledby="dropdowncourseheadingOne"
                     data-parent="#accordionExample"
                   >
-  
-                  <div class="d-flex flex-column">
-                    <a class="text-light py-2" href="businesscourses.html"
-                      >Business Essential courses</a
-                    >
-                    <a
-                      class="text-light py-2"
-                      href="coursesbusinessimprovement.html"
-                      >Business Improvement Courses</a
-                    >
-                    <a class="text-light py-2" href="#">Business</a>
-                  </div>
+                    <div class="d-flex flex-column">
+                      <a class="text-light py-2" href="businesscourses.html"
+                        > <i class="fas fa-arrow-right fa-xs mr-2"></i> Business Essential courses</a
+                      >
+                      <a
+                        class="text-light py-2"
+                        href="coursesbusinessimprovement.html"
+                        ><i class="fas fa-arrow-right fa-xs mr-2"></i> Business Improvement Courses</a
+                      >
+                      <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i> Business</a>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -117,7 +122,9 @@
                         aria-expanded="false"
                         aria-controls="dropdowncoursecollapseTwo"
                       >
-                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                        <div
+                          class="d-flex justify-content-between text-light w-100 border-bottom"
+                        >
                           <p>Programs</p>
                           <i class="fas fa-arrow-down mr-3 ml-2"></i>
                         </div>
@@ -125,23 +132,26 @@
                     </p>
                   </div>
                   <div
-                    class="collapse"
+                    class="collapse ml-4"
                     id="dropdowncoursecollapseTwo"
                     aria-labelledby="dropdowncourseheadingTwo"
                     data-parent="#accordionExample"
                   >
-  
-                  <div class="d-flex flex-column">
-                    <a class="text-light py-2" href="programsbusinessimprovement.html"
-                      >Business Process Improvement</a
-                    >
-                    <a
-                      class="text-light py-2"
-                      href="programsbusinessimprovement.html"
-                      >Business Improvement Courses</a
-                    >
-                    <a class="text-light py-2" href="programs.html">Programs</a>
-                  </div>
+                    <div class="d-flex flex-column">
+                      <a
+                        class="text-light py-2"
+                        href="programsbusinessimprovement.html"
+                        ><i class="fas fa-arrow-right fa-xs mr-2"></i>Business Process Improvement</a
+                      >
+                      <a
+                        class="text-light py-2"
+                        href="programsbusinessimprovement.html"
+                        ><i class="fas fa-arrow-right fa-xs mr-2"></i>Business Improvement Courses</a
+                      >
+                      <a class="text-light py-2" href="programs.html"
+                        ><i class="fas fa-arrow-right fa-xs mr-2"></i>Programs</a
+                      >
+                    </div>
                   </div>
                 </div>
               </li>
@@ -156,7 +166,9 @@
                         aria-expanded="false"
                         aria-controls="dropdowncoursecollapseThree"
                       >
-                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                        <div
+                          class="d-flex justify-content-between text-light w-100 border-bottom"
+                        >
                           <p>Products</p>
                           <i class="fas fa-arrow-down mr-3 ml-2"></i>
                         </div>
@@ -164,23 +176,26 @@
                     </p>
                   </div>
                   <div
-                    class="collapse"
+                    class="collapse ml-4"
                     id="dropdowncoursecollapseThree"
                     aria-labelledby="dropdowncourseheadingThree"
                     data-parent="#accordionExample"
                   >
-  
-                  <div class="d-flex flex-column">
-                    <a class="text-light py-2" href="programsbusinessimprovement.html"
-                      >Business Process Improvement</a
-                    >
-                    <a
-                      class="text-light py-2"
-                      href="programsbusinessimprovement.html"
-                      >Business Improvement Courses</a
-                    >
-                    <a class="text-light py-2" href="programs.html">Products</a>
-                  </div>
+                    <div class="d-flex flex-column">
+                      <a
+                        class="text-light py-2"
+                        href="programsbusinessimprovement.html"
+                        ><i class="fas fa-arrow-right fa-xs mr-2"></i>Business Process Improvement</a
+                      >
+                      <a
+                        class="text-light py-2"
+                        href="programsbusinessimprovement.html"
+                        ><i class="fas fa-arrow-right fa-xs mr-2"></i>Business Improvement Courses</a
+                      >
+                      <a class="text-light py-2" href="programs.html"
+                        ><i class="fas fa-arrow-right fa-xs mr-2"></i>Products</a
+                      >
+                    </div>
                   </div>
                 </div>
               </li>
@@ -195,7 +210,9 @@
                         aria-expanded="false"
                         aria-controls="dropdowncoursecollapseFour"
                       >
-                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                        <div
+                          class="d-flex justify-content-between text-light w-100 border-bottom"
+                        >
                           <p>Solutions</p>
                           <i class="fas fa-arrow-down mr-3 ml-2"></i>
                         </div>
@@ -203,23 +220,24 @@
                     </p>
                   </div>
                   <div
-                    class="collapse"
+                    class="collapse ml-4"
                     id="dropdowncoursecollapseFour"
                     aria-labelledby="dropdowncourseheadingFour"
                     data-parent="#accordionExample"
                   >
-  
-                  <div class="d-flex flex-column">
-                    <a class="text-light py-2" href="solutions.html"
-                      >Solutions</a
-                    >
-                    <a
-                      class="text-light py-2"
-                      href="solutioncompetencymanagement.html"
-                      >Competency Management</a
-                    >
-                    <a class="text-light py-2" href="programs.html">Programs</a>
-                  </div>
+                    <div class="d-flex flex-column">
+                      <a class="text-light py-2" href="solutions.html"
+                        ><i class="fas fa-arrow-right fa-xs mr-2"></i>Solutions</a
+                      >
+                      <a
+                        class="text-light py-2"
+                        href="solutioncompetencymanagement.html"
+                        ><i class="fas fa-arrow-right fa-xs mr-2"></i>Competency Management</a
+                      >
+                      <a class="text-light py-2" href="programs.html"
+                        ><i class="fas fa-arrow-right fa-xs mr-2"></i>Programs</a
+                      >
+                    </div>
                   </div>
                 </div>
               </li>
@@ -234,7 +252,9 @@
                         aria-expanded="false"
                         aria-controls="dropdowncoursecollapseFive"
                       >
-                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                        <div
+                          class="d-flex justify-content-between text-light w-100 border-bottom"
+                        >
                           <p>More Information</p>
                           <i class="fas fa-arrow-down mr-3 ml-2"></i>
                         </div>
@@ -242,58 +262,45 @@
                     </p>
                   </div>
                   <div
-                    class="collapse"
+                    class="collapse ml-4"
                     id="dropdowncoursecollapseFive"
                     aria-labelledby="dropdowncourseheadingFive"
                     data-parent="#accordionExample"
                   >
-  
-                  <div class="d-flex flex-column">
-                    <a class="text-light py-2" href="#"
-                      >Dibber Software</a
-                    >
-                    <a class="text-light py-2" href="#"
-                      >Dibber Consulting</a
-                    >
-                    <a class="text-light py-2" href="#"
-                      >About</a
-                    >
-                    <a
-                      class="text-light py-2"
-                      href="#"
-                      >Covid19</a
-                    >
-                    <a class="text-light py-2" href="#">News & Events</a>
-                    <a class="text-light py-2" href="#">Get in Touch</a>
-                  </div>
+                    <div class="d-flex flex-column">
+                      <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Dibber Software</a>
+                      <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Dibber Consulting</a>
+                      <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>About</a>
+                      <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Covid19</a>
+                      <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>News & Events</a>
+                      <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Get in Touch</a>
+                    </div>
                   </div>
                 </div>
               </li>
-  
-              
-  
-              <li class="nav-item p-0 m-0">
-                <a class="nav-link text-light" href="#">Blog</a>
+
+              <li class="nav-item">
+                <a class="text-light" href="#">Blog</a>
               </li>
             </div>
           </div>
         </ul>
-        </div>
-      </nav>
+      </div>
+    </nav>
    
-    <div class="container-fluid px-lg-5">
-      <div class="container-fluid mt-lg-4">
-        <div class="row d-flex justify-content-between" id="firstsection">
-          <div class="col ml-lg-4">
-            <a href="index.html">
-              <img
+    <div class="px-lg-5 mx-lg-5 totalcontainer">
+      <div class="container-fluid mt-4 topsection">
+        <div class="row d-flex justify-content-between">
+          <div class="col-3 my-3 p-0 m-0">
+            <a href="index.html"
+              ><img
                 src="images/logo.png"
                 class="img-fluid logoimage"
                 alt="Logo image"
             /></a>
           </div>
-          <div class="col-lg-6 mt-4 fontfamily">
-            <div class="row px-lg-4 mx-4 justify-content-md-end">
+          <div class="col-lg-6 mt-md-4 fontfamily">
+            <div class="row justify-content-md-end">
               <div class="dropdown">
                 <a
                   class="dropdown-toggle text-dark"
@@ -309,12 +316,10 @@
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="businesscourses.html"
+                  <a class="dropdown-item active" href="businesscourses.html"
                     >Business Essential courses</a
                   >
-                  <a
-                    class="dropdown-item active"
-                    href="coursesbusinessimprovement.html"
+                  <a class="dropdown-item" href="#"
                     >Business Improvement Courses</a
                   >
                   <a class="dropdown-item" href="#">Business</a>
@@ -338,10 +343,12 @@
                   <a class="dropdown-item" href="#"
                     >Business Process Improvement</a
                   >
-                  <a class="dropdown-item" href="#"
+                  <a
+                    class="dropdown-item"
+                    href="programsbusinessimprovement.html"
                     >Business Improvement Courses</a
                   >
-                  <a class="dropdown-item" href="/programs.html">Programs</a>
+                  <a class="dropdown-item" href="programs.html">Programs</a>
                 </div>
               </div>
               <div class="dropdown">
@@ -385,7 +392,7 @@
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="/solutions.html">Solutions</a>
+                  <a class="dropdown-item" href="solutions.html">Solutions</a>
                   <a
                     class="dropdown-item"
                     href="solutioncompetencymanagement.html"
@@ -400,12 +407,13 @@
         </div>
       </div>
 
-      <div class="container-fluid-sm mt-5 pt-3 px-lg-4 mx-lg-5">
+
+      <div class="container-fluid-sm mt-lg-5 pt-3">
         <div class="row">
           <div class="programtextbusinessimprovement">
-            <h3 class="mint header">Solution</h3>
+            <h3 class="mint header smallercoursetext p-0 m-0">Solution</h3>
             <h2>Competency Management Solution</h2>
-            <p class="businessimprovementsubheader mt-4 col-lg-8 p-0">
+            <p class="businessimprovementsubheader mt-3 col-lg-10 p-0">
               Our team of learning experts have designed a suite of practical
               programs that develop both your execution excellence capabilities
               and enable you to stay a step ahead.
@@ -428,10 +436,10 @@
         </div>
       </div>
 
-      <div class="container-fluid px-lg-5 mx-lg-3 pt-5">
+      <div class="container-fluid pt-5">
         <div class="row justify-content-between flex-row">
           <div class="col-lg-7">
-            <p class="smallerparagraphcompetency">
+            <p class="smallerparagraphbusinessimprovement">
               A key driver of High Performance Organization is their talented
               workforce. To be successful in today’s business arena,
               organizations must intentionally synchronize their talent with
@@ -440,7 +448,7 @@
               talent, design training programs, and develop technical
               capabilities.
             </p>
-            <p class="smallerparagraphcompetency">
+            <p class="smallerparagraphbusinessimprovement">
               A key driver of High Performance Organization is their talented
               workforce. To be successful in today’s business arena,
               organizations must intentionally synchronize their talent with
@@ -474,7 +482,7 @@
         </div>
       </div>
 
-      <div class="container-fluid-sm px-lg-5 mx-lg-2 mt-5">
+      <div class="container-fluid-sm mt-5">
         <div class="accordion" id="accordionExample">
           <div class="card programsbusinesssimprovementcollapsebox">
             <div
@@ -607,7 +615,7 @@
           </p>
           <div class="solutionborder">
             <div class="upperrow pl-3 pb-5 mx-3">
-              <h1 class="display-lg-4 mt-lg-4">Performance Refactoring</h1>
+              <h1 class="mt-lg-4">Performance Refactoring</h1>
               <p class="mt-4 mb-5 pt-3" id="competencyparagraph">
                 A key driver of High Performance Organization is their talented
                 workforce. To be successful in today’s business arena,
@@ -629,7 +637,7 @@
           </div>
           <div class="solutionborder my-4">
             <div class="upperrow pl-3 pb-5 mx-3">
-              <h1 class="display-lg-4 mt-lg-4">Performance Refactoring</h1>
+              <h1 class="mt-lg-4">Performance Refactoring</h1>
               <p class="mt-4 mb-5 pt-3" id="competencyparagraph">
                 A key driver of High Performance Organization is their talented
                 workforce. To be successful in today’s business arena,
@@ -773,7 +781,7 @@
         <div class="container-fluid px-2 mt-5">
           <div class="bottommiddlerow">
             <div class="explorecoursestext py-4">
-              <h2 class="header mint">Request a Custom Program</h2>
+              <h2 class="mainheader1 mint">Request a Custom Program</h2>
               <p>
                 Developing manager/team lead’s ability to organize and lead
                 teams to produce and sustain extraordinary results. This program
@@ -880,7 +888,7 @@
       </div>
     </div>
     <div class="container-fluid-sm reviews mt-5">
-      <div class="row reviewscontent px-5 py-lg-5 mx-lg-5 mb-4">
+      <div class="row reviewscontent py-lg-5 mb-4">
         <div
           id="carouselLearningIndicators"
           class="carousel slide"
@@ -943,7 +951,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid subscribetonewsletter px-lg-5 mx-lg-5 mt-4">
+    <div class="container-fluid subscribetonewsletter mt-4">
       <div class="row mt-5">
         <div class="col-lg-12">
           <p class="newsletter h1">
@@ -952,10 +960,10 @@
           </p>
         </div>
 
-        <div class="col-lg-12 pt-lg-5">
+        <div class="col-lg-12">
           <form class="newsletterform">
-            <div class="form-row">
-              <div class="form-group col-md-4">
+            <div class="form-row mt-4">
+              <div class="form-group col-md-6">
                 <label for="inputName">Name</label>
                 <input type="text" class="form-control" id="inputName" />
               </div>
@@ -975,7 +983,7 @@
         </div>
       </div>
     </div>
-
+</div>
     <footer></footer>
   </body>
   <script
