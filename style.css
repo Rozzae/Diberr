@@ -1878,10 +1878,10 @@ input[type='email'] {
   top: 310px;
   left: 0px;
   z-index: 2;
-  max-height: 64vh;
-  max-width: 59vw;
+  max-height: 58vh;
+  max-width: 48vw;
   left: 0px;
-  padding: 117px 140px;
+  padding: 100px 140px;
 }
 
 .carouselheader {
