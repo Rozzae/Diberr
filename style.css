@@ -54,12 +54,17 @@ html {
 
 .fontfamily {
   font-family: Roboto;
-  font-weight: 300;
   font-size: 16px;
   font-style: normal;
+  font-weight: 700;
   line-height: 19px;
   letter-spacing: -0.03em;
   text-align: right;
+  
+}
+
+.maincolor{
+  color: var(--main);
 }
 
 button.navbar-toggler {
@@ -316,12 +321,32 @@ button.btn.navheaderbuttonsmall:hover {
   letter-spacing: -0.03em;
   text-align: left;
   display: inline-block;
-  padding: 23px 12px;
-  max-width: 550px;
+  padding: 23px 12px !important;
+  display: block;
+  width: 100%;
+  height: 2px;
+  /* height: 100px; */
+  -webkit-appearance: none;
+  /* max-width: 550px; */
   border: none;
   /* -webkit-appearance: button;
   appearance: button;
   outline: none; */
+}
+
+.selectitems{
+  
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  display: inline-block;
+  padding: 14px 12px !important;
+  border: none;
+  width: 100%;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -484,11 +509,16 @@ h2.team {
   text-align: left;
 }
 
-.rounded-circle.card-circle.mb-3 {
+.rounded-circle.card-circle{
   background-color: #fff;
   width: 85px;
   height: 85px;
   border-radius: 50%;
+}
+.rounded-circle.card-circle img{
+width: 85px;
+height: 85px;
+border-radius: 50%;
 }
 
 .smallheader{
@@ -1710,7 +1740,7 @@ input[type='email'] {
 }
 
 .card-body.lastcards {
-  max-width: 380px;
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
   background-color: var(--mint);
@@ -2283,12 +2313,12 @@ ol.carousel-indicators {
   }
 
   .carousel-inner img {
-    height: 35vh;
+    height: 65vh;
   }
 
-  .fontfamily {
-  }
+
 }
+
 
 @media (max-width: 991px) {
   .navbarleftandright {
