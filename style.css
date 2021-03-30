@@ -343,7 +343,6 @@ button.btn.navheaderbuttonsmall:hover {
   line-height: 23px;
   letter-spacing: -0.03em;
   text-align: left;
-  display: inline-block;
   padding: 14px 12px !important;
   border: none;
   width: 100%;
@@ -364,14 +363,36 @@ select#inputState {
   font-family: 'FontAwesome';
   font-size: 16px;
   color: var(--main);
-  right: 19px;
-  top: 40px;
+  right: 29px;
+  top: 45px;
   z-index: 4;
   padding: 0 0 2px;
   position: absolute;
   pointer-events: none;
 }
 .border-form label:before {
+  content: '';
+  right: 4px;
+  top: 0px;
+  width: 23px;
+  height: 18px;
+  position: absolute;
+  pointer-events: none;
+  display: block;
+}
+.generalselectstyle label:after {
+  content: '\f063';
+  font-family: 'FontAwesome';
+  font-size: 16px;
+  color: var(--main);
+  right: 29px;
+  top: 60px;
+  z-index: 4;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+}
+.generalselectstyle label:before {
   content: '';
   right: 4px;
   top: 0px;
@@ -449,9 +470,9 @@ select#inputState {
   text-align: left;
 }
 
-#competencymanagement {
+.solutionheader {
   font-family: Roboto;
-  font-size: 40px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 900;
   line-height: 45px;
@@ -459,7 +480,7 @@ select#inputState {
   text-align: left;
   color: #225779;
 }
-#competencyparagraph {
+ .solutionparagraph{
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -610,21 +631,54 @@ button.pressreleasebtn {
 .newsletterform input[type='text'],
 input[type='email'] {
   padding: 30px;
+  height: 30px;
+  width: 80%;
+  outline: none;
   background: #edeeee;
+  border: none;
   border-radius: 10px;
+}
+.newsletterform input[type='email'] {
+  max-width: 600px;
+}
+.newsletterform input[type='text'] {
+  width: 90%;
 }
 .form-newsletter {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+ 
 }
 
 .emailnewsletter,
 .namenewsletter {
-  width: 40%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
 }
+
+#subscribebtn {
+  background-color: var(--main);
+  /* position: absolute;
+  right: -60px;
+  bottom: 3px; */
+  height: 60px;
+  padding: 10px 20px;
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 29px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+
 .newsletterform label {
   font-family: Roboto;
+  width: 20%;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -645,13 +699,33 @@ input[type='email'] {
 
 .blog p {
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: 19px;
   letter-spacing: -0.03em;
   text-align: left;
 }
+
+.events a.row{
+  text-decoration: none;
+  color: #000;
+
+
+}
+.events a.row:hover{
+  text-decoration: underline;
+  color: var(--main);
+
+
+}
+
+a.darkparagraph{
+  color: #000;
+  text-decoration: none;
+}
+
+
 
 /* end */
 
@@ -739,6 +813,13 @@ button.readmorebtn:hover {
   color: var(--main);
 }
 
+.bottomrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 /* business courses */
 .coursecategories h2 {
   font-family: Roboto;
@@ -786,6 +867,15 @@ button.readmorebtn:hover {
   line-height: 56px;
   letter-spacing: -0.03em;
   text-align: left;
+}
+
+.allcoursescards a{
+  text-decoration: none;
+  color: #000;
+}
+.allcoursescards a:hover{
+  text-decoration: none;
+  color: var(--mint);
 }
 
 .header {
@@ -996,37 +1086,7 @@ p.highorganization {
   color: #bbb6b6;
 }
 
-.newsletterform input[type='text'],
-input[type='email'] {
-  padding: 30px;
-  background: #edeeee;
-  border-radius: 10px;
-}
-.newsletterform label {
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 22px;
-  letter-spacing: -0.03em;
-  text-align: left;
-}
 
-#subscribebtn {
-  background-color: var(--main);
-  height: 60px;
-  padding: 10px 20px;
-  font-family: Roboto;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 29px;
-  letter-spacing: -0.03em;
-  text-align: center;
-  margin-top: 30px;
-  vertical-align: middle;
-  color: #fff;
-}
 
 .locationsimage .card.col-sm img {
   height: 267px;
@@ -1090,6 +1150,7 @@ input[type='email'] {
 
 .backgroundcirclesoneimage {
   top: 0px;
+  left: -200px;
   position: absolute;
   z-index: -4;
 }
@@ -2316,6 +2377,9 @@ ol.carousel-indicators {
     height: 65vh;
   }
 
+  #subscribebtn {
+    position: static;
+  }
 
 }
 
@@ -2394,9 +2458,11 @@ ol.carousel-indicators {
     justify-content: space-between;
   }
 
-  .emailnewsletter,
+  .emailnewsletter {
+    width: 100%;
+  }
   .namenewsletter {
-    width: 80%;
+    width: 50%;
   }
 
   #subscribebtn {
@@ -2751,7 +2817,7 @@ ol.carousel-indicators {
   }
 
   .darkteamlearning {
-    padding-left: 20px;
+    font-size: 20px;
   }
   p.darkoccupation {
     padding-left: 30px;

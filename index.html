@@ -575,7 +575,7 @@
       </div>
 
       <div class="container-fluid-sm">
-        <div class="my-5 py-5" id="middlesection">
+        <div class="my-2 py-5" id="middlesection">
           <div class="">
             <p class="h1 mb-1">15,000+</p>
             <p>
@@ -661,15 +661,15 @@
               and in demand skills
             </p>
           </div>
-          <div class="form-row border-form formlabel">
-            <div class="form-group col-md-3">
+          <div class="border-form formlabel d-flex flex-md-row flex-column">
+            <div class="form-group col ml-0 pl-0">
               <label for="inputState">Select course Area</label>
               <select name="selectcoursearea" class="selectitems mr-5">
                 <option selected>All</option>
                 <option>All</option>
               </select>
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col ml-0 pl-0">
               <label for="inputState">Select course</label>
               <select name="selectcourse" class="selectitems mr-5">
                 <option selected>All</option>
@@ -677,14 +677,14 @@
               </select>
               <!-- <i class="fas fa-arrow-down"></i> -->
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col ml-0 pl-0">
               <label for="inputState">Select location</label>
               <select name="selectlocation" class="selectitems">
                 <option selected>All</option>
                 <option>All</option>
               </select>
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group">
               <button
                 type="button"
                 class="btn btn-dark my-4 px-5"
@@ -699,7 +699,7 @@
             <h3 class="mt-4 mb-md-5 mainheader2">Upcoming courses</h3>
 
             <div class="row">
-              <div class="col-md-4 formparagraph pb-5">
+              <div class="col-sm formparagraph pb-5 mr-3">
                 <h6 class="card-title-upcomingcourses mb-2">18th January</h6>
                 <p class="mb-4">
                   Recharge & Refuel for professional development & career growth
@@ -711,7 +711,7 @@
                   Register<i class="fas fa-long-arrow-alt-right ml-3"></i>
                 </button>
               </div>
-              <div class="col-md-4 formparagraph pb-5">
+              <div class="col-sm formparagraph pb-5 mr-3">
                 <h6 class="card-title-upcomingcourses mb-2">18th January</h6>
                 <p class="mb-4">
                   Recharge & Refuel for professional development & career growth
@@ -723,7 +723,7 @@
                   Register<i class="fas fa-long-arrow-alt-right ml-3"></i>
                 </button>
               </div>
-              <div class="col-md-4 formparagraph pb-5">
+              <div class="col-sm formparagraph pb-5">
                 <h6 class="card-title-upcomingcourses mb-2">18th January</h6>
                 <p class="mb-4">
                   Recharge & Refuel for professional development & career growth
@@ -1015,7 +1015,16 @@
         class="carousel slide mt-5 pt-3"
         data-ride="carousel"
       >
-        <ol class="carousel-indicators ml-3">
+      <div class="mt-5 mx-lg-2 row row-cols-8 pt-5">
+        <p class="col-lg-8 mint mainheader1 mb-1">Solution</p>
+
+        <h2 class="team col-lg-9 mb-2">
+          Our team of learning experts have designed a suite of practical
+          programs that develop both your execution excellence capabilities
+          and enable you to stay a step ahead.
+        </h2>
+      </div>
+        <!-- <ol class="carousel-indicators ml-3">
           <li
             data-target="#carouselSolutionIndicators"
             data-slide-to="0"
@@ -1023,20 +1032,20 @@
           ></li>
           <li data-target="#carouselSolutionIndicators" data-slide-to="1"></li>
           <li data-target="#carouselSolutionIndicators" data-slide-to="2"></li>
-        </ol>
+        </ol> -->
         <div class="container-fluid-sm boxshadow white my-5 mx-lg-4 p-lg-5">
           <div
-            class="carousel-inner container-fluid-sm mt-4"
+            class="ontainer-fluid-sm"
             id="cardsleadership"
           >
-            <div class="carousel-item active">
-              <div class="px-3 row">
-                <div class="upperrow col-lg-6">
-                  <p class="mt-5 mint smallheader mb-1">Solution</p>
-                  <h1 class="mb-lg-4" id="competencymanagement">
+            <div class="">
+              <div class="px-3 row justify-content-between">
+                <div class="upperrow col-lg-6 pl-0 ml-0">
+                  <p class="mint smallheader mb-1 mt-0 pt-0">Solution</p>
+                  <h1 class="mb-lg-4 solutionheader">
                     Competency Management
                   </h1>
-                  <p class="mt-lg-4 mb-lg-5 pt-5" id="competencyparagraph">
+                  <p class="mt-lg-4 mb-lg-5 pt-2 solutionparagraph">
                     A key driver of High Performance Organization is their
                     talented workforce. To be successful in today’s business
                     arena, organizations must intentionally synchronize their
@@ -1045,21 +1054,21 @@
                     professionals assess their talent, design training programs,
                     and develop technical capabilities.
                   </p>
-                  <button type="button" class="btn readmorebtn my-4">
+                  <button type="button" class="btn readmorebtn">
                     Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
                   </button>
                 </div>
 
-                <div class="bottomrow col-lg-6 justify-content-end">
+                <div class="bottomrow col-lg-5 justify-content-end pl-4 mr-0 pr-0">
                   <img
                     src="images/managementimage.png"
                     alt=""
-                    class="img-fluid h-75 pt-lg-5"
+                    class="img-fluid"
                   />
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
               <div class="px-3 row">
                 <div class="upperrow col-lg-6">
                   <p class="mt-5 mint smallheader mb-1">Intellegience</p>
@@ -1085,7 +1094,7 @@
                   />
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -1349,9 +1358,9 @@
             <img src="images/blog.png" alt="" class="img-fluid" />
 
             <div class="my-4">
-            <h4 class="darkparagraph my-4">
+            <a class="darkparagraph my-4">
               Recharge & Refuel for professional development & career growth
-            </h4>
+            </a>
             <p>
               Our team of learning experts have designed a suite of practical
               programs that develop both your execution excellence capabilities
@@ -1363,11 +1372,11 @@
             </a>
           </div>
           </div>
-          <div class="col-lg-4">
-            <h3 class="mint mainheader1 mb-4">Events</h3>
-            <div class="row mb-5">
+          <div class="col-lg-4 events pl-3">
+            <h3 class="mint mainheader1 mb-4 ml-0 pl-0">Events</h3>
+            <a class="row mb-5" href="#">
               <div
-                class="dates d-flex flex-column justify-content-center align-items-center col-3"
+                class="dates ml-3 d-flex flex-column justify-content-center align-items-center col-3"
               >
                 <span>28</span>
                 <span class="smallerdates">APR</span>
@@ -1378,10 +1387,10 @@
                 </p>
                 <h6 class="mint">2 weeks. Lagos</h6>
               </div>
-            </div>
-            <div class="row mb-5">
+            </a>
+            <a class="row mb-5" href="#">
               <div
-                class="dates d-flex flex-column justify-content-center align-items-center col-3"
+                class="dates ml-3 d-flex flex-column justify-content-center align-items-center col-3"
               >
                 <span>28</span>
                 <span class="smallerdates">APR</span>
@@ -1392,10 +1401,10 @@
                 </p>
                 <h6 class="mint">2 weeks. Lagos</h6>
               </div>
-            </div>
-            <div class="row mb-5">
+            </a>
+            <a class="row mb-5" href="#">
               <div
-                class="dates d-flex flex-column justify-content-center align-items-center col-3"
+                class="dates ml-3 d-flex flex-column justify-content-center align-items-center col-3"
               >
                 <span>28</span>
                 <span class="smallerdates">APR</span>
@@ -1406,10 +1415,10 @@
                 </p>
                 <h6 class="mint">2 weeks. Lagos</h6>
               </div>
-            </div>
+            </a>
 
-            <div class="row">
-              <a class="viewcalender">
+            <div class="row ml-1">
+              <a class="viewcalender" href="coursecalender.html">
                 VIEW ALL EVENTS <i class="fas fa-long-arrow-alt-right ml-3"></i>
               </a>
             </div>
@@ -1417,7 +1426,7 @@
         </div>
       </div>
 
-      <div class="container-fluid subscribetonewsletter">
+      <div class="container-fluid subscribetonewsletter pb-5">
         <div class="row">
           <div class="col-lg-4">
             <h6 class="mint">JOIN OUR NEWSLETTER</h6>
@@ -1433,12 +1442,12 @@
             <form class="newsletterform">
               <div class="form-newsletter">
                 <div class="namenewsletter">
-                  <label for="inputName">Name</label>
-                  <input type="text" class="form-control" id="inputName" />
+                  <label for="newsletterinputname">Name</label>
+                  <input type="text" class="form-control" id="newsletterinputname" />
                 </div>
                 <div class="emailnewsletter">
                   <label for="inputEmail4">Email</label>
-                  <input type="text" class="form-control" id="inputEmail4" />
+                  <input type="text" class="form-control" id="newsletterinputemail" />
                 </div>
                 <button
                   type="submit"
