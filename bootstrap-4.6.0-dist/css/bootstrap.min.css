@@ -3059,7 +3059,7 @@ input[type='submit'].btn-block {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
+  /* border-radius: 0.25rem; */
 }
 .dropdown-menu-left {
   right: auto;
@@ -6145,7 +6145,7 @@ a.close.disabled {
 .carousel-indicators .active {
   opacity: 1;
 }
-.carousel-caption {
+/* .carousel-caption {
   position: absolute;
   right: 15%;
   bottom: 20px;
@@ -6155,7 +6155,7 @@ a.close.disabled {
   padding-bottom: 20px;
   color: #fff;
   text-align: center;
-}
+} */
 @-webkit-keyframes spinner-border {
   to {
     -webkit-transform: rotate(360deg);

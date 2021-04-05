@@ -15,6 +15,10 @@
   background-color: #f2ffff;
 }
 
+.lastfooter{
+  background-color: var(--main);
+}
+
 .navbar {
   background: var(--main);
 }
@@ -22,6 +26,8 @@
 .navbarmobile {
   display: none;
 }
+
+
 
 .navbarleftandright {
   width: 100%;
@@ -60,10 +66,89 @@ html {
   line-height: 19px;
   letter-spacing: -0.03em;
   text-align: right;
-  
+
 }
 
-.maincolor{
+.dropdownposition{
+  position: relative;
+
+}
+
+/* .dropdown-toggle {
+  /* background-color: var(--main); 
+  text-transform: uppercase;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-align: center;
+   line-height: 4 !important;
+} */
+
+.fontfamily a{
+  color: var(--main);
+}
+
+.dropdown-menu{
+  border: none !important;
+  background-color: var(--main) !important;
+  position: absolute;
+  left: -200px !important;
+  width: 600px;
+  height: auto;
+  border-radius: none !important;
+  -webkit-border-bottom-right-radius: 20px;
+-webkit-border-bottom-left-radius: 20px;
+-moz-border-radius-bottomright: 20px;
+-moz-border-radius-bottomleft: 20px;
+border-bottom-right-radius:  20px;
+border-bottom-left-radius: 20px;
+}
+
+.dropdown-menu .dropdowncontents{
+  font-family: Roboto;
+font-size: 16px;
+font-style: light;
+font-weight: 300;
+line-height: 18px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+
+.dropdown-toggle:hover {
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px 0px 60px 30px;
+  background-color: var(--main);
+  color: #fff;
+}
+.dropdown:hover {
+  /* margin: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px 0px 60px 30px;
+  background-color: var(--main);
+  color: #fff; */
+}
+.dropdown a:hover {
+  color: #fff;
+}
+
+.dropdown-menu .dropdown-item{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  /* height: 0; */
+  /* overflow: hidden; */
+  list-style: none;
+  background-color: var(--main);
+}
+
+.maincolor {
   color: var(--main);
 }
 
@@ -204,6 +289,16 @@ button.btn.navheaderbuttonsmall:hover {
   text-align: left;
   color: #000;
 }
+
+.generalparagraph{
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
 .form {
   background-color: #fff;
   display: flex;
@@ -220,6 +315,7 @@ button.btn.navheaderbuttonsmall:hover {
   line-height: 19px;
   letter-spacing: -0.03em;
   text-align: left;
+
 }
 
 .cardimage {
@@ -281,8 +377,6 @@ button.btn.navheaderbuttonsmall:hover {
   line-height: 29px;
   letter-spacing: -0.03em;
   text-align: left;
-
-  color: #37a3a5;
 }
 
 .mainheader3 {
@@ -334,8 +428,7 @@ button.btn.navheaderbuttonsmall:hover {
   outline: none; */
 }
 
-.selectitems{
-  
+.selectitems {
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -409,7 +502,7 @@ select#inputState {
   font-style: normal;
 }
 
-.formh4 {
+.carddatesandschedule {
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -448,7 +541,6 @@ select#inputState {
   border-radius: 20px;
 }
 
-
 .secondbox {
   display: flex;
   flex-direction: column;
@@ -480,7 +572,7 @@ select#inputState {
   text-align: left;
   color: #225779;
 }
- .solutionparagraph{
+.solutionparagraph {
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -530,27 +622,21 @@ h2.team {
   text-align: left;
 }
 
-.rounded-circle.card-circle{
-  background-color: #fff;
-  width: 85px;
-  height: 85px;
-  border-radius: 50%;
-}
-.rounded-circle.card-circle img{
-width: 85px;
-height: 85px;
-border-radius: 50%;
+
+.rounded-circle.card-circle img {
+  width: 100%;
+  height:  115px;
+  border-radius: 10px;
 }
 
-.smallheader{
+.smallheader {
   font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 900;
-line-height: 18px;
-letter-spacing: -0.03em;
-text-align: left;
-
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  text-align: left;
 }
 
 /* .cardcircleimage{
@@ -584,16 +670,20 @@ text-align: left;
   color: var(--mint);
 }
 
-p.newsletter.h1 {
+.subscribetonewsletter{
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--main);
+}
+
+p.newsletter {
   font-family: Roboto;
-  font-size: 70px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 900;
-  line-height: 79px;
+  line-height: 45px;
   letter-spacing: -0.03em;
   text-align: left;
-  text-decoration: none;
-  color: #bbb6b6;
+  color: var(--mint);
 }
 
 a.viewcalender {
@@ -628,15 +718,21 @@ button.pressreleasebtn {
   text-align: left;
 }
 
+.reviewcircles{
+  position: absolute;
+  top: 50px;
+  left: -80px;
+}
+
 .newsletterform input[type='text'],
 input[type='email'] {
   padding: 30px;
   height: 30px;
-  width: 80%;
+  width: 40%;
   outline: none;
   background: #edeeee;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .newsletterform input[type='email'] {
   max-width: 600px;
@@ -646,8 +742,9 @@ input[type='email'] {
 }
 .form-newsletter {
   display: flex;
+  flex-direction: row;
+  justify-items: center;
   width: 100%;
- 
 }
 
 .emailnewsletter,
@@ -655,7 +752,6 @@ input[type='email'] {
   display: flex;
   flex-direction: column;
   width: 100%;
-  
 }
 
 #subscribebtn {
@@ -663,20 +759,20 @@ input[type='email'] {
   /* position: absolute;
   right: -60px;
   bottom: 3px; */
+  width: 350px;
   height: 60px;
-  padding: 10px 20px;
   font-family: Roboto;
-  font-size: 25px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 900;
-  line-height: 29px;
+  line-height: 16px;
   letter-spacing: -0.03em;
-  text-align: center;
-  margin-top: 30px;
+  text-align: left;
+  border-radius: 20px;
   color: #fff;
 }
 
-.newsletterform label {
+/* .newsletterform label {
   font-family: Roboto;
   width: 20%;
   font-size: 20px;
@@ -685,7 +781,7 @@ input[type='email'] {
   line-height: 22px;
   letter-spacing: -0.03em;
   text-align: left;
-}
+} */
 
 .darkparagraph {
   font-family: Roboto;
@@ -707,43 +803,22 @@ input[type='email'] {
   text-align: left;
 }
 
-.events a.row{
+.events a.row {
   text-decoration: none;
   color: #000;
-
-
 }
-.events a.row:hover{
+.events a.row:hover {
   text-decoration: underline;
   color: var(--main);
-
-
 }
 
-a.darkparagraph{
+a.darkparagraph {
   color: #000;
   text-decoration: none;
 }
-
-
 
 /* end */
 
-/* #subscribebtn {
-  background-color: var(--main);
-  height: 60px;
-  color: #fff;
-  padding: 10px 20px;
-  font-family: Roboto;
-font-size: 25px;
-font-style: normal;
-font-weight: 900;
-line-height: 29px;
-letter-spacing: -0.03em;
-text-align: center;
-margin-top: 28px;
-
-} */
 
 button#mainbutton {
   background-color: var(--main);
@@ -813,7 +888,7 @@ button.readmorebtn:hover {
   color: var(--main);
 }
 
-.bottomrow{
+.bottomrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -869,11 +944,24 @@ button.readmorebtn:hover {
   text-align: left;
 }
 
-.allcoursescards a{
+.explorecourseslink{
+  text-decoration: none;
+  list-style: none;
+  font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+
+.allcoursescards a {
   text-decoration: none;
   color: #000;
 }
-.allcoursescards a:hover{
+.allcoursescards a:hover {
   text-decoration: none;
   color: var(--mint);
 }
@@ -908,24 +996,12 @@ button.readmorebtn:hover {
   letter-spacing: -0.03em;
   text-align: left;
 }
-.recharge p.card-text {
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 18px;
-  letter-spacing: -0.03em;
-  text-align: left;
-}
 
 .coursecategories {
   background-color: var(--main);
   color: #fff;
 }
 
-/* .recharge {
-  border-bottom: 3px solid var(--mint);
-} */
 
 .recharge .card-body {
   background-color: #fff;
@@ -1073,19 +1149,6 @@ p.highorganization {
   letter-spacing: -0.03em;
   text-align: left;
 }
-
-.subscribetonewsletter p.newsletter.h1 {
-  font-family: Roboto;
-  font-size: 70px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 79px;
-  letter-spacing: -0.03em;
-  text-align: left;
-
-  color: #bbb6b6;
-}
-
 
 
 .locationsimage .card.col-sm img {
@@ -1545,7 +1608,7 @@ textarea#attendeestextarea.form-control {
   color: var(--mint);
 }
 
-button.btn.btn-block.text-left {
+/* button.btn.btn-block.text-left {
   font-family: Roboto;
   font-size: 25px;
   font-style: normal;
@@ -1554,7 +1617,7 @@ button.btn.btn-block.text-left {
   letter-spacing: -0.03em;
   text-align: left;
   color: var(--mint);
-}
+} */
 
 .filtercourseinput label {
   font-family: Roboto;
@@ -1654,6 +1717,10 @@ input[type='email'] {
 
 .textgreen {
   color: #b6ca3a;
+}
+
+.main{
+  color: var(--main);
 }
 
 .form-group select {
@@ -1783,7 +1850,7 @@ input[type='email'] {
 
 .card-subtitle {
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: 19px;
@@ -1802,7 +1869,7 @@ input[type='email'] {
 
 .card-body.lastcards {
   max-width: 300px;
-  height: auto;
+  max-height: 350px;
   border-radius: 10px;
   background-color: var(--mint);
   color: #fff;
@@ -1819,15 +1886,6 @@ input[type='email'] {
   text-align: left;
 }
 
-.card-text {
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 18px;
-  letter-spacing: -0.03em;
-  text-align: left;
-}
 .card-text-main {
   font-family: Roboto;
   font-size: 14px;
@@ -1838,7 +1896,7 @@ input[type='email'] {
   text-align: left;
 }
 
-.card-body.cardbackground{
+.card-body.cardbackground {
   border-radius: 0 !important;
 }
 
@@ -1872,7 +1930,7 @@ input[type='email'] {
   text-align: left;
 } */
 
-.col-lg-11 {
+h1.learningexperts{
   font-family: Roboto;
   font-size: 40px;
   font-style: normal;
@@ -1880,8 +1938,7 @@ input[type='email'] {
   line-height: 47px;
   letter-spacing: -0.03em;
   text-align: left;
-  color: #6a7575;
-}
+  color: var(--mint)}
 
 .card {
   border: none;
@@ -1969,14 +2026,6 @@ input[type='email'] {
   height: 700px;
 }
 
-.newsletterform input[type='text'],
-input[type='email'] {
-  padding: 30px;
-  background: #edeeee;
-  border-radius: 10px;
-  margin-right: 40px;
-}
-/* */
 
 .carousel .carousel-indicators li {
   width: 10px;
@@ -2270,10 +2319,68 @@ ol.carousel-indicators {
   display: none;
 }
 
+/* footer */
+
+.footerlinks{
+  font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 18px;
+letter-spacing: -0.03em;
+text-align: left;
+}
+
+.footerlinks li{
+  list-style-type: none;
+}
+.footerlinks a{
+  color: var(--main);
+  text-decoration: underline;
+}
+.footerlinks a:hover{
+  color: var(--mint);
+}
+.footerlinks a i:hover{
+  color: var(--main);
+}
+
+.footerlinks li{
+  padding: 10px 0px;
+}
+
+.lastfootercontent{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  height: 100%;
+  width: 70%;
+}
+
+.lastfootercontent a{
+  text-decoration: underline;
+  color: #fff;
+}
+
+.lastfootercontent a:hover{
+  color: var(--mint);
+}
+
+.smallscreens{
+  display: none;
+}
+
+.boxesspacingfooter {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+}
+
+
 /* end */
-/* #inputState.form-control{
-    padding: 20px;
-} */
 
 .carousel-indicators li {
   background-color: var(--main);
@@ -2374,15 +2481,12 @@ ol.carousel-indicators {
   }
 
   .carousel-inner img {
-    height: 65vh;
+    height: 45vh;
   }
 
-  #subscribebtn {
-    position: static;
-  }
+
 
 }
-
 
 @media (max-width: 991px) {
   .navbarleftandright {
@@ -2424,6 +2528,14 @@ ol.carousel-indicators {
     border-radius: 0;
   }
 
+  .footerlargescreens{
+    display: none;
+  }
+
+  .smallscreens{
+    display: block;
+  }
+
   /* .collapse{
   -webkit-appearance: none;
   border-radius: 0;
@@ -2462,12 +2574,9 @@ ol.carousel-indicators {
     width: 100%;
   }
   .namenewsletter {
-    width: 50%;
+    width: 100%;
   }
 
-  #subscribebtn {
-    width: 30%;
-  }
 
   /* .fontfamilygrid{
   display: grid;
@@ -2530,12 +2639,24 @@ ol.carousel-indicators {
     z-index: 100;
   }
 
+  .explorecollapsebox{
+    display: flex;
+    flex-direction: row;
+  }
   textarea#attendeestextarea.form-control {
     width: 100%;
   }
 
   .totalcontainer {
     padding: 0px 22px;
+  }
+
+  .newsletterform input[type='text'] {
+    width: 100%;
+  }
+
+  .lastfootercontent{
+    width: 100%;
   }
 
   /* main page index.html mobile */
@@ -2609,6 +2730,18 @@ ol.carousel-indicators {
     margin: 20px 0px;
   }
 
+
+  #subscribebtn {
+    width: 50%;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 16px;
+    height: 50px;
+
+
+  }
+
+
   /* end */
 
   /* business essential courses responsive */
@@ -2657,6 +2790,11 @@ ol.carousel-indicators {
   .learningconsultantimage {
     height: 102px;
     width: 115px;
+  }
+
+  .explorecollapsebox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   /* end */
 
@@ -2762,29 +2900,6 @@ ol.carousel-indicators {
     margin-bottom: 20px;
   }
 
-  /* .paragraphspacing {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  } */
-  /* .carousel-caption.main {
-    position: absolute;
-    width: 100%;
-    right: 0%;
-    bottom: -220px;
-    left: 0%;
-    z-index: 10;
-    padding-top: 20px;
-    color: #fff;
-    text-align: center;
-  } */
-
-  /* button#mainbutton {
-    padding: 10px 20px;
-    margin-bottom: 90px;
-    font-size: 12px;
-    line-height: 14px;
-  } */
 
   .solutionborder {
     display: flex;
@@ -2795,9 +2910,9 @@ ol.carousel-indicators {
     font-size: 14px;
     line-height: 18px;
   }
-  .newsletter.h1 {
-    font-size: 35px;
-    line-height: 39px;
+  p.newsletter {
+    font-size: 30px;
+    line-height: 34px;
   }
 
   .formparagraph {
@@ -2885,6 +3000,98 @@ ol.carousel-indicators {
     position: absolute;
     right: 0px;
   }
+
+    .reviews h1 {
+      font-size: 20px;
+      line-height: 27px;
+    }
+  
+    .programtextbusinessimprovement h2 {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  
+    h1.learningexperts {
+      font-size: 20px;
+      line-height: 27px;
+    }
+    
+    .businessesentialcourses img {
+      position: absolute;
+      z-index: -1;
+      height: 148px;
+      width: 476px;
+      left: -199px;
+      border-radius: 0px;
+    }
+  
+    #firstsection {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .businessesentialcourses h2 {
+      font-size: 35px;
+      line-height: 36px;
+    }
+    .imagebehind {
+      position: absolute;
+      left: -20px;
+      z-index: -1;
+    }
+  
+    .coursecategories h2 {
+      font-size: 18px;
+     
+    }
+  
+    .header {
+      font-size: 25px;
+      margin: 20px;
+    }
+  
+    .recharge .row {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      gap: 10px;
+    }
+    .rechargebusinessimprovement .row {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      gap: 10px;
+    }
+  
+    .allcoursescards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      gap: 30px;
+    }
+    .subscribetonewsletter p.newsletter.h1 {
+      font-size: 35px;
+      line-height: 39px;
+      color: #bbb6b6;
+    }
+  
+    .reviews h1 {
+      font-size: 20px;
+      line-height: 27px;
+    }
+  
+    .teamlearning {
+      padding-left: 20px;
+    }
+    p.occupation {
+      padding-left: 30px;
+    }
+  
+    #navbarText button.btn.loginbtn {
+      display: none;
+    }
+  
+
 }
 
 /* business courses responsive */
@@ -2921,115 +3128,8 @@ ol.carousel-indicators {
   }
 }
 
-@media (max-width: 470px) {
-  #subscribebtn {
-    width: 40%;
-    padding: 10px 8px;
-    font-size: 20px;
-    line-height: 25px;
-  }
-}
-@media (max-width: 601px) {
-  .reviews h1 {
-    font-size: 20px;
-    line-height: 27px;
-  }
 
-  .programtextbusinessimprovement h2 {
-    font-size: 25px;
-    line-height: 30px;
-  }
 
-  p.newsletter.h1 {
-    font-size: 35px;
-    line-height: 39px;
-  }
-
-  h1.learningexperts {
-    font-size: 20px;
-    line-height: 27px;
-  }
-  .fontfamily .justify-content-md-end {
-    /* background-color: var(--main); */
-    display: flex;
-    flex-wrap: wrap;
-    /* grid-template-columns: repeat(5, 1fr);
-    gap: 10px; */
-  }
-  .businessesentialcourses img {
-    position: absolute;
-    z-index: -1;
-    height: 148px;
-    width: 476px;
-    left: -199px;
-    border-radius: 0px;
-  }
-
-  #firstsection {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .businessesentialcourses h2 {
-    font-size: 35px;
-    line-height: 36px;
-  }
-  .imagebehind {
-    position: absolute;
-    left: -20px;
-    z-index: -1;
-  }
-
-  .coursecategories h2 {
-    font-size: 20px;
-  }
-
-  .header {
-    font-size: 25px;
-    margin: 20px;
-  }
-
-  .recharge .row {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    gap: 10px;
-  }
-  .rechargebusinessimprovement .row {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    gap: 10px;
-  }
-
-  .allcoursescards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    gap: 30px;
-  }
-  .subscribetonewsletter p.newsletter.h1 {
-    font-size: 35px;
-    line-height: 39px;
-    color: #bbb6b6;
-  }
-
-  .reviews h1 {
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  .teamlearning {
-    padding-left: 20px;
-  }
-  p.occupation {
-    padding-left: 30px;
-  }
-
-  #navbarText button.btn.loginbtn {
-    display: none;
-  }
-}
 
 @media (max-width: 750px) {
   body {
