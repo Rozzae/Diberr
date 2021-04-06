@@ -49,14 +49,14 @@
             console.log("jQuery is loaded, after " + tookTime + " milliseconds!");
         });
     });
+    $(document).ready(function () {
+        $('.fontfamily .dropdown').hover(function () {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+            }, function () {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+            });
+        });
 })();
 
 console.log("hey")
 
-$(document).ready(function () {
-  $('.fontfamily .dropdown').hover(function () {
-          $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
-      }, function () {
-          $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
-      });
-  });
