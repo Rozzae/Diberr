@@ -56,6 +56,44 @@
                 $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
             });
         });
+        $(".dropmenu1").hover(function () {
+          $(".drop1").addClass("hovered");
+        }, function () {
+          $(".drop1").removeClass("hovered");
+        });
+    
+    
+        $(".dropmenu2").hover(function () {
+          $(".drop2").addClass("hovered");
+        }, function () {
+          $(".drop2").removeClass("hovered");
+        });
+    
+        
+        $(".dropmenu2").hover(function () {
+          $(".drop2").addClass("hovered");
+        }, function () {
+          $(".drop2").removeClass("hovered");
+        });
+    
+    
+        $(".dropmenu3").hover(function () {
+          $(".drop3").addClass("hovered");
+        }, function () {
+          $(".drop3").removeClass("hovered");
+        });
+    
+        $(".dropmenu4").hover(function () {
+          $(".drop4").addClass("hovered");
+        }, function () {
+          $(".drop4").removeClass("hovered");
+        });
+    
+        $(".dropmenu5").hover(function () {
+          $(".drop5").addClass("hovered");
+        }, function () {
+          $(".drop5").removeClass("hovered");
+        });
 })();
 
 $(function () {
@@ -67,44 +105,7 @@ $(function () {
     // });
   
     // or optionally using .hover() for in/out handling as per A. Wolff's comment
-    $(".dropmenu1").hover(function () {
-      $(".drop1").addClass("hovered");
-    }, function () {
-      $(".drop1").removeClass("hovered");
-    });
 
-
-    $(".dropmenu2").hover(function () {
-      $(".drop2").addClass("hovered");
-    }, function () {
-      $(".drop2").removeClass("hovered");
-    });
-
-    
-    $(".dropmenu2").hover(function () {
-      $(".drop2").addClass("hovered");
-    }, function () {
-      $(".drop2").removeClass("hovered");
-    });
-
-
-    $(".dropmenu3").hover(function () {
-      $(".drop3").addClass("hovered");
-    }, function () {
-      $(".drop3").removeClass("hovered");
-    });
-
-    $(".dropmenu4").hover(function () {
-      $(".drop4").addClass("hovered");
-    }, function () {
-      $(".drop4").removeClass("hovered");
-    });
-
-    $(".dropmenu5").hover(function () {
-      $(".drop5").addClass("hovered");
-    }, function () {
-      $(".drop5").removeClass("hovered");
-    });
 
 
   });
