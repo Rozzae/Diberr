@@ -11,6 +11,74 @@
   -webkit-appearance: none;
 }
 
+/* under construction */
+
+.constructionimage{
+  position: absolute;
+  z-index: -4;
+  left: 80px;
+  top: 130px;
+}
+
+.constructionpage{
+  /* margin: 0px 100px; */
+}
+
+.constructionstyle{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 80vh;
+  justify-content: center;
+}
+
+.mainheaderlarge{
+  font-family: Roboto;
+font-size: 50px;
+font-style: normal;
+font-weight: 900;
+line-height: 56px;
+letter-spacing: -0.03em;
+text-align: center;
+
+}
+
+.generalparagraphlarge{
+  font-family: Roboto;
+font-size: 25px;
+font-style: normal;
+font-weight: 300;
+line-height: 29px;
+letter-spacing: -0.03em;
+text-align: center;
+
+}
+
+.enquires{
+  font-family: Roboto;
+font-size: 25px;
+font-style: normal;
+font-weight: 900;
+line-height: 29px;
+letter-spacing: -0.03em;
+text-align: center;
+
+}
+
+.enquiresinfo{
+  font-family: Roboto;
+font-size: 25px;
+font-style: normal;
+font-weight: 300;
+line-height: 29px;
+letter-spacing: -0.03em;
+text-align: center;
+
+}
+
+/* end */
+
+
 .mainbackground {
   background-color: #f2ffff;
 }
@@ -103,6 +171,14 @@ border-bottom-right-radius:  20px;
 border-bottom-left-radius: 20px;
 }
 
+/* .dropdown-toggle:hover .dropdown-menu{
+  background-color: red;    
+}
+
+.dropdown-menu:hover ~ .dropdown-toggle:hover{
+  background-color: red;    
+} */
+
 .dropdown-menu .dropdowncontents{
   font-family: Roboto;
 font-size: 16px;
@@ -112,6 +188,20 @@ line-height: 18px;
 letter-spacing: -0.03em;
 text-align: left;
 
+}
+
+
+
+.hovered{
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  color: #fff !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px 0px 60px 30px;
+  background-color: var(--main);
 }
 
 .dropdown-toggle:hover {
@@ -125,6 +215,8 @@ text-align: left;
   background-color: var(--main);
   color: #fff;
 }
+
+
 .dropdown:hover {
   /* margin: 0;
   border-top-left-radius: 20px;
@@ -2743,6 +2835,45 @@ text-align: left;
 
 
   /* end */
+
+  /* under construction mobile */
+
+.constructionimage{
+  position: absolute;
+  z-index: -4;
+  left: 80px;
+  top: 130px;
+}
+
+
+
+.mainheaderlarge{
+font-size: 30px;
+line-height: 40px;
+
+
+}
+
+.generalparagraphlarge{
+font-size: 20px;
+line-height: 26px;
+
+}
+
+.enquires{
+font-size: 15px;
+line-height: 10px;
+padding: 5px 0px;
+
+}
+
+.enquiresinfo{
+font-size: 15px;
+line-height: 10px;
+
+}
+
+/* end */
 
   /* business essential courses responsive */
 
