@@ -171,14 +171,6 @@ border-bottom-right-radius:  20px;
 border-bottom-left-radius: 20px;
 }
 
-/* .dropdown-toggle:hover .dropdown-menu{
-  background-color: red;    
-}
-
-.dropdown-menu:hover ~ .dropdown-toggle:hover{
-  background-color: red;    
-} */
-
 .dropdown-menu .dropdowncontents{
   font-family: Roboto;
 font-size: 16px;
@@ -202,6 +194,7 @@ text-align: left;
   border-top-right-radius: 20px;
   padding: 20px 0px 60px 30px;
   background-color: var(--main);
+  cursor: pointer;
 }
 
 .dropdown-toggle:hover {
@@ -214,6 +207,7 @@ text-align: left;
   padding: 20px 0px 60px 30px;
   background-color: var(--main);
   color: #fff;
+  cursor: pointer;
 }
 
 
@@ -227,6 +221,7 @@ text-align: left;
 }
 .dropdown a:hover {
   color: #fff;
+  cursor: pointer;
 }
 
 .dropdown-menu .dropdown-item{
@@ -270,6 +265,7 @@ a.loginbtn:hover {
   color: #37a3a5;
   text-decoration: none;
   opacity: 0.7;
+  cursor: pointer;
 }
 
 a.navbar-brand.logo-icon-mobile {
@@ -295,6 +291,7 @@ button.btn.navheaderbuttonsmall {
 }
 button.btn.navheaderbuttonsmall:hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 #middlesection {
@@ -691,6 +688,7 @@ button.registerbtn:hover {
   color: #fff;
   background-color: var(--main);
   border: 2px solid var(--main);
+  cursor: pointer;
 }
 
 .box i {
@@ -699,9 +697,11 @@ button.registerbtn:hover {
 
 .box:hover {
   transform: translateY(15px);
+  cursor: pointer;
 }
 .secondbox:hover {
   transform: translateY(15px);
+  cursor: pointer;
 }
 
 h2.team {
@@ -902,6 +902,7 @@ input[type='email'] {
 .events a.row:hover {
   text-decoration: underline;
   color: var(--main);
+  cursor: pointer;
 }
 
 a.darkparagraph {
@@ -943,6 +944,7 @@ button#mainbutton:hover {
   background-color: var(--fff);
   color: var(--main);
   border: 1px solid var(--main);
+  cursor: pointer;
 }
 button#outlinebutton {
   border: 2px solid var(--main);
@@ -960,6 +962,7 @@ button#outlinebutton:hover {
   border: 2px solid #fff;
   background-color: var(--main);
   color: #fff;
+  cursor: pointer;
 }
 button.readmorebtn {
   background-color: var(--main);
@@ -978,6 +981,7 @@ button.readmorebtn:hover {
   border: 2px solid var(--main);
   background-color: #fff;
   color: var(--main);
+  cursor: pointer;
 }
 
 .bottomrow {
@@ -1056,6 +1060,7 @@ text-align: left;
 .allcoursescards a:hover {
   text-decoration: none;
   color: var(--mint);
+  cursor: pointer;
 }
 
 .header {
@@ -2432,9 +2437,11 @@ text-align: left;
 }
 .footerlinks a:hover{
   color: var(--mint);
+  cursor: pointer;
 }
 .footerlinks a i:hover{
   color: var(--main);
+  cursor: pointer;
 }
 
 .footerlinks li{
@@ -2459,6 +2466,7 @@ text-align: left;
 
 .lastfootercontent a:hover{
   color: var(--mint);
+  cursor: pointer;
 }
 
 .smallscreens{
