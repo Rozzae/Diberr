@@ -2632,6 +2632,34 @@ border-bottom: 1px dotted gray;
   border-bottom: 1px solid var(--yellow);
 }
 
+.acecircles {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px dotted gray;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.acecircles li {
+  background-color: var(--yellow);
+  list-style-type: none;
+  color: #fff;
+  font-weight: bold;
+  margin-top: -40px;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acecontent{
+  list-style-type: none;
+}
+
 /* end */
 
 /* footer */
