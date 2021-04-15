@@ -94,9 +94,19 @@
         }, function () {
           $(".drop5").removeClass("hovered");
         });
+
+        $('#serviceList').click(function(){
+          $(this).find('.servicedrop').toggleClass('icon-chevron-down icon-chevron-up');
+      });
+
 })();
 
 $(function () {
+
+  $('#boxesspacing').on('click', function() {
+    $(this).toggleClass('fas fa-arrow-up fas fa-arrow-down');
+});
+
     // $('.dropdown-menu').mouseover(function(e) {
     //   $('.dropdown-toggle').addClass("hovered");
     // });

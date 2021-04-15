@@ -1,6 +1,7 @@
 :root {
   --main: #225779;
   --mint: #37a3a5;
+  --yellow: #F39927;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -180,6 +181,19 @@ line-height: 18px;
 letter-spacing: -0.03em;
 text-align: left;
 
+}
+.hovernodropdown:hover{
+  background-color: var(--main);
+  color: #fff !important;
+  border-radius: 20px;
+  padding: 10px 25px;
+}
+
+.dropdownselected{
+  background-color: var(--main);
+  color: #fff !important;
+  border-radius: 20px;
+  padding: 20px 30px;
 }
 
 
@@ -386,7 +400,6 @@ button.btn.navheaderbuttonsmall:hover {
   font-weight: 300;
   line-height: 19px;
   letter-spacing: -0.03em;
-  text-align: left;
 }
 .form {
   background-color: #fff;
@@ -475,9 +488,6 @@ button.btn.navheaderbuttonsmall:hover {
   font-weight: 900;
   line-height: 25px;
   letter-spacing: -0.03em;
-  text-align: left;
-
-  color: #37a3a5;
 }
 
 .card-title-upcomingcourses {
@@ -814,6 +824,7 @@ button.pressreleasebtn {
   position: absolute;
   top: 50px;
   left: -80px;
+  z-index: -5;
 }
 
 .newsletterform input[type='text'],
@@ -1548,6 +1559,9 @@ p.instructorstitle {
 .globalborderbottom {
   border-bottom: 1px solid var(--mint);
 }
+.globalbordertop {
+  border-top: 1px solid var(--mint);
+}
 
 .globalborderbottom .fa-arrow-up {
   color: var(--main);
@@ -1854,6 +1868,27 @@ input[type='email'] {
   width: 92%;
   justify-content: space-between;
 }
+
+/* i[aria-expanded=true] .fas .fa-arrow-up {
+  transition: .3s transform ease-in-out;
+  transform: rotate(90deg);
+ } */
+
+ /* .fas.fa-arrow-up .glyphicon {
+  transition: .3s transform ease-in-out;
+}
+.collapse-chevron .collapsed .glyphicon {
+  transform: rotate(-90deg);
+} */
+
+[aria-expanded="collapse"] .fa:before {  
+  content: "\f139";
+}
+
+[aria-expanded="collapse"].collapsed .fa:before {
+  content: "\f13a";
+}
+
 
 .coursecalenderbox .fa-circle {
   font-size: 18px;
@@ -2416,6 +2451,189 @@ ol.carousel-indicators {
   display: none;
 }
 
+/* events and updates */
+
+.mainborderbottom{
+  border-bottom: 2px solid var(--main);
+}
+
+.eventsteam{
+  font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 14px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+
+.eventsdate{
+  background-color: var(--main);
+  color: #fff;
+  width: 35%;
+  border-radius: 20px;
+  font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 900;
+line-height: 16px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+
+.projectdelivery{
+  font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 16px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+
+.eventsandupdates .globalborderbottom{
+  min-height: 250px;
+}
+.eventsandupdates img{
+  min-height: 200px;
+}
+
+
+.page-item:first-child .page-link {
+  margin-left: 0;
+  border-radius: 0 !important;
+  border: 1px solid var(--main) !important;
+  color: #000 !important;
+
+}
+.page-link {
+  margin-left: 0;
+  border-radius: 0 !important;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  
+}
+
+#nextpage {
+  background-color: var(--main) !important;
+  color: #fff !important;
+}
+
+/* end */
+
+/* view article */
+.darkborderbottom{
+  border-bottom: 1px solid #000;
+}
+
+/* end */
+
+/* products */
+.mintfullborder{
+  border: 1px solid var(--mint);
+  border-radius: 10px;
+}
+/* end */
+
+/* ace pmp */
+.navbar#acepmp{
+background-color: var(--yellow);
+}
+
+.aceimage{
+  height: 499px;
+width: 748px;
+margin: auto;
+}
+
+.acepmpcontainer{
+  height: 662px;
+width: 1346px;
+border-radius: 20px;
+background: #FFE4C1;
+}
+
+.yellowacetext{
+  color: var(--yellow);
+}
+
+button.acemainbtn{
+width: 141px;
+height: 50px;
+background: #F39927;
+color: #fff;
+border-radius: 20px;
+font-size: 14px;
+font-style: normal;
+font-weight: 900;
+line-height: 16px;
+letter-spacing: -0.03em;
+text-align: center;
+
+}
+button.acelightbtn{
+width: 141px;
+height: 50px;
+border: 1px solid #F39927;
+color: #000;
+border-radius: 20px;
+font-size: 14px;
+font-style: normal;
+font-weight: 900;
+line-height: 16px;
+letter-spacing: -0.03em;
+text-align: center;
+}
+button.acegetstartedbtn{
+  width: 141px;
+height: 50px;
+background: #F39927;
+border-radius: 20px;
+font-size: 14px;
+font-style: normal;
+font-weight: 900;
+line-height: 16px;
+letter-spacing: -0.03em;
+text-align: center;
+color: #000;
+}
+
+.card.acepmpcard{
+  border: 2px solid var(--yellow);
+width: 380px;
+border-radius: 20px;
+background-color: #fff;
+
+}
+.card.acepmpcard ul{
+list-style-type: none;
+}
+
+.card.acepmpcard li{
+border-bottom: 1px dotted gray;
+}
+
+.acegray{
+  color: #979592;
+}
+.acebggray{
+  background-color: #F4F4F4;
+}
+
+.globalyellowbottom{
+  border-bottom: 1px solid var(--yellow);
+}
+
+/* end */
+
 /* footer */
 
 .footerlinks{
@@ -2484,6 +2702,10 @@ text-align: left;
 
 .carousel-indicators li {
   background-color: var(--main);
+}
+
+.carousel-indicators#acepmpcarousel li {
+  background-color: var(--yellow);
 }
 
 .carousel-indicators .active {
@@ -2574,7 +2796,7 @@ text-align: left;
   }
 
   button#mainbutton {
-    padding: 10px 20px;
+    padding: 10px 30px;
     margin-bottom: 20px;
     font-size: 12px;
     line-height: 14px;
@@ -2739,6 +2961,18 @@ text-align: left;
     z-index: 100;
   }
 
+  .eventsdate{
+    width: auto;
+  }
+
+  .projectdelivery p{
+    font-size: 12px !important;
+    padding-left: 15px;
+  }
+
+  .eventsdate .row{
+    justify-content: center;
+  }
   .explorecollapsebox{
     display: flex;
     flex-direction: row;

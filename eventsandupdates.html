@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events and Updates</title>
+
+    <script src="https://kit.fontawesome.com/0da91a7850.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light p-0 m-0">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <a class="navbar-brand logo-icon-mobile" href="#">
+            <button type="button" class="btn navheaderbuttonsmall">
+                LMS Login <i class="fas fa-long-arrow-alt-right"></i></button></a>
+        <div class="collapse navbar-collapse px-lg-5 mx-lg-5 totalcontainer" id="navbarSupportedContent">
+            <div class="navbarleftandright">
+                <ul class="navbar-nav leftcontent">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Diberr Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Diberr Consulting</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav rightcontent">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Covid19 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">News & Events </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Get in Touch</a>
+                    </li>
+
+                    <a class="loginbtn">
+                        <i class="fas fa-chalkboard-teacher pr-2"></i>
+                        LMS Login
+                        <!-- <i class="fas fa-long-arrow-alt-right"></i> -->
+                    </a>
+                </ul>
+            </div>
+            <ul class="navbarmobile">
+                <div class="navitemdropdownspacing">
+                    <div class="navitemdropdowns w-100" id="accordionExample">
+                        <li class="nav-item active">
+                            <div class="">
+                                <div id="dropdowncourseheadingOne p-0 m-0">
+                                    <p style="-webkit-appearance: none; border-radius: 0">
+                                        <a class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"
+                                            data-toggle="collapse" data-target="#dropdowncoursecollapseOne"
+                                            aria-expanded="false" aria-controls="dropdowncoursecollapseOne">
+                                            <div
+                                                class="d-flex justify-content-between text-light w-100 border-bottom p-0 m-0">
+                                                <p>Course</p>
+                                                <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                                            </div>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="collapse ml-4" id="dropdowncoursecollapseOne"
+                                    aria-labelledby="dropdowncourseheadingOne" data-parent="#accordionExample">
+                                    <div class="d-flex flex-column">
+                                        <a class="text-light py-2" href="businesscourses.html"> <i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i> Business Essential
+                                            courses</a>
+                                        <a class="text-light py-2" href="coursesbusinessimprovement.html"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i> Business Improvement
+                                            Courses</a>
+                                        <a class="text-light py-2" href="#"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i> Business</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="">
+                                <div id="dropdowncourseheadingTwo">
+                                    <p>
+                                        <a class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"
+                                            data-toggle="collapse" data-target="#dropdowncoursecollapseTwo"
+                                            aria-expanded="false" aria-controls="dropdowncoursecollapseTwo">
+                                            <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                                                <p>Programs</p>
+                                                <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                                            </div>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="collapse ml-4" id="dropdowncoursecollapseTwo"
+                                    aria-labelledby="dropdowncourseheadingTwo" data-parent="#accordionExample">
+                                    <div class="d-flex flex-column">
+                                        <a class="text-light py-2" href="programsbusinessimprovement.html"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>Business Process
+                                            Improvement</a>
+                                        <a class="text-light py-2" href="programsbusinessimprovement.html"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>Business Improvement
+                                            Courses</a>
+                                        <a class="text-light py-2" href="programs.html"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>Programs</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="">
+                                <div id="dropdowncourseheadingThree">
+                                    <p>
+                                        <a class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"
+                                            data-toggle="collapse" data-target="#dropdowncoursecollapseThree"
+                                            aria-expanded="false" aria-controls="dropdowncoursecollapseThree">
+                                            <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                                                <p>Products</p>
+                                                <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                                            </div>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="collapse ml-4" id="dropdowncoursecollapseThree"
+                                    aria-labelledby="dropdowncourseheadingThree" data-parent="#accordionExample">
+                                    <div class="d-flex flex-column">
+                                        <a class="text-light py-2" href="programsbusinessimprovement.html"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>Business Process
+                                            Improvement</a>
+                                        <a class="text-light py-2" href="programsbusinessimprovement.html"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>Business Improvement
+                                            Courses</a>
+                                        <a class="text-light py-2" href="programs.html"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>Products</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="">
+                                <div id="dropdowncourseheadingFour">
+                                    <p>
+                                        <a class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"
+                                            data-toggle="collapse" data-target="#dropdowncoursecollapseFour"
+                                            aria-expanded="false" aria-controls="dropdowncoursecollapseFour">
+                                            <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                                                <p>Solutions</p>
+                                                <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                                            </div>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="collapse ml-4" id="dropdowncoursecollapseFour"
+                                    aria-labelledby="dropdowncourseheadingFour" data-parent="#accordionExample">
+                                    <div class="d-flex flex-column">
+                                        <a class="text-light py-2" href="solutions.html"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>Solutions</a>
+                                        <a class="text-light py-2" href="solutioncompetencymanagement.html"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>Competency Management</a>
+                                        <a class="text-light py-2" href="programs.html"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>Programs</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="">
+                                <div id="dropdowncourseheadingFour">
+                                    <p>
+                                        <a class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"
+                                            data-toggle="collapse" data-target="#dropdowncoursecollapseFive"
+                                            aria-expanded="false" aria-controls="dropdowncoursecollapseFive">
+                                            <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                                                <p>More Information</p>
+                                                <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                                            </div>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="collapse ml-4" id="dropdowncoursecollapseFive"
+                                    aria-labelledby="dropdowncourseheadingFive" data-parent="#accordionExample">
+                                    <div class="d-flex flex-column">
+                                        <a class="text-light py-2" href="#"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>Dibber Software</a>
+                                        <a class="text-light py-2" href="#"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>Dibber Consulting</a>
+                                        <a class="text-light py-2" href="#"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>About</a>
+                                        <a class="text-light py-2" href="#"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>Covid19</a>
+                                        <a class="text-light py-2" href="#"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>News & Events</a>
+                                        <a class="text-light py-2" href="#"><i
+                                                class="fas fa-arrow-right fa-xs mr-2"></i>Get in Touch</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="text-light" href="#">Blog</a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <div class="px-lg-5 mx-lg-5 totalcontainer">
+        <div class="container-fluid mt-4 topsection">
+            <div class="row justify-content-between">
+                <div class="col-3 my-3 p-0 m-0">
+                    <a href="index.html">
+                        <img src="images/logo.png" class="img-fluid logoimage" alt="Logo image" /></a>
+                </div>
+                <div class="col-lg-6 mt-md-4 fontfamily">
+                    <div class="row justify-content-end">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle drop1" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Courses
+                                <i class="fas fa-arrow-down mr-3 ml-2 maincolor"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropmenu1" aria-labelledby="dropdownMenuLink">
+                                <div class="row py-3 px-3">
+                                    <div class="col">
+                                        <p class="text-white border-bottom pb-2">Courses Area</p>
+
+                                        <div class="d-flex flex-column dropdowncontents">
+                                            <a href="businesscourses.html"
+                                                class="text-white py-2 d-flex align-items-center"><i
+                                                    class="fas fa-circle fa-xs textpurple mr-2"
+                                                    style="font-size: 8px"></i>Business Essential Courses</a>
+                                            <a href="coursesbusinessimprovement.html"
+                                                class="text-white py-2 d-flex align-items-center"><i
+                                                    class="fas fa-circle fa-xs textgreen mr-2"
+                                                    style="font-size: 8px"></i>Certification Courses</a>
+                                            <a href="#" class="text-white py-2 d-flex align-items-center"><i
+                                                    class="fas fa-circle fa-xs textgreen mr-2"
+                                                    style="font-size: 8px"></i>TransformationCourses</a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <p class="text-white border-bottom pb-2">
+                                            Other Information
+                                        </p>
+
+                                        <div class="d-flex flex-column dropdowncontents">
+                                            <a href="coursecalender.html" class="text-white py-2"><i
+                                                    class="fas fa-arrow-right fa-xs mr-2"></i>2021
+                                                Calender</a>
+                                            <a href="#" class="text-white py-2"><i
+                                                    class="fas fa-arrow-right fa-xs mr-2"></i>Our
+                                                Locations</a>
+                                            <a href="#" class="text-white py-2"><i
+                                                    class="fas fa-arrow-right fa-xs mr-2"></i>Course
+                                                Brochure</a>
+                                            <a href="#" class="text-white py-2"><i
+                                                    class="fas fa-arrow-right fa-xs mr-2"></i>Speak to
+                                                a Learning Consultant</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="dropdown-item active" href="businesscourses.html"
+                    >Business Essential courses</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    >Business Improvement Courses</a
+                  >
+                  <a class="dropdown-item" href="#">Business</a> -->
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle drop2" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                2021 Calender
+                                <i class="fas fa-arrow-down mr-3 ml-2 maincolor"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropmenu2" aria-labelledby="dropdownMenuLink">
+                                <div class="row py-3 px-4">
+                                    <!-- <div class="col">
+                      <p class="text-white border-bottom pb-2">Courses Area</p>
+
+                    </div> -->
+                                    <div class="col">
+                                        <p class="text-white border-bottom pb-2">New Courses</p>
+
+                                        <div class="d-flex flex-column dropdowncontents">
+                                            <a href="coursecalender.html" class="text-white py-2"><i
+                                                    class="fas fa-arrow-right fa-xs mr-2"></i>2021
+                                                Calender</a>
+                                            <a href="#" class="text-white py-2"><i
+                                                    class="fas fa-arrow-right fa-xs mr-2"></i>Our
+                                                Locations</a>
+                                            <a href="#" class="text-white py-2"><i
+                                                    class="fas fa-arrow-right fa-xs mr-2"></i>Course
+                                                Brochure</a>
+                                            <a href="#" class="text-white py-2"><i
+                                                    class="fas fa-arrow-right fa-xs mr-2"></i>Speak to
+                                                a Learning Consultant</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle drop3" href="#" role="button" id="dropdownPrograms"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Programs
+                                <i class="fas fa-arrow-down mr-3 ml-2 maincolor"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropmenu3" aria-labelledby="dropdownMenuLink">
+                                <div class="row py-3 px-4">
+                                    <div class="col">
+                                        <div class="d-flex flex-column dropdowncontents">
+                                            <a class="text-white py-2" href="businesscourses.html">Business Essential
+                                                Courses</a>
+                                            <a class="text-white py-2" href="#">Certification Courses</a>
+                                            <a class="text-white py-2" href="programs.html">Programs</a>
+                                            <a class="text-white py-2" href="programsbusinessimprovement.html">Business
+                                                Improvement Program</a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex flex-column dropdowncontents">
+                                            <a class="text-white py-2" href="#">Business Essential Courses</a>
+                                            <a class="text-white py-2" href="#">Certification Courses</a>
+                                            <a class="text-white py-2" href="#">Transformation Courses</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle drop4" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Products
+                                <i class="fas fa-arrow-down mr-3 ml-2 maincolor"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropmenu4" aria-labelledby="dropdownMenuLink">
+                                <div class="row py-3 px-4">
+                                    <div class="col">
+                                        <div class="d-flex flex-column dropdowncontents">
+                                            <a class="text-white py-2" href="products.html">
+                                                Products
+                                            </a>
+                                            <a class="text-white py-2" href="#">Certification Courses</a>
+                                            <a class="text-white py-2" href="#">Transformation Courses</a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex flex-column dropdowncontents">
+                                            <a class="text-white py-2" href="#">Business Essential Courses</a>
+                                            <a class="text-white py-2" href="#">Certification Courses</a>
+                                            <a class="text-white py-2" href="#">Transformation Courses</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle drop5" href="#" role="button" id="dropdownPrograms"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Solutions
+                                <i class="fas fa-arrow-down mr-1 ml-2 maincolor"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropmenu5" aria-labelledby="dropdownMenuLink">
+                                <div class="row py-3 px-4">
+                                    <div class="col">
+                                        <div class="d-flex flex-column dropdowncontents">
+                                            <a class="text-white py-2" href="solutions.html">Solutions</a>
+                                            <a class="text-white py-2"
+                                                href="solutioncompetencymanagement.html">Competency Management</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <a class="hovernodropdown pl-2" href="eventsandupdates.html"> Updates </a>
+                        </div>
+                        <!-- <a href="#" class=""> Blog</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid-sm relativecontainer">
+            <div class="container-fluid-sm">
+                <div class="row mt-md-5">
+                    <div class="col-sm-7 mr-lg-5">
+                        <h2 class="mainheader1">Events & Updates</h2>
+                        <p class="coursecalendersubheader mt-3">
+                            Our team of learning experts have designed a suite of practical
+                            programs that develop both your execution excellence capabilities
+                            and enable you to stay a step ahead.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-lg-4 mt-sm-5 pb-3 mainborderbottom">
+                <form class="p-0 m-0">
+                    <div class="p-0 m-0">
+                        <h2 class="mainheader2 mint mb-4">Filter</h2>
+                    </div>
+                    <div class="generalselectstyle d-flex flex-wrap">
+                        <div class="form-group col-lg-3 p-lg-0 m-lg-0 mr-lg-5 pb-3 pb-lg-1">
+                            <label for="inputState">Content Type</label>
+                            <select id="inputState" class="selectitems mr-5 mt-3">
+                                <option selected>All</option>
+                                <option>All</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-3 p-lg-0 m-lg-0 mt-sm-3">
+                            <label for="inputState">Topic</label>
+                            <select id="inputState" class="selectitems mr-5 mt-3" placeholder="all">
+                                <option selected>Project Delivery</option>
+                                <option>All</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2 mb-4 pt-md-4 mt-md-3">
+                            <button type="button" class="btn btn-dark" id="mainbutton">
+                                Go
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="container-fluid py-4 mainborderbottom">
+            <div class="row">
+                <div class="col-lg-5 m-0 p-0 mt-5 relativecontainer">
+                    <img src="images/backgroundcircles.png" alt="" class="reviewcircles img-fluid" />
+                    <div class="mainheader3 mint">Latest</div>
+                    <div class="mainheader1 pt-2">
+                        Recharge & Refuel for professional development & career growth
+                    </div>
+                    <div class="generalparagraph py-3 w-75">
+                        Our team of learning experts have designed a suite of practical programs that develop both your
+                        execution excellence capabilities and enable you to stay a step ahead.
+                    </div>
+                </div>
+                <div class="col-lg-7 row justify-content-end pr-0 mr-0">
+                    <img src="/images/blog.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid eventsandupdates">
+            <div class="row py-3 globalborderbottom">
+                <div class="col-lg-7 p-0 m-0">
+                    <p class="eventsteam p-0 m-0">EVENT / DIBERR TEAM</p>
+                    <h6 class="mainheader3 py-2">Event: Business Process Improvement / Re-engineering</h6>
+                    <div class="eventsdate mb-3">
+                        <div class="row pl-md-5 pr-4 py-2">
+                        <div class="span">28th April</div>
+                        <div class="span">  . 10am (EST)</div>
+                        <div class="span">  . Lagos</div>
+                    </div>
+                </div>
+                    <div class="generalparagraph">
+                        Our team of learning experts have designed a suite of practical programs that develop both your
+                        execution excellence capabilities and enable you to stay a step ahead.. Our team of learning experts
+                        have designed a suite of practical programs that develop both your execution excellence capabilities
+                        and enable you to stay a step ahead.
+                    </div>
+                    <div class="row mint px-md-3 py-3 projectdelivery">
+                        <p>PROJECT DELIVERY .</p>
+                        <p>PERFORMANCE MANAGEMENT</p>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-3 row justify-content-end">
+                    <img src="/images/sectionimg.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row py-3 globalborderbottom">
+                <div class="col-lg-7 p-0 m-0">
+                    <p class="eventsteam p-0 m-0">PRESS RELEASE  /  HARVARD BUSINESS REVIEW</p>
+                    <h6 class="mainheader3 py-2">Business Process Improvement / Re-engineering</h6>
+                    <div class="generalparagraph">
+                        Our team of learning experts have designed a suite of practical programs that develop both your
+                        execution excellence capabilities and enable you to stay a step ahead.. Our team of learning experts
+                        have designed a suite of practical programs that develop both your execution excellence capabilities
+                        and enable you to stay a step ahead.
+                    </div>
+                    <div class="row mint px-md-3 py-3 projectdelivery">
+                        <p>PROJECT DELIVERY .</p>
+                        <p>PERFORMANCE MANAGEMENT</p>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-3 row justify-content-end">
+                    <img src="/images/sectionimg.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row py-3 globalborderbottom">
+                <div class="col-lg-7 p-0 m-0">
+                    <p class="eventsteam p-0 m-0">THOUGHT LEADERSHIP   / DEJI JEMIY0</p>
+                    <h6 class="mainheader3 py-2">Event: Business Process Improvement / Re-engineering</h6>
+                    <div class="eventsdate mb-3">
+                        <div class="row pl-md-5 pr-4 py-2">
+                        <div class="span">28th April</div>
+                        <div class="span">  . 10am (EST)</div>
+                        <div class="span">  . Lagos</div>
+                    </div>
+                </div>
+                    <div class="generalparagraph">
+                        Our team of learning experts have designed a suite of practical programs that develop both your
+                        execution excellence capabilities and enable you to stay a step ahead.. Our team of learning experts
+                        have designed a suite of practical programs that develop both your execution excellence capabilities
+                        and enable you to stay a step ahead.
+                    </div>
+                    <div class="row mint px-md-3 py-3 projectdelivery">
+                        <p>PROJECT DELIVERY .</p>
+                        <p>PERFORMANCE MANAGEMENT</p>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-3 row justify-content-end">
+                    <img src="/images/sectionimg.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row py-3 globalborderbottom">
+                <div class="col-lg-7 p-0 m-0">
+                    <p class="eventsteam p-0 m-0">EVENT / DIBERR TEAM</p>
+                    <h6 class="mainheader3 py-2">Event: Business Process Improvement / Re-engineering</h6>
+                    <div class="generalparagraph">
+                        Our team of learning experts have designed a suite of practical programs that develop both your
+                        execution excellence capabilities and enable you to stay a step ahead.. Our team of learning experts
+                        have designed a suite of practical programs that develop both your execution excellence capabilities
+                        and enable you to stay a step ahead.
+                    </div>
+                    <div class="row mint px-md-3 py-3 projectdelivery">
+                        <p>PROJECT DELIVERY .</p>
+                        <p>PERFORMANCE MANAGEMENT</p>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-3 row justify-content-end">
+                    <img src="/images/sectionimg.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row py-3 globalborderbottom">
+                <div class="col-lg-7 p-0 m-0">
+                    <p class="eventsteam p-0 m-0">EVENT / DIBERR TEAM</p>
+                    <h6 class="mainheader3 py-2">Event: Business Process Improvement / Re-engineering</h6>
+                    <div class="eventsdate mb-3">
+                        <div class="row pl-5 pr-4 py-2">
+                        <div class="span">28th April</div>
+                        <div class="span">  . 10am (EST)</div>
+                        <div class="span">  . Lagos</div>
+                    </div>
+                </div>
+                    <div class="generalparagraph">
+                        Our team of learning experts have designed a suite of practical programs that develop both your
+                        execution excellence capabilities and enable you to stay a step ahead.. Our team of learning experts
+                        have designed a suite of practical programs that develop both your execution excellence capabilities
+                        and enable you to stay a step ahead.
+                    </div>
+                    <div class="row mint px-md-3 py-3 projectdelivery">
+                        <p>PROJECT DELIVERY .</p>
+                        <p>PERFORMANCE MANAGEMENT</p>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-3 row justify-content-end">
+                    <img src="/images/sectionimg.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row py-3 globalborderbottom">
+                <div class="col-lg-7 p-0 m-0">
+                    <p class="eventsteam p-0 m-0">EVENT / DIBERR TEAM</p>
+                    <h6 class="mainheader3 py-2">Event: Business Process Improvement / Re-engineering</h6>
+                    <div class="eventsdate mb-3">
+                        <div class="row pl-5 pr-4 py-2">
+                        <div class="span">28th April</div>
+                        <div class="span">  . 10am (EST)</div>
+                        <div class="span">  . Lagos</div>
+                    </div>
+                </div>
+                    <div class="generalparagraph">
+                        Our team of learning experts have designed a suite of practical programs that develop both your
+                        execution excellence capabilities and enable you to stay a step ahead.. Our team of learning experts
+                        have designed a suite of practical programs that develop both your execution excellence capabilities
+                        and enable you to stay a step ahead.
+                    </div>
+                    <div class="row mint px-md-3 py-3 projectdelivery">
+                        <p>PROJECT DELIVERY .</p>
+                        <p>PERFORMANCE MANAGEMENT</p>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-3 row justify-content-end">
+                    <img src="/images/sectionimg.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row py-3 globalborderbottom">
+                <div class="col-lg-7 p-0 m-0">
+                    <p class="eventsteam p-0 m-0">EVENT / DIBERR TEAM</p>
+                    <h6 class="mainheader3 py-2">Event: Business Process Improvement / Re-engineering</h6>
+                    <div class="eventsdate mb-3">
+                        <div class="row pl-md-5 pr-4 py-2">
+                        <div class="span">28th April</div>
+                        <div class="span">  . 10am (EST)</div>
+                        <div class="span">  . Lagos</div>
+                    </div>
+                </div>
+                    <div class="generalparagraph">
+                        Our team of learning experts have designed a suite of practical programs that develop both your
+                        execution excellence capabilities and enable you to stay a step ahead.. Our team of learning experts
+                        have designed a suite of practical programs that develop both your execution excellence capabilities
+                        and enable you to stay a step ahead.
+                    </div>
+                    <div class="row mint px-md-3 py-3 projectdelivery">
+                        <p>PROJECT DELIVERY .</p>
+                        <p>PERFORMANCE MANAGEMENT</p>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-3 row justify-content-end">
+                    <img src="/images/sectionimg.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <nav aria-label="..." class="py-4 pl-0 ml-0 mainborderbottom">
+                <ul class="pagination pagination">
+                  <li class="page-item disabled pr-3">
+                    <a class="page-link" href="#" tabindex="-1">1</a>
+                  </li>
+                  <li class="page-item">
+                      <a class="page-link" id="nextpage" href="#">2</a></li>
+                </ul>
+              </nav>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <footer class="footerlargescreens">
+        <div class="px-md-5 mx-md-5 totalcontainer">
+            <div class="row footerlinks mt-4">
+                <div class="col-4 mr-5">
+                    <img src="images/altlogo.png" alt="small logo" />
+
+                    <div class="generalparagraph">
+                        Our founder, Deji Jemiyo has distilled the principles of High
+                        Performance in the workplace into practical framework in his
+                        best-selling books.
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <h6>Products</h6>
+                    <ul>
+                        <li><a href="#">Result Series</a></li>
+                        <li><a href="#">ACE PMP</a></li>
+                        <li><a href="#">ACE PMP</a></li>
+                        <li><a href="#">ACE PGMP</a></li>
+                    </ul>
+                </div>
+                <div class="col-2 mr-md-5">
+                    <h6>Quick Links</h6>
+                    <ul>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">2021 Calender</a></li>
+                        <li><a href="#">Get in Touch</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3 justify-content-end">
+                    <div class="row justify-content-around">
+                        <a href="#"><i class="fab fa-facebook-square fa-2x mint"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square fa-2x mint"></i></a>
+                        <a href="#"><i><i class="fab fa-twitter-square fa-2x mint"></i></i></a>
+                        <a href="#"><i><i class="fab fa-linkedin fa-2x mint"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lastfooter totalcontainer pb-0 mb-0 mt-3 ml-0">
+            <div class="px-lg-4 mx-lg-5 totalcontainer row lastfootercontent py-4">
+                <div class="col-5 mr-3">
+                    <a href="#">Diberr Academy is a Subsidiary of Diberr Group</a>
+                </div>
+                <div class="col-2">
+                    <a href="#">Diberr Consulting</a>
+                </div>
+                <div class="col">
+                    <a href="#">Diberr Performance Management Software</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="smallscreens">
+        <footer class="px-md-5 mx-md-5 totalcontainer container-fluid px-3">
+            <div class="row">
+                <div class="col">
+                    <img src="images/logo.png" alt="small logo" class="pb-0 mt-2" />
+
+                    <div class="generalparagraph pt-1 pb-4">
+                        Our founder, Deji Jemiyo has distilled the principles of High
+                        Performance in the workplace into practical framework in his
+                        best-selling books.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion footerlinks footeraccordion" id="accordionExample">
+                <div class="card">
+                    <div class="footercollapsebox" id="mobilefooterheadingOne">
+                        <h2 class="mb-0 boxesspacingfooter border-bottom border-top py-2">
+                            <button class="btn btn-link btn-block text-left" data-toggle="collapse"
+                                data-target="#footercollapseOne" aria-expanded="true" aria-controls="footercollapseOne">
+                                <h6 class="text-dark">Products</h6>
+                            </button>
+                            <i class="fas fa-long-arrow-alt-up main fa-xs mt-2" style="font-size: 14px"
+                                data-toggle="collapse" data-target="#footercollapseOne" aria-expanded="true"
+                                aria-controls="footercollapseOne"></i>
+                        </h2>
+                    </div>
+
+                    <div id="footercollapseOne" class="collapse show" aria-labelledby="mobilefooterheadingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body ml-0">
+                            <ul>
+                                <li><a href="#">Result Series</a></li>
+                                <li><a href="#">ACE PMP</a></li>
+                                <li><a href="#">ACE PMP</a></li>
+                                <li><a href="#">ACE PGMP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="footercollapsebox" id="footerheadingTwo">
+                        <h2 class="mb-0 boxesspacingfooter border-bottom border-top py-2">
+                            <button class="btn btn-link btn-block text-left collapsed" data-toggle="collapse"
+                                data-target="#footercollapseTwo" aria-expanded="false"
+                                aria-controls="footercollapseTwo">
+                                <h6 class="text-dark">Quick Links</h6>
+                            </button>
+                            <i class="fas fa-long-arrow-alt-up main fa-xs mt-2" style="font-size: 14px"
+                                data-toggle="collapse" data-target="#programscollapseTwo" aria-expanded="true"
+                                aria-controls="programscollapseTwo"></i>
+                        </h2>
+                    </div>
+                    <div id="footercollapseTwo" class="collapse" aria-labelledby="footerheadingTwo"
+                        data-parent="#accordionExample">
+                        <div class="card-body ml-0">
+                            <ul>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">2021 Calender</a></li>
+                                <li><a href="#">Get in Touch</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-7 justify-content-start py-4">
+                <div class="row justify-content-between">
+                    <a href="#"><i class="fab fa-facebook-square fa-2x mint"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square fa-2x mint"></i></a>
+                    <a href="#"><i><i class="fab fa-twitter-square fa-2x mint"></i></i></a>
+                    <a href="#"><i><i class="fab fa-linkedin fa-2x mint"></i></i></a>
+                </div>
+            </div>
+        </footer>
+        <div class="lastfooter px-md-5 mx-md-5 totalcontainer pb-0 mb-0 mt-3">
+            <div class="px-lg-4 mx-lg-5 totalcontainer lastfootercontent py-4">
+                <div class="">
+                    <a href="#">Diberr Academy is a Subsidiary of Diberr Group</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+<script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+
+</html>
