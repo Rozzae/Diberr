@@ -1,5 +1,5 @@
 // if ($(window).width() > 992) {
-//     $(window).scroll(function(){  
+//     $(window).scroll(function(){
 //        if ($(this).scrollTop() > 40) {
 //           $('#navbar').addClass("fixed-top");
 //           // add padding top to show content behind navbar
@@ -8,10 +8,9 @@
 //           $('#navbar').removeClass("fixed-top");
 //            // remove padding top from body
 //           $('body').css('padding-top', '0');
-//         }   
+//         }
 //     });
 //   }
-
 
 // $(document).ready(function(){
 //     $(selector).toggleClass('fas fa-plus fas fa-minus');
@@ -23,102 +22,150 @@
 //   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 // });
 
-(function() {
-    var startingTime = new Date().getTime();
-    // Load the script
-    var script = document.createElement("SCRIPT");
-    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
-    script.type = 'text/javascript';
-    document.getElementsByTagName("head")[0].appendChild(script);
+(function () {
+  var startingTime = new Date().getTime();
+  // Load the script
+  var script = document.createElement('SCRIPT');
+  script.src =
+    'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
+  script.type = 'text/javascript';
+  document.getElementsByTagName('head')[0].appendChild(script);
 
-    // Poll for jQuery to come into existance
-    var checkReady = function(callback) {
-        if (window.jQuery) {
-            callback(jQuery);
-        }
-        else {
-            window.setTimeout(function() { checkReady(callback); }, 20);
-        }
-    };
+  // Poll for jQuery to come into existance
+  var checkReady = function (callback) {
+    if (window.jQuery) {
+      callback(jQuery);
+    } else {
+      window.setTimeout(function () {
+        checkReady(callback);
+      }, 20);
+    }
+  };
 
-    // Start polling...
-    checkReady(function($) {
-        $(function() {
-            var endingTime = new Date().getTime();
-            var tookTime = endingTime - startingTime;
-            console.log("jQuery is loaded, after " + tookTime + " milliseconds!");
-        });
+  // Start polling...
+  checkReady(function ($) {
+    $(function () {
+      var endingTime = new Date().getTime();
+      var tookTime = endingTime - startingTime;
+      console.log('jQuery is loaded, after ' + tookTime + ' milliseconds!');
     });
-    $(document).ready(function () {
-        $('.fontfamily .dropdown').hover(function () {
-                $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
-            }, function () {
-                $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
-            });
-        });
-        $(".dropmenu1").hover(function () {
-          $(".drop1").addClass("hovered");
-        }, function () {
-          $(".drop1").removeClass("hovered");
-        });
-    
-    
-        $(".dropmenu2").hover(function () {
-          $(".drop2").addClass("hovered");
-        }, function () {
-          $(".drop2").removeClass("hovered");
-        });
-    
-        
-        $(".dropmenu2").hover(function () {
-          $(".drop2").addClass("hovered");
-        }, function () {
-          $(".drop2").removeClass("hovered");
-        });
-    
-    
-        $(".dropmenu3").hover(function () {
-          $(".drop3").addClass("hovered");
-        }, function () {
-          $(".drop3").removeClass("hovered");
-        });
-    
-        $(".dropmenu4").hover(function () {
-          $(".drop4").addClass("hovered");
-        }, function () {
-          $(".drop4").removeClass("hovered");
-        });
-    
-        $(".dropmenu5").hover(function () {
-          $(".drop5").addClass("hovered");
-        }, function () {
-          $(".drop5").removeClass("hovered");
-        });
+  });
+  //this code makes dropdown occur on hover rather than on click
+  $(document).ready(function () {
+    $('.fontfamily .dropdown').hover(
+      function () {
+        $(this).find('.dropdown-menu#mainnavmenu').first().stop(true, true).slideDown(150);
+      },
+      function () {
+        $(this).find('.dropdown-menu#mainnavmenu').first().stop(true, true).slideUp(105);
+      }
+    );
+  });
+  (function () {
+    $('.dropdown-toggle').click(
+      function (e) {
+        e.stopPropagation();
+        return false;
+      },
+      function () {
+        e.stopPropagation();
+        return false;
+      }
+    );
+  });
 
-        $('#serviceList').click(function(){
-          $(this).find('.servicedrop').toggleClass('icon-chevron-down icon-chevron-up');
-      });
+  $(document).on('click', '.fontfamily .dropdown', function (e) {
+    e.stopPropagation();
+  });
+  $(".dropdown-toggle").on('click', '.fontfamily .dropdown', function (e) {
+    e.stopPropagation();
+  });
 
+  $('.dropdown-toggle').click(
+    function (e) {
+      e.stopPropagation();
+      return false;
+    },
+    function (e) {
+      e.stopPropagation();
+      return false;
+    }
+  );
+
+  $('.dropmenu1').hover(
+    function () {
+      $('.drop1').addClass('hovered');
+    },
+    function () {
+      $('.drop1').removeClass('hovered');
+    }
+  );
+
+  $('.dropmenu2').hover(
+    function () {
+      $('.drop2').addClass('hovered');
+    },
+    function () {
+      $('.drop2').removeClass('hovered');
+    }
+  );
+
+  $('.dropmenu2').hover(
+    function () {
+      $('.drop2').addClass('hovered');
+    },
+    function () {
+      $('.drop2').removeClass('hovered');
+    }
+  );
+
+  $('.dropmenu3').hover(
+    function () {
+      $('.drop3').addClass('hovered');
+    },
+    function () {
+      $('.drop3').removeClass('hovered');
+    }
+  );
+
+  $('.dropmenu4').hover(
+    function () {
+      $('.drop4').addClass('hovered');
+    },
+    function () {
+      $('.drop4').removeClass('hovered');
+    }
+  );
+
+  $('.dropmenu5').hover(
+    function () {
+      $('.drop5').addClass('hovered');
+    },
+    function () {
+      $('.drop5').removeClass('hovered');
+    }
+  );
+
+  $('#serviceList').click(function () {
+    $(this)
+      .find('.servicedrop')
+      .toggleClass('icon-chevron-down icon-chevron-up');
+  });
 })();
 
 $(function () {
-
-  $('#boxesspacing').on('click', function() {
+  $('#boxesspacing').on('click', function () {
     $(this).toggleClass('fas fa-arrow-up fas fa-arrow-down');
-});
-
-    // $('.dropdown-menu').mouseover(function(e) {
-    //   $('.dropdown-toggle').addClass("hovered");
-    // });
-    // $(".dropdown-menu").mouseout(function () {
-    //   $(".dropdown-toggle").removeClass("hovered");
-    // });
-  
-    // or optionally using .hover() for in/out handling as per A. Wolff's comment
-
-
-
   });
 
-console.log("hey")
+  // $('.dropdown-menu').mouseover(function(e) {
+  //   $('.dropdown-toggle').addClass("hovered");
+  // });
+  // $(".dropdown-menu").mouseout(function () {
+  //   $(".dropdown-toggle").removeClass("hovered");
+  // });
 
+  // or optionally using .hover() for in/out handling as per A. Wolff's comment
+});
+
+console.log('hey');

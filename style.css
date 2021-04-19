@@ -156,7 +156,7 @@ html {
   color: var(--main);
 }
 
-.dropdown-menu{
+.dropdown-menu#mainnavmenu{
   border: none !important;
   background-color: var(--main) !important;
   position: absolute;
@@ -172,7 +172,7 @@ border-bottom-right-radius:  20px;
 border-bottom-left-radius: 20px;
 }
 
-.dropdown-menu .dropdowncontents{
+.dropdown-menu#mainnavmenu .dropdowncontents{
   font-family: Roboto;
 font-size: 16px;
 font-style: light;
@@ -538,6 +538,10 @@ button.btn.navheaderbuttonsmall:hover {
   padding: 14px 12px !important;
   border: none;
   width: 100%;
+}
+
+select:focus{
+  outline: none !important;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -909,11 +913,13 @@ input[type='email'] {
 .events a.row {
   text-decoration: none;
   color: #000;
+  transition: transform 0.4s ease-in;
 }
 .events a.row:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--main);
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 a.darkparagraph {
@@ -1064,13 +1070,40 @@ text-align: left;
 
 }
 
+/* colors */
+
+.purple {
+  background: #bea9ec;
+  height: 20px;
+  width: inherit;
+}
+
+.green{
+  background: rgb(128, 180, 128);
+  height: 20px;
+}
+.yellow{
+  background: rgb(226, 243, 157);
+  height: 20px;
+}
+.pink{
+  background: rgb(243, 157, 214);
+  height: 20px;
+}
+.blue{
+  background: rgb(157, 184, 243);
+  height: 20px;
+}
+
 .allcoursescards a {
   text-decoration: none;
   color: #000;
+  transition: transform 0.4s ease-in;
 }
 .allcoursescards a:hover {
   text-decoration: none;
   color: var(--mint);
+  transform: scale(1.03);
   cursor: pointer;
 }
 
@@ -1124,11 +1157,6 @@ text-align: left;
   letter-spacing: -0.03em;
   text-align: left;
   color: var(--main);
-}
-
-.purple {
-  background: #bea9ec;
-  height: 20px;
 }
 
 .allcourses .card-text {
@@ -1211,13 +1239,6 @@ p.highorganization {
 }
 
 .locations .purple {
-  font-family: Roboto;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 28px;
-  letter-spacing: -0.03em;
-  text-align: left;
   color: #fff;
   height: auto;
 }
@@ -1435,7 +1456,8 @@ p.highorganization {
 
 .learningconsultant h2 {
   font-family: Roboto;
-  font-size: 25px;
+  font-size: 20px;
+  width: 90%;
   font-style: normal;
   font-weight: 900;
   line-height: 29px;
@@ -1459,6 +1481,13 @@ p.highorganization {
   background: #c4c4c4;
 
   border-radius: 0px;
+}
+
+.btn-block.text-left:focus{
+  box-shadow: none;
+}
+.btn.text-dark:focus{
+  box-shadow: none;
 }
 
 p.instructorstitle {
@@ -1511,7 +1540,7 @@ p.instructorstitle {
 }
 
 .instructorprofile img {
-  height: 224px;
+  height: 174px;
   width: 170px;
   border-radius: 50%;
 }
@@ -1537,7 +1566,6 @@ p.instructorstitle {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 21px;
   letter-spacing: -0.03em;
   text-align: left;
 }
@@ -1558,6 +1586,9 @@ p.instructorstitle {
 
 .globalborderbottom {
   border-bottom: 1px solid var(--mint);
+}
+.faqcollapse.h-50 {
+  height: 75px !important;
 }
 .globalbordertop {
   border-top: 1px solid var(--mint);
@@ -1814,8 +1845,12 @@ input[type='email'] {
 #headingNine.card-header {
   background-color: #fff;
   border: none;
-  border: 1px solid var(--main);
-  border-radius: 10px;
+}
+
+.borderaround{
+  border: 1px solid var(--main) !important;
+  border-radius: 10px !important;
+
 }
 
 .textpurple {
@@ -1845,17 +1880,9 @@ input[type='email'] {
 }
 
 .coursecalenderbox {
-  font-family: Roboto;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 28px;
-  letter-spacing: -0.03em;
-  text-align: left;
   color: var(--main);
   background: #e2f0f0;
   margin: 20px;
-
   height: 71px;
   width: 100%;
   border-radius: 10px;
@@ -1899,7 +1926,7 @@ input[type='email'] {
 
 .smallspan {
   font-family: Roboto;
-  font-size: 12px;
+  font-size: 11px;
   font-style: normal;
   font-weight: 900;
   line-height: 16px;
@@ -1908,8 +1935,9 @@ input[type='email'] {
   background-color: #868788;
   color: #fff;
   height: 24px;
-  width: 48.42856979370117px;
+  width: 37.42856979370117px;
   border-radius: 20px;
+  margin-top: 1px;
   padding: 3px 13px;
   margin-left: 15px;
 }
@@ -1934,7 +1962,7 @@ input[type='email'] {
   text-align: left;
 }
 
-.locationsstate {
+/* .locationsstate {
   font-family: Roboto;
   font-size: 25px;
   font-style: normal;
@@ -1942,7 +1970,7 @@ input[type='email'] {
   line-height: 28px;
   letter-spacing: -0.03em;
   text-align: left;
-}
+} */
 
 /* end course calender */
 
@@ -2010,10 +2038,10 @@ input[type='email'] {
 
 .card-title {
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 16px;
   font-style: bold;
   font-weight: 900;
-  line-height: 23px;
+  line-height: 22px;
   letter-spacing: -0.03em;
   text-align: left;
 }
@@ -2154,7 +2182,7 @@ h1.learningexperts{
   text-align: left;
 }
 
-.carousel-inner img {
+.maincarous img {
   height: 700px;
 }
 
@@ -2251,6 +2279,11 @@ ol.carousel-indicators {
 
 .relativecontainercardsmint {
   position: relative;
+}
+
+.cardbackgroundmint a:hover{
+  text-decoration: none;
+  cursor: pointer;
 }
 .relativecontainercardstwo {
   position: relative;
@@ -2541,11 +2574,16 @@ text-align: left;
   border: 1px solid var(--mint);
   border-radius: 10px;
 }
+
+.mintfullborder a.upperrow:hover{
+  text-decoration: none;
+  color: var(--main);
+}
 /* end */
 
 /* ace pmp */
 .navbar#acepmp{
-background-color: var(--yellow);
+background-color: #F39927;
 }
 
 .aceimage{
@@ -2554,15 +2592,153 @@ width: 748px;
 margin: auto;
 }
 
+
+.dropdown-menu.acedropmenu{
+  border: 2px solid #fff !important;
+  background-color: var(--yellow) !important;
+  position: absolute;
+  left: -200px !important;
+  width: 600px;
+  height: auto;
+}
+
+.dropdown-menu .acedropcontents{
+  font-family: Roboto;
+font-size: 16px;
+font-style: light;
+font-weight: 300;
+line-height: 18px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+.hovernodropdown:hover{
+  background-color: var(--main);
+  color: #fff !important;
+  border-radius: 20px;
+  padding: 10px 25px;
+}
+
+.dropdownselected{
+  background-color: var(--main);
+  color: #fff !important;
+  border-radius: 20px;
+  padding: 20px 30px;
+}
+
+
+
+.hovered{
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  color: #fff !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px 0px 60px 30px;
+  background-color: var(--main);
+  cursor: pointer;
+}
+
+.dropdown-toggle.dropace:hover {
+border-radius: 20px;
+  /* padding: 20px 0px 60px 30px; */
+  background-color: #F39927;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.dropdown:hover {
+  /* margin: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px 0px 60px 30px;
+  background-color: var(--main);
+  color: #fff; */
+}
+.dropdown a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  /* height: 0; */
+  /* overflow: hidden; */
+  list-style: none;
+  background-color: var(--main);
+}
+
+
+
+.dropdown-toggle.dropace:hover {
+  background-color: #F39927;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dropdown-menu .acedropmenu{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  /* height: 0; */
+  /* overflow: hidden; */
+  list-style: none;
+  background-color: #F39927;
+}
+
+
+a.aceloginbtn{
+  font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 900;
+line-height: 13px;
+letter-spacing: -0.03em;
+text-align: left;
+color: #fff;
+border-radius: 20px;
+  border: 1px solid #fff;
+}
+
+.pmpdropdowntext{
+  font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: -0.03em;
+text-align: left;
+color: #000;
+}
+
 .acepmpcontainer{
   height: 662px;
 width: 1346px;
 border-radius: 20px;
 background: #FFE4C1;
 }
+.acepmpcontainerblue{
+  height: 662px;
+width: 1346px;
+border-radius: 20px;
+background: #d4f3f1;
+}
+
 
 .yellowacetext{
-  color: var(--yellow);
+  color: #F39927;
+}
+
+.potraitacepmp{
+  /* height: 134px;
+width: 130px; */
+object-fit: contain;
 }
 
 button.acemainbtn{
@@ -2607,7 +2783,7 @@ color: #000;
 }
 
 .card.acepmpcard{
-  border: 2px solid var(--yellow);
+  border: 2px solid #F39927;
 width: 380px;
 border-radius: 20px;
 background-color: #fff;
@@ -2642,7 +2818,7 @@ border-bottom: 1px dotted gray;
 }
 
 .acecircles li {
-  background-color: var(--yellow);
+  background-color: #F39927;
   list-style-type: none;
   color: #fff;
   font-weight: bold;
@@ -2861,7 +3037,7 @@ text-align: left;
     justify-content: space-between;
   }
 
-  .col-lg-6.fontfamily {
+  .fontfamily {
     display: none;
   }
 
