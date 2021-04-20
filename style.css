@@ -2619,7 +2619,10 @@ text-align: left;
 list-style: none;
 background-color: #F39927 !important;
 border: none !important;
-border-radius: 0.25rem;
+-webkit-border-bottom-left-radius: 20px;
+-webkit-border-bottom-right-radius: 20px;
+-moz-border-radius-bottomleft: 20px;
+-moz-border-radius-bottomright: 20px;
 
 }
 .hovernodropdown:hover{
