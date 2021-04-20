@@ -60,6 +60,14 @@
         $(this).find('.dropdown-menu#mainnavmenu').first().stop(true, true).slideUp(105);
       }
     );
+    $('.acepmpfinaldrop .dropdown').hover(
+      function () {
+        $(this).find('.dropdown-menu#acedropmenu').first().stop(true, true).slideDown(150);
+      },
+      function () {
+        $(this).find('.dropdown-menu#acedropmenu').first().stop(true, true).slideUp(105);
+      }
+    );
   });
   (function () {
     $('.dropdown-toggle').click(
@@ -92,6 +100,14 @@
     }
   );
 
+  $('#acedropmenu').hover(
+    function () {
+      $('.dropace').addClass('hoveredace');
+    },
+    function () {
+      $('.dropace').removeClass('hoveredace');
+    }
+  );
   $('.dropmenu1').hover(
     function () {
       $('.drop1').addClass('hovered');

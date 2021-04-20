@@ -2593,23 +2593,33 @@ margin: auto;
 }
 
 
-.dropdown-menu.acedropmenu{
+/* .dropdown-menu.acedropmenu{
   border: 2px solid #fff !important;
   background-color: var(--yellow) !important;
   position: absolute;
   left: -200px !important;
   width: 600px;
   height: auto;
-}
+} */
 
-.dropdown-menu .acedropcontents{
-  font-family: Roboto;
-font-size: 16px;
-font-style: light;
-font-weight: 300;
-line-height: 18px;
-letter-spacing: -0.03em;
+#acedropmenu{
+position: absolute;
+top: 82%;
+left: 0.5px;
+z-index: 1000;
+display: none;
+float: left;
+min-width: 15.16rem;
+border: 3px solid #fff;
+padding: 20px;
+margin: 0.125rem 0 0;
+font-size: 1rem;
+color: #212529;
 text-align: left;
+list-style: none;
+background-color: #F39927 !important;
+border: none !important;
+border-radius: 0.25rem;
 
 }
 .hovernodropdown:hover{
@@ -2628,35 +2638,49 @@ text-align: left;
 
 
 
-.hovered{
+.hoveredace{
   -webkit-border-top-left-radius: 20px;
   -webkit-border-top-right-radius: 20px;
   -moz-border-radius-topleft: 20px;
   -moz-border-radius-topright: 20px;
-  color: #fff !important;
+  background: #F39927 !important;
+  border: 1px solid #fff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding: 20px 0px 60px 30px;
-  background-color: var(--main);
+  padding: 13px 5px 60px 30px;
+  background-color: var(--yellow);
   cursor: pointer;
 }
 
 .dropdown-toggle.dropace:hover {
-border-radius: 20px;
-  /* padding: 20px 0px 60px 30px; */
-  background-color: #F39927;
-  color: #fff;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  background: #F39927 !important;
+  border: 1px solid #fff;
+  color: #000;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 13px 5px 60px 30px;
+  background-color: var(--yellow);
   cursor: pointer;
 }
 
+/* .dropdown-toggle.dropace::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: '';
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+} */
+
 
 .dropdown:hover {
-  /* margin: 0;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  padding: 20px 0px 60px 30px;
-  background-color: var(--main);
-  color: #fff; */
+/* border: 1px solid #fff; */
 }
 .dropdown a:hover {
   color: #fff;
@@ -2678,7 +2702,8 @@ border-radius: 20px;
 
 .dropdown-toggle.dropace:hover {
   background-color: #F39927;
-  color: #fff;
+  color: #000;
+  text-decoration: none;
   cursor: pointer;
 }
 
