@@ -184,9 +184,10 @@ text-align: left;
 }
 .hovernodropdown:hover{
   background-color: var(--main);
+  text-decoration: none;
   color: #fff !important;
-  border-radius: 20px;
-  padding: 10px 25px;
+  border-radius: 15px;
+  padding: 10px 20px;
 }
 
 .dropdownselected{
@@ -206,10 +207,14 @@ text-align: left;
   color: #fff !important;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding: 20px 0px 60px 30px;
+  padding: 10px 0px 30px 20px;
   background-color: var(--main);
   cursor: pointer;
+  margin-left: 10px;
+  margin-right: 20px;
+  text-decoration: none;
 }
+  
 
 .dropdown-toggle:hover {
   -webkit-border-top-left-radius: 20px;
@@ -218,11 +223,19 @@ text-align: left;
   -moz-border-radius-topright: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding: 20px 0px 60px 30px;
+  padding: 10px 0px 30px 20px;
   background-color: var(--main);
   color: #fff;
   cursor: pointer;
+  margin-left: 10px;
+  margin-right: 20px;
+  text-decoration: none;
 }
+.dropdown-toggle .fa-arrow-down:hover {
+color: #fff;
+}
+
+
 
 
 .dropdown:hover {
@@ -291,13 +304,15 @@ button.btn.navheaderbuttonsmall {
 
   border: 1px solid #fff;
   border-radius: 20px;
-  padding: 15px 30px;
+  padding: 10px 25px;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 900;
   line-height: 16px;
   letter-spacing: -0.03em;
+  margin-top: 5px;
+  margin-bottom: 5px;
   text-align: left;
   color: #fff;
   margin-right: 20px;
@@ -347,7 +362,7 @@ button.btn.navheaderbuttonsmall:hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 112.19%;
   letter-spacing: -0.03em;
 }
@@ -374,7 +389,7 @@ button.btn.navheaderbuttonsmall:hover {
 
 .subheader {
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 23px;
@@ -1172,10 +1187,10 @@ text-align: left;
 }
 .allcourses .card-subtitle {
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 900;
-  line-height: 19px;
+  line-height: 14px;
   letter-spacing: -0.03em;
   text-align: left;
 
@@ -1222,7 +1237,7 @@ p.highorganization {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 112.19%;
   letter-spacing: -0.03em;
   color: var(--mint);
@@ -1942,16 +1957,6 @@ input[type='email'] {
   margin-left: 15px;
 }
 
-.locations h2 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 112.19%;
-  letter-spacing: -0.03em;
-  color: var(--mint);
-}
-
 .locationstext p {
   font-family: Roboto;
   font-size: 20px;
@@ -2041,7 +2046,7 @@ input[type='email'] {
   font-size: 16px;
   font-style: bold;
   font-weight: 900;
-  line-height: 22px;
+  line-height: 19px;
   letter-spacing: -0.03em;
   text-align: left;
 }
@@ -2423,6 +2428,23 @@ ol.carousel-indicators {
   line-height: 35px;
   letter-spacing: -0.03em;
   text-align: left;
+}
+
+.circlesbusiness{
+  background-color: #BEA9EC;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+}
+.circlesbusiness.circletwomobile{
+  background-color: #37A3A5;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
 }
 
 .circle {
@@ -3193,6 +3215,7 @@ text-align: left;
     z-index: 100;
   }
 
+
   .eventsdate{
     width: auto;
   }
@@ -3401,6 +3424,29 @@ line-height: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .businessesentialcourses{
+    position: relative;
+  }
+
+  .circlesbusiness{
+display: block;
+width: 100px;
+height: 100px;
+position: absolute;
+z-index: -3;
+top: -200px;
+left: 250px;
+  }
+  .circlesbusiness.circletwomobile{
+
+    display: block;
+    top: -200px;
+    left: 300px;
+    width: 100px;
+height: 100px;
+  }
+
   /* end */
 
   /* business improvement courses mobile responsive */
@@ -3544,12 +3590,12 @@ line-height: 10px;
   }
 
   .mainheader1 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 30px;
   }
   .mainheader2 {
     font-size: 20px;
-    line-height: 40px;
+    line-height: 30px;
   }
 
   .dates {
