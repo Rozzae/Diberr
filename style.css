@@ -1759,7 +1759,7 @@ textarea#attendeestextarea.form-control {
   padding: 30 100px;
 }
 
-.explorecoursestext h2 {
+/* .explorecoursestext h2 {
   font-family: Roboto;
   font-size: 40px;
   font-style: normal;
@@ -1768,7 +1768,7 @@ textarea#attendeestextarea.form-control {
   letter-spacing: -0.03em;
   text-align: left;
   color: var(--mint);
-}
+} */
 
 /* button.btn.btn-block.text-left {
   font-family: Roboto;
@@ -3612,6 +3612,10 @@ height: 100px;
   .mainheader2 {
     font-size: 20px;
     line-height: 30px;
+  }
+  .mainheader3 {
+    font-size: 15px;
+    line-height: 27px;
   }
 
   .dates {
