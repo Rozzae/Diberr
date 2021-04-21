@@ -1365,6 +1365,7 @@ p.highorganization {
 .backgroundimprovementcirclesoneimagetwo {
   position: absolute;
   z-index: -4;
+  left: -200px;
 }
 
 .businessimprovementsubheader {
@@ -1538,6 +1539,10 @@ p.instructorstitle {
   letter-spacing: -0.03em;
   text-align: left;
   color: var(--main);
+}
+.btn.requestproposal:hover {
+background-color: var(--main);
+  color: #fff;
 }
 
 .instructorprofile {
@@ -2149,7 +2154,7 @@ h1.learningexperts{
 }
 .backgroundcirclesbusinessimprovement {
   position: absolute;
-  left: -50px;
+  left: -150px;
   top: 130px;
   z-index: -1;
 }
@@ -3190,8 +3195,8 @@ text-align: left;
 @media (max-width: 601px) {
   .logoimage {
     margin-top: 70px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
 
   #middlesection p.h1 {
@@ -3357,6 +3362,11 @@ line-height: 26px;
 
 }
 
+.generalparagraph{
+  font-size: 12px !important;
+  line-height: 25px !important;
+}
+
 .enquires{
 font-size: 15px;
 line-height: 10px;
@@ -3494,6 +3504,12 @@ height: 100px;
     border-radius: 10px;
     display: flex;
     align-items: center;
+  }
+
+  .businessimprovementcourses .subheader{
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
   }
 
   .boxesspacing {
@@ -3794,7 +3810,7 @@ height: 100px;
 
   .globalborderbottom p {
     font-size: 15px;
-    line-height: 24px;
+    line-height: 22px;
   }
 
   .globalborderbottom .fa-arrow-up {
