@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-appearance: none;
+  -webkit-appearance: none !important;
 }
 
 /* under construction */
@@ -2235,15 +2235,13 @@ ol.carousel-indicators {
 #programsheadingOne.card-header,
 #programsheadingTwo.card-header,
 #programsheadingThree.card-header,
-#programsheadingFour.card-header,
-#programsheadingFive.card-header,
-#programsheadingSix.card-header,
-#programsheadingSeven.card-header,
-#programsheadingEight.card-header,
-#programsheadingNine.card-header {
+#programsheadingFour.card-header{
   background-color: #fff;
   border: none;
   border-top: 1px solid var(--mint);
+}
+#programscollapseFour{
+  border-bottom: 1px solid var(--mint);
 }
 
 .programscollapsebox {
@@ -2264,9 +2262,9 @@ ol.carousel-indicators {
   text-align: left;
 }
 
-#programsheadingFour.borderbottomcollapse {
+/* #programsheadingFour.borderbottomcollapse {
   border-bottom: 1px solid var(--mint);
-}
+} */
 
 .programscollapsebox .fa-brush {
   width: 3%;
@@ -2325,7 +2323,7 @@ ol.carousel-indicators {
 .backgroundprogramstwo {
   position: absolute;
   transform: rotate(180deg);
-  right: -100px;
+  right: -160px;
 }
 
 #factoryworkersprograms {
@@ -2366,10 +2364,11 @@ ol.carousel-indicators {
 
 .programbusinessbox {
   background: #e2f0f0;
-  height: 244px;
-  width: 290px;
-  margin-bottom: 50px;
-  padding: 30px;
+  height: 204px;
+  width: 250px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  padding: 15px 30px;
 }
 
 .programbusinessbox .highlightheader {
@@ -2982,6 +2981,10 @@ text-align: left;
     justify-content: space-between;
   }
 
+  .programbusinessboxes{
+    flex-wrap: wrap;
+  }
+
   .relativecontainercardsmint {
     position: relative;
     width: 100%;
@@ -3119,7 +3122,6 @@ text-align: left;
 
   /* .collapse{
   -webkit-appearance: none;
-  border-radius: 0;
 } */
 
   #middlesection {
