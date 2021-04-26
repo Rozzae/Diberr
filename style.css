@@ -3208,6 +3208,17 @@ text-align: left;
     z-index: 100;
   }
 
+  button.pressreleasebtn {
+    position: absolute;
+    z-index: 3;
+    top: 100px;
+    left: 40px;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
+
 
   .eventsdate{
     width: auto;
