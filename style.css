@@ -2553,7 +2553,8 @@ ol.carousel-indicators {
   min-height: 250px;
 }
 .eventsandupdates img {
-  min-height: 200px;
+  /* min-height: 200px; */
+  object-fit: contain;
 }
 
 .page-item:first-child .page-link {
