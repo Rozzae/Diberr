@@ -2550,7 +2550,7 @@ ol.carousel-indicators {
 }
 
 .eventsandupdates .globalborderbottom {
-  min-height: 250px;
+  /* min-height: 250px; */
 }
 .eventsandupdates img {
   /* min-height: 200px; */
