@@ -2460,7 +2460,7 @@ ol.carousel-indicators {
   list-style: none;
 }
 
-.circle:before {
+/* .circle:before {
   content: '';
   display: block;
   position: absolute;
@@ -2471,14 +2471,33 @@ ol.carousel-indicators {
   border-width: 0 0 0 2px;
   width: 3px;
   height: 100%;
-}
+} */
 
-.circles {
-  display: flex;
+.competencyverticalconnector {
+  /* display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  align-items: center;
+  align-items: center; */
+  /* border-left: 2px dotted var(--main);
+  padding-left: 125px;
+  margin-left: 195px; */
+position: relative;
+  /* position: relative;
+  left: 200px; */
+  /* border: 4px dotted var(--main); */
+}
+
+.competencyconnector {
+  position:absolute;
+  top: 55px;
+  left: 27px;
+  border: 3px dotted var(--main);
+  /* border-right: 0; */
+  /* border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px; */
+  height: 400px;
+  width: auto;
 }
 
 .competencycirclestext {
