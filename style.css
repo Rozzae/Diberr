@@ -875,6 +875,10 @@ input[type='email'] {
   border-radius: 20px;
   color: #fff;
 }
+#subscribebtn:hover {
+  background-color: var(--mint);
+  color: var(--main);
+}
 
 /* .newsletterform label {
   font-family: Roboto;

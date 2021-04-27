@@ -54,18 +54,34 @@
   $(document).ready(function () {
     $('.fontfamily .dropdown').hover(
       function () {
-        $(this).find('.dropdown-menu#mainnavmenu').first().stop(true, true).slideDown(150);
+        $(this)
+          .find('.dropdown-menu#mainnavmenu')
+          .first()
+          .stop(true, true)
+          .slideDown(150);
       },
       function () {
-        $(this).find('.dropdown-menu#mainnavmenu').first().stop(true, true).slideUp(105);
+        $(this)
+          .find('.dropdown-menu#mainnavmenu')
+          .first()
+          .stop(true, true)
+          .slideUp(105);
       }
     );
     $('.acepmpfinaldrop .dropdown').hover(
       function () {
-        $(this).find('.dropdown-menu#acedropmenu').first().stop(true, true).slideDown(150);
+        $(this)
+          .find('.dropdown-menu#acedropmenu')
+          .first()
+          .stop(true, true)
+          .slideDown(150);
       },
       function () {
-        $(this).find('.dropdown-menu#acedropmenu').first().stop(true, true).slideUp(105);
+        $(this)
+          .find('.dropdown-menu#acedropmenu')
+          .first()
+          .stop(true, true)
+          .slideUp(105);
       }
     );
   });
@@ -85,7 +101,7 @@
   $(document).on('click', '.fontfamily .dropdown', function (e) {
     e.stopPropagation();
   });
-  $(".dropdown-toggle").on('click', '.fontfamily .dropdown', function (e) {
+  $('.dropdown-toggle').on('click', '.fontfamily .dropdown', function (e) {
     e.stopPropagation();
   });
 
@@ -184,4 +200,38 @@ $(function () {
   // or optionally using .hover() for in/out handling as per A. Wolff's comment
 });
 
-console.log('hey');
+$(document).ready(function () {
+  // $('.collapse')
+  //     .on('shown.bs.collapse', function(event) {
+  //       event.stopPropagation();
+  //       console.log("open");
+  //         $(this)
+  //             .parent()
+  //             .find(".fa-arrow-up")
+  //             .removeClass("fa-arrow-up")
+  //             .addClass("fa-arrow-down");
+  //     }).on('hidden.bs.collapse', function(event) {
+  //         console.log("closed");
+  //      event.stopPropagation();
+  //         $(this)
+  //             .parent()
+  //             .find(".fa-arrow-down")
+  //             .removeClass("fa-arrow-down")
+  //             .addClass("fa-arrow-up");
+  //     });
+  $('#accordionExample .collapse')
+    .on('shown.bs.collapse', function () {
+      $(this)
+        .parent()
+              .find(".fa-arrow-up")
+               .removeClass("fa-arrow-up")
+               .addClass("fa-arrow-down");
+    })
+    .on('hidden.bs.collapse', function () {
+      $(this)
+        .parent()
+        .find(".fa-arrow-down")
+                    .removeClass("fa-arrow-down")
+                     .addClass("fa-arrow-up");
+    });
+});
