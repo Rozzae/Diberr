@@ -820,6 +820,11 @@ button.pressreleasebtn {
   letter-spacing: -0.03em;
   text-align: left;
 }
+button.pressreleasebtn:hover {
+  background-color: var(--main);
+  cursor: pointer;
+  color: #fff;
+}
 
 .reviewcircles {
   position: absolute;
@@ -1895,6 +1900,11 @@ input[type='email'] {
   display: flex;
   width: 92%;
   justify-content: space-between;
+}
+.boxesspacing a:hover {
+text-decoration: none;
+color: var(--mint);
+cursor: pointer;
 }
 
 /* i[aria-expanded=true] .fas .fa-arrow-up {
@@ -3192,7 +3202,7 @@ button.acegetstartedbtn {
     z-index: 3;
     top: 100px;
     left: 40px;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 13px;
     letter-spacing: -0.03em;
     text-align: left;

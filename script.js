@@ -201,37 +201,43 @@ $(function () {
 });
 
 $(document).ready(function () {
-  // $('.collapse')
-  //     .on('shown.bs.collapse', function(event) {
-  //       event.stopPropagation();
-  //       console.log("open");
-  //         $(this)
-  //             .parent()
-  //             .find(".fa-arrow-up")
-  //             .removeClass("fa-arrow-up")
-  //             .addClass("fa-arrow-down");
-  //     }).on('hidden.bs.collapse', function(event) {
-  //         console.log("closed");
-  //      event.stopPropagation();
-  //         $(this)
-  //             .parent()
-  //             .find(".fa-arrow-down")
-  //             .removeClass("fa-arrow-down")
-  //             .addClass("fa-arrow-up");
-  //     });
   $('#accordionExample .collapse')
     .on('shown.bs.collapse', function () {
       $(this)
         .parent()
-              .find(".fa-arrow-up")
-               .removeClass("fa-arrow-up")
-               .addClass("fa-arrow-down");
+        .find('.fa-arrow-up')
+        .removeClass('fa-arrow-up')
+        .addClass('fa-arrow-down')
+        .find('.fa-plus')
+        .removeClass('fa-plus')
+        .addClass('fa-minus');
     })
     .on('hidden.bs.collapse', function () {
       $(this)
         .parent()
-        .find(".fa-arrow-down")
-                    .removeClass("fa-arrow-down")
-                     .addClass("fa-arrow-up");
+        .find('.fa-arrow-down')
+        .removeClass('fa-arrow-down')
+        .addClass('fa-arrow-up')
+        .find('.fa-minus')
+        .removeClass('fa-minus')
+        .addClass('fa-plus');
+    });
+});
+
+$(document).ready(function () {
+  $('#accordionExample .collapse')
+    .on('shown.bs.collapse', function () {
+      $(this)
+
+        .find('.fa-plus')
+        .removeClass('fa-plus')
+        .addClass('fa-minus');
+    })
+    .on('hidden.bs.collapse', function () {
+      $(this)
+
+        .find('.fa-minus')
+        .removeClass('fa-minus')
+        .addClass('fa-plus');
     });
 });
