@@ -2790,6 +2790,12 @@ button.acemainbtn {
   letter-spacing: -0.03em;
   text-align: center;
 }
+button.acemainbtn:hover {
+  background: #fff;
+  border: 1px solid #f39927;
+  color: #f39927;
+
+}
 button.acelightbtn {
   width: 141px;
   height: 50px;
@@ -2803,6 +2809,10 @@ button.acelightbtn {
   letter-spacing: -0.03em;
   text-align: center;
 }
+button.acelightbtn:hover {
+  background-color: #f39927;
+  color: #000;
+}
 button.acegetstartedbtn {
   width: 141px;
   height: 50px;
@@ -2815,6 +2825,10 @@ button.acegetstartedbtn {
   letter-spacing: -0.03em;
   text-align: center;
   color: #000;
+}
+button.acegetstartedbtn:hover {
+  background: #fff;
+  border: 1px solid #f39927;
 }
 
 .card.acepmpcard {
@@ -3046,9 +3060,23 @@ button.acegetstartedbtn {
   .carousel-inner img {
     height: 45vh;
   }
+
+  .potraitacepmp{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  #reviewsimageparagraph{
+    max-height: 240px;
+  }
 }
 
 @media (max-width: 991px) {
+  .totalcontainer {
+    padding: 0px 22px;
+  }
+
   .navbarleftandright {
     display: none;
   }
@@ -3226,10 +3254,6 @@ button.acegetstartedbtn {
   }
   textarea#attendeestextarea.form-control {
     width: 100%;
-  }
-
-  .totalcontainer {
-    padding: 0px 22px;
   }
 
   .newsletterform input[type='text'] {
