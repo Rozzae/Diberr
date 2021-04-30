@@ -2118,12 +2118,12 @@ h1.learningexperts {
   top: 400px;
   border-radius: none;
   width: 85%;
-  height: 1000px;
+  height: 380px;
 }
 
 .relativecontainercards {
   position: relative;
-  height: 750px;
+  height: 800px;
 }
 
 .relativecontainer {
@@ -3010,7 +3010,7 @@ button.acegetstartedbtn:hover {
     width: 85%;
     top: 300px;
     bottom: -100px;
-    height: 1200px;
+    /* height: 1200px; */
     z-index: 21;
   }
 
