@@ -2150,17 +2150,34 @@ h1.learningexperts {
   z-index: -1;
 }
 
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: visible !important;
+}
+
 .leftcarousel {
   background-color: #fff;
   width: 100%;
   position: absolute;
-  top: 310px;
-  left: 0px;
-  z-index: 2;
+  top: 150px;
+  left: -100px;
+  /* transform: translate(-50%, -50%); */
+  /* margin-right: -400px; */
+  overflow-x: visible !important;
+  z-index: 201;
   max-height: 58vh;
   max-width: 48vw;
-  left: 0px;
   padding: 100px 140px;
+  /* position: absolute;
+  right: 5%;
+  bottom: 20px;
+  left: -25%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center; */
 }
 
 .carouselheader {
@@ -2790,6 +2807,12 @@ button.acemainbtn {
   letter-spacing: -0.03em;
   text-align: center;
 }
+button.acemainbtn:hover {
+  background: #fff;
+  border: 1px solid #f39927;
+  color: #f39927;
+
+}
 button.acelightbtn {
   width: 141px;
   height: 50px;
@@ -2803,6 +2826,10 @@ button.acelightbtn {
   letter-spacing: -0.03em;
   text-align: center;
 }
+button.acelightbtn:hover {
+  background-color: #f39927;
+  color: #000;
+}
 button.acegetstartedbtn {
   width: 141px;
   height: 50px;
@@ -2815,6 +2842,10 @@ button.acegetstartedbtn {
   letter-spacing: -0.03em;
   text-align: center;
   color: #000;
+}
+button.acegetstartedbtn:hover {
+  background: #fff;
+  border: 1px solid #f39927;
 }
 
 .card.acepmpcard {
@@ -2843,15 +2874,16 @@ button.acegetstartedbtn {
 }
 
 .acecircles {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  border-top: 2px dotted gray;
+  /* border-top: 2px dotted gray;
   padding-top: 15px;
-  margin-top: 15px;
+  margin-top: 15px; */
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  border: 2px dotted gray;
 }
 
-.acecircles li {
+.acecircle {
   background-color: #f39927;
   list-style-type: none;
   color: #fff;
@@ -2864,9 +2896,11 @@ button.acegetstartedbtn {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
-.acecontent {
+.acecontent > li {
+
   list-style-type: none;
 }
 
@@ -3046,9 +3080,23 @@ button.acegetstartedbtn {
   .carousel-inner img {
     height: 45vh;
   }
+
+  .potraitacepmp{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  #reviewsimageparagraph{
+    max-height: 240px;
+  }
 }
 
 @media (max-width: 991px) {
+  .totalcontainer {
+    padding: 0px 22px;
+  }
+
   .navbarleftandright {
     display: none;
   }
@@ -3226,10 +3274,6 @@ button.acegetstartedbtn {
   }
   textarea#attendeestextarea.form-control {
     width: 100%;
-  }
-
-  .totalcontainer {
-    padding: 0px 22px;
   }
 
   .newsletterform input[type='text'] {
