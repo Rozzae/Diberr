@@ -2857,15 +2857,16 @@ button.acegetstartedbtn:hover {
 }
 
 .acecircles {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  border-top: 2px dotted gray;
+  /* border-top: 2px dotted gray;
   padding-top: 15px;
-  margin-top: 15px;
+  margin-top: 15px; */
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  border: 2px dotted gray;
 }
 
-.acecircles li {
+.acecircle {
   background-color: #f39927;
   list-style-type: none;
   color: #fff;
@@ -2878,9 +2879,11 @@ button.acegetstartedbtn:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .acecontent {
+  position: relative;
   list-style-type: none;
 }
 
