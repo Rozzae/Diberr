@@ -2882,8 +2882,8 @@ button.acegetstartedbtn:hover {
   
 }
 
-.acecontent {
-  position: relative;
+.acecontent > li {
+
   list-style-type: none;
 }
 
