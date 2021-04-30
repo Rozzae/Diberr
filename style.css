@@ -2150,17 +2150,34 @@ h1.learningexperts {
   z-index: -1;
 }
 
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: visible !important;
+}
+
 .leftcarousel {
   background-color: #fff;
   width: 100%;
   position: absolute;
-  top: 310px;
-  left: 0px;
-  z-index: 2;
+  top: 150px;
+  left: -100px;
+  /* transform: translate(-50%, -50%); */
+  /* margin-right: -400px; */
+  overflow-x: visible !important;
+  z-index: 201;
   max-height: 58vh;
   max-width: 48vw;
-  left: 0px;
   padding: 100px 140px;
+  /* position: absolute;
+  right: 5%;
+  bottom: 20px;
+  left: -25%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center; */
 }
 
 .carouselheader {
