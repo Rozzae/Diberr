@@ -1458,7 +1458,7 @@ p.highorganization {
 }
 
 .businessimprovementbox {
-  padding: 1rem;
+  padding: 20px;
   background: var(--mint);
   margin: 10px;
   color: var(--main);
@@ -2961,11 +2961,7 @@ button.applynowbtn:hover {
   cursor: pointer;
 }
 
-/* .careersgrid{
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-  grid-gap: 20px;
-} */
+
 
 /* end */
 
@@ -3046,6 +3042,14 @@ button.applynowbtn:hover {
   background-color: #c4c4c4;
 }
 
+
+
+@media (max-width: 1475px) {
+a.careersgrid{
+  flex-direction: column;
+}
+
+}
 @media (max-width: 1250px) {
   .cardbackgroundmint {
     left: 14px;
