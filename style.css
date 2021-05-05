@@ -488,6 +488,17 @@ button.btn.navheaderbuttonsmall:hover {
   letter-spacing: -0.03em;
 }
 
+.mainheader4 {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  
+}
+
 .card-title-upcomingcourses {
   font-family: Roboto;
   font-size: 14px;
@@ -1453,7 +1464,7 @@ p.highorganization {
   color: var(--main);
   background: #e2f0f0;
   max-height: 56px;
-  width: 269px;
+  min-width: 269px;
   border-radius: 20px;
 }
 
@@ -2246,9 +2257,14 @@ ol.carousel-indicators {
   background-color: #fff;
   border: none;
   border-top: 1px solid var(--mint);
+
 }
 #programscollapseFour {
   border-bottom: 1px solid var(--mint);
+}
+
+.lastcollapse{
+  border-bottom: 1px solid var(--mint) !important;
 }
 
 .programscollapsebox {
@@ -2908,10 +2924,41 @@ button.acegetstartedbtn:hover {
 
 /* careers */
 
-.careersborder{
+a.careersborder{
   border: 1px solid var(--main);
   border-radius: 10px;
   width: 390px;
+  text-decoration: none;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+
+.careersborder p{
+color: #000 !important;
+}
+.careersborder:hover{
+  text-decoration: none;
+  transform: scale(1.03);
+}
+
+/* executiveassistant */
+
+button.applynowbtn {
+  color: var(--main);
+  border: 2px solid var(--main);
+  border-radius: 20px;
+  padding: 14px 20px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  transition: transform 0.7s ease-in;
+  letter-spacing: -0.03em;
+}
+button.applynowbtn:hover {
+  color: #fff;
+  background-color: var(--main);
+  border: 2px solid var(--main);
+  cursor: pointer;
 }
 
 /* .careersgrid{
