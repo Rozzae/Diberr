@@ -2906,6 +2906,22 @@ button.acegetstartedbtn:hover {
 
 /* end */
 
+/* careers */
+
+.careersborder{
+  border: 1px solid var(--main);
+  border-radius: 10px;
+  width: 390px;
+}
+
+/* .careersgrid{
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  grid-gap: 20px;
+} */
+
+/* end */
+
 /* footer */
 
 .footerlinks {
@@ -3041,6 +3057,8 @@ button.acegetstartedbtn:hover {
 
   .cardsicon {
   }
+
+
 }
 
 @media (max-width: 1050px) {
