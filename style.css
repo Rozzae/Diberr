@@ -82,7 +82,6 @@
   line-height: 23px;
   letter-spacing: -0.03em;
   text-align: left;
-  
 }
 
 .bold{
@@ -350,7 +349,7 @@ html {
 }
 
 .maincolor {
-  color: var(--main);
+  color: var(--main) !important;
 }
 
 button.navbar-toggler {
