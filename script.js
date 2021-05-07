@@ -142,12 +142,12 @@
     }
   );
 
-  $('.dropmenu2').hover(
+  $('.dropmenutwo').hover(
     function () {
-      $('.drop2').addClass('hovered');
+      $('.droptwo').addClass('hovered');
     },
     function () {
-      $('.drop2').removeClass('hovered');
+      $('.droptwo').removeClass('hovered');
     }
   );
 
@@ -175,6 +175,46 @@
     },
     function () {
       $('.drop5').removeClass('hovered');
+    }
+  );
+  $('.dropmenu6').hover(
+    function () {
+      $('.drop6').addClass('hovered');
+    },
+    function () {
+      $('.drop6').removeClass('hovered');
+    }
+  );
+  $('.dropmenu7').hover(
+    function () {
+      $('.drop7').addClass('hovered');
+    },
+    function () {
+      $('.drop7').removeClass('hovered');
+    }
+  );
+  $('.dropmenu8').hover(
+    function () {
+      $('.drop8').addClass('hovered');
+    },
+    function () {
+      $('.drop8').removeClass('hovered');
+    }
+  );
+  $('.dropmenu9').hover(
+    function () {
+      $('.drop9').addClass('hovered');
+    },
+    function () {
+      $('.drop9').removeClass('hovered');
+    }
+  );
+  $('.dropmenu10').hover(
+    function () {
+      $('.drop10').addClass('hovered');
+    },
+    function () {
+      $('.drop10').removeClass('hovered');
     }
   );
 
