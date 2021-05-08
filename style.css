@@ -132,6 +132,10 @@
 
 /* end */
 
+.darkerborderbottom{
+  border-bottom: 4px solid #000;
+}
+
 .mainbackground {
   background-color: #f2ffff;
 }
@@ -1876,27 +1880,6 @@ textarea#attendeestextarea.form-control {
   width: 70px;
 }
 
-.coursecalendersubheader {
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: light;
-  font-weight: 300;
-  line-height: 23px;
-  letter-spacing: -0.03em;
-  text-align: left;
-}
-
-.formheadercoursecalender {
-  font-family: Roboto;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 29px;
-  letter-spacing: -0.03em;
-  text-align: left;
-  color: var(--mint);
-}
-
 .coursecalender h2 {
   font-family: Roboto;
   font-size: 50px;
@@ -1906,6 +1889,20 @@ textarea#attendeestextarea.form-control {
   letter-spacing: -0.03em;
   text-align: left;
   z-index: 2;
+}
+
+.coursecalenderfilter{
+  border-radius: 20px;
+}
+.coursecalendertab a{
+  text-decoration: none;
+}
+.coursecalendertab a.muted{
+  color: #979797;
+  
+}
+.coursecalenderfilter .selectitems{
+  background-color: #fff !important;
 }
 
 /* form */

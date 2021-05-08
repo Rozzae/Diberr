@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>on Demand Course Calendar</title>
+
+    <script
+      src="https://kit.fontawesome.com/0da91a7850.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light p-0 m-0">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <a class="navbar-brand logo-icon-mobile" href="#">
+        <button type="button" class="btn navheaderbuttonsmall">
+          LMS Login <i class="fas fa-long-arrow-alt-right"></i></button
+      ></a>
+      <div class="collapse navbar-collapse px-md-5 mx-md-5 totalcontainer" id="navbarSupportedContent">
+        <div class="navbarleftandright">
+          <ul class="navbar-nav leftcontent">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Diberr Software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#"
+                >Diberr Consulting</a
+              >
+            </li>
+          </ul>
+
+          <ul class="navbar-nav rightcontent">
+
+          
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Covid19 </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">News & Events </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Get in Touch</a>
+            </li>
+          
+            <a class="loginbtn">
+              <i class="fas fa-chalkboard-teacher pr-2"></i>
+              LMS Login 
+              <!-- <i class="fas fa-long-arrow-alt-right"></i> -->
+            </a>
+          </ul>
+        </div>
+        <ul class="navbarmobile">
+
+          <div class="navitemdropdownspacing">
+            <div class="navitemdropdowns w-100" id="accordionExample">
+              <li class="nav-item active">
+                <div class="">
+                  <div id="dropdowncourseheadingOne">
+                    <p>
+                      <a
+                        class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"
+                        data-toggle="collapse"
+                        data-target="#dropdowncoursecollapseOne"
+                        aria-expanded="false"
+                        aria-controls="dropdowncoursecollapseOne"
+                      >
+                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                          <p>Course</p>
+                          <i class="fas fa-arrow-up mr-3 ml-2 text-light"></i>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div
+                    class="collapse ml-4"
+                    id="dropdowncoursecollapseOne"
+                    aria-labelledby="dropdowncourseheadingOne"
+                    data-parent="#accordionExample"
+                  >
+
+                  <div class="d-flex flex-column">
+                    <a class="text-light py-2" href="businesscourses.html"
+                      ><i class="fas fa-arrow-right fa-xs mr-2"></i> Business Essential courses</a
+                    >
+                    <a
+                      class="text-light py-2"
+                      href="coursesbusinessimprovement.html"
+                      ><i class="fas fa-arrow-right fa-xs mr-2"></i> Business Improvement Courses</a
+                    >
+                    <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i> Business</a>
+                  </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="">
+                  <div id="dropdowncourseheadingTwo">
+                    <p>
+                      <a
+                        class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"
+                        data-toggle="collapse"
+                        data-target="#dropdowncoursecollapseTwo"
+                        aria-expanded="false"
+                        aria-controls="dropdowncoursecollapseTwo"
+                      >
+                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                          <p>Programs</p>
+                          <i class="fas fa-arrow-up mr-3 ml-2 text-light"></i>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div
+                    class="collapse ml-4"
+                    id="dropdowncoursecollapseTwo"
+                    aria-labelledby="dropdowncourseheadingTwo"
+                    data-parent="#accordionExample"
+                  >
+
+                  <div class="d-flex flex-column">
+                    <a class="text-light py-2" href="programsbusinessimprovement.html"
+                      ><i class="fas fa-arrow-right fa-xs mr-2"></i> Business Process Improvement</a
+                    >
+                    <a
+                      class="text-light py-2"
+                      href="programsbusinessimprovement.html"
+                      ><i class="fas fa-arrow-right fa-xs mr-2"></i> Business Improvement Courses</a
+                    >
+                    <a class="text-light py-2" href="programs.html"><i class="fas fa-arrow-right fa-xs mr-2"></i> Programs</a>
+                  </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="">
+                  <div id="dropdowncourseheadingThree">
+                    <p>
+                      <a
+                        class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"
+                        data-toggle="collapse"
+                        data-target="#dropdowncoursecollapseThree"
+                        aria-expanded="false"
+                        aria-controls="dropdowncoursecollapseThree"
+                      >
+                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                          <p>Products</p>
+                          <i class="fas fa-arrow-up mr-3 ml-2 text-light"></i>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div
+                    class="collapse ml-4"
+                    id="dropdowncoursecollapseThree"
+                    aria-labelledby="dropdowncourseheadingThree"
+                    data-parent="#accordionExample"
+                  >
+
+                  <div class="d-flex flex-column">
+                    <a class="text-light py-2" href="programsbusinessimprovement.html"
+                      ><i class="fas fa-arrow-right fa-xs mr-2"></i> Business Process Improvement</a
+                    >
+                    <a
+                      class="text-light py-2"
+                      href="programsbusinessimprovement.html"
+                      ><i class="fas fa-arrow-right fa-xs mr-2"></i> Business Improvement Courses</a
+                    >
+                    <a class="text-light py-2" href="programs.html"><i class="fas fa-arrow-right fa-xs mr-2"></i> Products</a>
+                  </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="">
+                  <div id="dropdowncourseheadingFour">
+                    <p>
+                      <a
+                        class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"      
+                        data-toggle="collapse"
+                        data-target="#dropdowncoursecollapseFour"
+                        aria-expanded="false"
+                        aria-controls="dropdowncoursecollapseFour"
+                      >
+                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                          <p>Solutions</p>
+                          <i class="fas fa-arrow-up mr-3 ml-2 text-light"></i>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div
+                    class="collapse ml-4"
+                    id="dropdowncoursecollapseFour"
+                    aria-labelledby="dropdowncourseheadingFour"
+                    data-parent="#accordionExample"
+                  >
+
+                  <div class="d-flex flex-column">
+                    <a class="text-light py-2" href="solutions.html"
+                      ><i class="fas fa-arrow-right fa-xs mr-2"></i> Solutions</a
+                    >
+                    <a
+                      class="text-light py-2"
+                      href="solutioncompetencymanagement.html"
+                      ><i class="fas fa-arrow-right fa-xs mr-2"></i> Competency Management</a
+                    >
+                    <a class="text-light py-2" href="programs.html"><i class="fas fa-arrow-right fa-xs mr-2"></i> Programs</a>
+                  </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="">
+                  <div id="dropdowncourseheadingFour">
+                    <p>
+                      <a
+                        class="nav-link text-left d-flex justify-content-between text-light w-100 m-0 p-0"
+                        data-toggle="collapse"
+                        data-target="#dropdowncoursecollapseFive"
+                        aria-expanded="false"
+                        aria-controls="dropdowncoursecollapseFive"
+                      >
+                        <div class="d-flex justify-content-between text-light w-100 border-bottom">
+                          <p>More Information</p>
+                          <i class="fas fa-arrow-up mr-3 ml-2 text-light"></i>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div
+                    class="collapse ml-4"
+                    id="dropdowncoursecollapseFive"
+                    aria-labelledby="dropdowncourseheadingFive"
+                    data-parent="#accordionExample"
+                  >
+
+                  <div class="d-flex flex-column">
+                    <a class="text-light py-2" href="#"
+                      ><i class="fas fa-arrow-right fa-xs mr-2"></i> Dibber Software</a
+                    >
+                    <a class="text-light py-2" href="#"
+                      ><i class="fas fa-arrow-right fa-xs mr-2"></i> Dibber Consulting</a
+                    >
+                    <a class="text-light py-2" href="#"
+                      ><i class="fas fa-arrow-right fa-xs mr-2"></i> About</a
+                    >
+                    <a
+                      class="text-light py-2"
+                      href="#"
+                      ><i class="fas fa-arrow-right fa-xs mr-2"></i> Covid19</a
+                    >
+                    <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i> News & Events</a>
+                    <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i> Get in Touch</a>
+                  </div>
+                  </div>
+                </div>
+              </li>
+
+              
+
+              <li class="nav-item py-2">
+                <a class="text-light" href="coursecalender.html">2021 Calender</a>
+              </li>
+
+              <li class="nav-item py-4">
+                <a class="text-light" href="eventsandupdates.html">Updates</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <div class="px-md-5 mx-md-5 totalcontainer">
+      <div class="container-fluid mt-4 topsection">
+        <div class="row justify-content-between">
+          <div class="col-lg-1 my-3 p-0 m-0">
+            <a href="index.html"
+              ><img
+                src="images/logo.png"
+                class="img-fluid logoimage"
+                alt="Logo image"
+            /></a>
+          </div>
+          <div class="col-11 mt-md-4 fontfamily">
+            <div class="row justify-content-end">
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle drop1"
+                  href="#"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Courses
+                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                </a>
+
+                <div
+                  class="dropdown-menu dropmenu1"
+                  id="mainnavmenu"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <div class="row py-3 px-3">
+                    <div class="col">
+                      <p class="text-white border-bottom pb-2">Courses Area</p>
+
+                      <div class="d-flex flex-column dropdowncontents">
+                        <a
+                          href="businesscourses.html"
+                          class="text-white py-2 d-flex align-items-center"
+                          ><i
+                            class="fas fa-circle fa-xs textpurple mr-2"
+                            style="font-size: 8px"
+                          ></i
+                          >Business Essential Courses</a
+                        >
+                        <a
+                          href="coursesbusinessimprovement.html"
+                          class="text-white py-2 d-flex align-items-center"
+                          ><i
+                            class="fas fa-circle fa-xs textgreen mr-2"
+                            style="font-size: 8px"
+                          ></i
+                          >Certification Courses</a
+                        >
+                        <a
+                          href="#"
+                          class="text-white py-2 d-flex align-items-center"
+                          ><i
+                            class="fas fa-circle fa-xs textgreen mr-2"
+                            style="font-size: 8px"
+                          ></i
+                          >TransformationCourses</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p class="text-white border-bottom pb-2">
+                        Other Information
+                      </p>
+
+                      <div class="d-flex flex-column dropdowncontents">
+                        <a href="coursecalender.html" class="text-white py-2"
+                          ><i class="fas fa-arrow-right fa-xs mr-2"></i>2021
+                          Calender</a
+                        >
+                        <a href="#" class="text-white py-2"
+                          ><i class="fas fa-arrow-right fa-xs mr-2"></i>Our
+                          Locations</a
+                        >
+                        <a href="#" class="text-white py-2"
+                          ><i class="fas fa-arrow-right fa-xs mr-2"></i>Course
+                          Brochure</a
+                        >
+                        <a href="#" class="text-white py-2"
+                          ><i class="fas fa-arrow-right fa-xs mr-2"></i>Speak to
+                          a Learning Consultant</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle droptwo"
+                  href="#"
+                  role="button"
+                  id="dropdownPrograms"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                2021 Calender
+                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                </a>
+
+                <div
+                  class="dropdown-menu dropmenutwo"
+                  id="mainnavmenu"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <div class="row py-3 px-4">
+                    <div class="col">
+                      <div class="d-flex flex-column dropdowncontents">
+                        <a class="text-white py-2" href="coursecalender.html"
+                          ><i class="fas fa-arrow-down mr-3 fa-xs"></i>2021 Scheduled Courses Calendar</a
+                        >
+                        <a class="text-white py-2" href="#"
+                          ><i class="fas fa-arrow-down mr-3 fa-xs"></i>Available On-Demand Courses</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle drop3"
+                  href="#"
+                  role="button"
+                  id="dropdownPrograms"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Programs
+                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                </a>
+
+                <div
+                  class="dropdown-menu dropmenu3"
+                  id="mainnavmenu"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <div class="row py-3 px-4">
+                    <div class="col">
+                      <div class="d-flex flex-column dropdowncontents">
+                        <a class="text-white py-2" href="businesscourses.html"
+                          >Business Essential Courses</a
+                        >
+                        <a class="text-white py-2" href="#"
+                          >Certification Courses</a
+                        >
+                        <a class="text-white py-2" href="programs.html"
+                          >Programs</a
+                        >
+                        <a
+                          class="text-white py-2"
+                          href="programsbusinessimprovement.html"
+                          >Business Improvement Program</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="d-flex flex-column dropdowncontents">
+                        <a class="text-white py-2" href="#"
+                          >Business Essential Courses</a
+                        >
+                        <a class="text-white py-2" href="#"
+                          >Certification Courses</a
+                        >
+                        <a class="text-white py-2" href="#"
+                          >Transformation Courses</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle drop4"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Products
+                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                </a>
+
+                <div
+                  class="dropdown-menu dropmenu4"
+                  id="mainnavmenu"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <div class="row py-3 px-4">
+                    <div class="col">
+                      <div class="d-flex flex-column dropdowncontents">
+                        <a class="text-white py-2" href="products.html"
+                          >Products</a
+                        >
+                        <a class="text-white py-2" href="#"
+                          >Certification Courses</a
+                        >
+                        <a class="text-white py-2" href="#"
+                          >Transformation Courses</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="d-flex flex-column dropdowncontents">
+                        <a class="text-white py-2" href="#"
+                          >Business Essential Courses</a
+                        >
+                        <a class="text-white py-2" href="#"
+                          >Certification Courses</a
+                        >
+                        <a class="text-white py-2" href="#"
+                          >Transformation Courses</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle drop5"
+                  href="#"
+                  role="button"
+                  id="dropdownPrograms"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Solutions
+                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                </a>
+
+                <div
+                  class="dropdown-menu dropmenu5"
+                  id="mainnavmenu"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <div class="row py-3 px-4">
+                    <div class="col">
+                      <div class="d-flex flex-column dropdowncontents">
+                          <a class="text-white py-2" href="solutions.html"
+                            ><i class="fas fa-arrow-right mr-3 fa-xs"></i
+                            >Solutions</a
+                          >
+                        <a
+                          class="text-white py-2"
+                          href="solutioncompetencymanagement.html"
+                          ><i class="fas fa-arrow-right mr-3 fa-xs"></i
+                            >Competency Management</a
+                        >
+                        <a
+                          class="text-white py-2"
+                          href="solutioncompetencymanagement.html"
+                          ><i class="fas fa-arrow-right mr-3 fa-xs"></i
+                            >Competency Management</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="d-flex flex-column dropdowncontents">
+                          <a class="text-white py-2" href="solutions.html"
+                            ><i class="fas fa-arrow-right mr-3 fa-xs"></i
+                            >Solutions</a
+                          >
+                        <a
+                          class="text-white py-2"
+                          href="solutioncompetencymanagement.html"
+                          ><i class="fas fa-arrow-right mr-3 fa-xs"></i
+                            >Competency Management</a
+                        >
+                        <a
+                          class="text-white py-2"
+                          href="solutioncompetencymanagement.html"
+                          ><i class="fas fa-arrow-right mr-3 fa-xs"></i
+                            >Competency Management</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle drop6"
+                  href="#"
+                  role="button"
+                  id="dropdownPrograms"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Company
+                  <i class="fas fa-arrow-down mr-3 ml-2"></i>
+                </a>
+
+                <div
+                  class="dropdown-menu dropmenu6"
+                  id="mainnavmenu"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <div class="row py-3 px-4">
+                    <div class="col">
+                      <div class="d-flex flex-column dropdowncontents">
+                        <a class="text-white py-2" href="solutions.html"
+                          ><i class="fas fa-arrow-right mr-3 fa-xs"></i
+                          >About</a
+                        >
+                        <a class="text-white py-2" href="careers.html"
+                          ><i class="fas fa-arrow-right mr-3 fa-xs"></i
+                          >Jobs</a
+                        >
+                        <a class="text-white py-2" href="eventsandupdates.html"
+                          ><i class="fas fa-arrow-right mr-3 fa-xs"></i
+                          >Events & Updates</a
+                        >
+                        <a class="text-white py-2" href="download.html"
+                          ><i class="fas fa-arrow-right mr-3 fa-xs"></i
+                          >Download</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="d-flex flex-column dropdowncontents">
+                        <a class="text-white py-2" href="solutions.html"
+                          ><i class="fas fa-arrow-right mr-3 ml-2 fa-xs"></i
+                          >COVID 19 Policy</a
+                        >
+                        <a
+                          class="text-white py-2"
+                          href="solutioncompetencymanagement.html"
+                          ><i class="fas fa-arrow-right mr-3 ml-2 fa-xs"></i
+                          >International Training Policy</a
+                        >
+                        <a class="text-white py-2" href="contactus.html"
+                          ><i class="fas fa-arrow-right mr-3 ml-2 fa-xs"></i
+                          >Contact Us</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="pl-1">
+                <a class="hovernodropdown" href="eventsandupdates.html"> Updates </a>
+              </div> -->
+              <!-- <a href="#" class=""> Blog</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid-sm">
+        <div class="container-fluid-sm relativecontainer">
+          <div class="row mt-md-5">
+            <img
+              src="images/backgroundcircles.png"
+              alt=""
+              class="backgroundcirclesoneimage img-fluid"
+            />
+            <div class="col-sm-7 coursecalender mx-lg-5">
+              <h2 class="">Course Calendar</h2>
+              <p class="subheader mt-4">
+                Our team of learning experts have designed a suite of practical
+                programs that develop both your execution excellence capabilities
+                and enable you to stay a step ahead.
+              </p>
+            </div>
+            <div class="mt-5">
+
+          </div>
+        </div>
+        <div class="">
+          <a href="/coursecalender.html"></a>
+          <a href="coursecalender.html" class="mint mb-4 ml-lg-3"></a>
+          <a href="coursecalenderondemand.html" class="mainheader3 muted mb-4 ml-lg-3"></a>
+        </div>
+
+      <div class="row mx-4 px-2 pb-2 darkborderbottom coursecalendertab">
+        <a href="coursecalender.html" class="mainheader3 muted mb-4 ml-lg-3 col-3">Scheduled Courses</a>
+        <a href="coursecalenderondemand.html" class="mainheader3 mint mb-4 ml-lg-3 col-4">On-Demand Courses</a>
+      </div>
+      <div class="container-fluid mt-lg-0 mt-sm-5 mx-lg-4">
+        <div class="mt-4">
+
+          <!-- <div class="generalselectstyle px-4 py-1 coursecalenderfilter d-flex flex-wrap align-items-center mintbackground mr-5">
+            <div class="maincolor mainheader3">Schedule Filter</div>
+            <div class="form-group col-lg-3 pt-3">
+              <select id="inputState" class="selectitems mr-5">
+                <option selected>Select course Area</option>
+                <option>All</option>
+              </select>
+            </div>
+            <div class="form-group col-lg-3 pt-3">
+              <select id="inputState" class="selectitems" placeholder="all">
+                <option selected>Select Location</option>
+                <option>All</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2 mb-2 pt-2">
+              <button type="button" class="btn btn-dark" id="mainbutton">
+                Go
+              </button>
+            </div>
+    </div> -->
+  </div>
+    </div>
+      <div class="container-fluid-sm mx-lg-2 pt-5 mx-lg-5">
+        <div class="header pb-md-4 pl-md-2">
+          Viewing All Certification Courses  in Lagos
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="card pb-3 borderaround">
+            <div class="card-header pl-4 py-2 m-0" id="headingOne">
+              <h2 class="mb-0 d-flex">
+                <button
+                  class="btn btn-block text-left d-flex flex-row p-0 m-0 pt-4"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <h2 class="mainheader3 mint">On-Demand Essential Courses</h2>
+                  <span class="smallspan">3</span>
+                </button>
+                <i
+                class="fas fa-arrow-up main fa-xs pt-3 maincolor"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              ></i>
+            </h2>
+          </div>
+
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordionExample"
+          >
+          <div class="card-body table-responsive">
+            <table class="table mb-5">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Course Title</th>
+                  <th scope="col">Start Date</th>
+                  <th scope="col">Duration</th>
+                  <th scope="col">Location</th>
+                  <th scope="col">Fee</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="py-3">
+                  <th scope="row"><i class="fas fa-circle fa-xs textpurple"></i></th>
+                  <td>
+                    Recharge & Refuel for professional development & career
+                    growth
+                  </td>
+                  <td>18th January</td>
+                  <td>2 Weeks</td>
+                  <td>Lagos</td>
+                  <td>$4,500</td>
+                  <td>
+                    <button type="button" class="btn registerbtn">
+                      Register <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"><i class="fas fa-circle fa-xs textyellow"></i></th>
+                  <td>
+                    Recharge & Refuel for professional development & career
+                    growth
+                  </td>
+                  <td>18th January</td>
+                  <td>2 Weeks</td>
+                  <td>Lagos</td>
+                  <td>$4,500</td>
+                  <td>
+                    <button type="button" class="btn registerbtn">
+                      Register <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"><i class="fas fa-circle fa-xs textgreen"></i></th>
+                  <td>
+                    Recharge & Refuel for professional development & career
+                    growth
+                  </td>
+                  <td>18th January</td>
+                  <td>2 Weeks</td>
+                  <td>Lagos</td>
+                  <td>$4,500</td>
+                  <td>
+                    <button type="button" class="btn registerbtn">
+                      Register <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="card pb-3 borderaround my-3">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0 d-flex">
+            <button
+              class="btn btn-block text-left d-flex collapsed p-0 m-0 pt-4"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+            <h2 class="mainheader3 mint">On-Demand Essential Courses</h2>
+              <span class="smallspan">3</span>
+            </button>
+            <i
+              class="fas fa-arrow-up fa-xs pt-3 maincolor"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="true"
+              aria-controls="collapseTwo"
+            ></i>
+          </h2>
+        </div>
+        <div
+          id="collapseTwo"
+          class="collapse"
+          aria-labelledby="headingTwo"
+          data-parent="#accordionExample"
+        >
+        <div class="card-body table-responsive">
+          <table class="table mb-5">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Course Title</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Location</th>
+                <th scope="col">Fee</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="py-3">
+                <th scope="row"><i class="fas fa-circle fa-xs textpurple"></i></th>
+                <td>
+                  Recharge & Refuel for professional development & career
+                  growth
+                </td>
+                <td>18th January</td>
+                <td>2 Weeks</td>
+                <td>Lagos</td>
+                <td>$4,500</td>
+                <td>
+                  <button type="button" class="btn registerbtn">
+                    Register <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-circle fa-xs textyellow"></i></th>
+                <td>
+                  Recharge & Refuel for professional development & career
+                  growth
+                </td>
+                <td>18th January</td>
+                <td>2 Weeks</td>
+                <td>Lagos</td>
+                <td>$4,500</td>
+                <td>
+                  <button type="button" class="btn registerbtn">
+                    Register <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-circle fa-xs textgreen"></i></th>
+                <td>
+                  Recharge & Refuel for professional development & career
+                  growth
+                </td>
+                <td>18th January</td>
+                <td>2 Weeks</td>
+                <td>Lagos</td>
+                <td>$4,500</td>
+                <td>
+                  <button type="button" class="btn registerbtn">
+                    Register <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+      </div>
+      <div class="card pb-3 my-3 borderaround">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0 d-flex">
+            <button
+              class="btn btn-block text-left d-flex collapsed p-0 m-0 pt-4"
+              data-toggle="collapse"
+              data-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+            <h2 class="mainheader3 mint">On-Demand Essential Courses</h2>
+              <span class="smallspan">3</span>
+            </button>
+            <i
+              class="fas fa-arrow-up fa-xs pt-3 maincolor"
+              data-toggle="collapse"
+              data-target="#collapseThree"
+              aria-expanded="true"
+              aria-controls="collapseThree"
+            ></i>
+          </h2>
+        </div>
+        <div
+          id="collapseThree"
+          class="collapse"
+          aria-labelledby="headingThree"
+          data-parent="#accordionExample"
+        >
+        <div class="card-body table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Course Title</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Location</th>
+                <th scope="col">Fee</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="py-3">
+                <th scope="row"><i class="fas fa-circle fa-xs textpurple"></i></th>
+                <td>
+                  Recharge & Refuel for professional development &
+                  career growth
+                </td>
+                <td>18th January</td>
+                <td>2 Weeks</td>
+                <td>Lagos</td>
+                <td>$4,500</td>
+                <td>
+                  <button type="button" class="btn registerbtn">
+                    Register <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-circle fa-xs textyellow"></i></th>
+                <td>
+                  Recharge & Refuel for professional development &
+                  career growth
+                </td>
+                <td>18th January</td>
+                <td>2 Weeks</td>
+                <td>Lagos</td>
+                <td>$4,500</td>
+                <td>
+                  <button type="button" class="btn registerbtn">
+                    Register <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-circle fa-xs textgreen"></i></th>
+                <td>
+                  Recharge & Refuel for professional development &
+                  career growth
+                </td>
+                <td>18th January</td>
+                <td>2 Weeks</td>
+                <td>Lagos</td>
+                <td>$4,500</td>
+                <td>
+                  <button type="button" class="btn registerbtn">
+                    Register <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+      
+      
+
+
+    <div class="container-fluid-sm explorecourses mt-5 mx-lg-4 pr-lg-3">
+      <div class="explorecoursestext mt-5 mb-4">
+        <div class="mainheader1 ml-lg-3 my-4">
+          <h2 class="mainheader1 mint mt-5">Explore our Courses</h2>
+        </div>
+      </div>
+      <div class="coursecalenderboxes mr-lg-4">
+        <div class="coursecalenderboxes mb-5">
+          <div class="coursecalenderbox">
+            <i class="fas fa-circle textpurple"></i>
+
+            <div class="boxesspacing">
+            <a class="maincolor mainheader3" href="businesscourses.html"> Business Essential Courses</a>
+            <i class="fas fa-arrow-right pr-lg-3"></i>
+          </div>
+          </div>
+          <div class="coursecalenderbox">
+            <i class="fas fa-circle textyellow"></i>
+            <div class="boxesspacing">
+            <a class="maincolor mainheader3">View all certification Course</a>
+            <i class="fas fa-arrow-right pr-lg-3"></i>
+          </div>
+          </div>
+          <div class="coursecalenderbox mb-5">
+            <i class="fas fa-circle textgreen"></i>
+            <div class="boxesspacing">
+            <a class="maincolor mainheader3">View all Performance Development
+              Courses</a>
+              <i class="fas fa-arrow-right pr-lg-3"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid-sm locations pt-3 mb-5 mx-lg-4">
+      <div class="px-3 ml-lg-3">
+        <div class="row">
+          <h2 class="mainheader1 mb-1">Explore our Locations</h2>
+        </div>
+        <div class="row mb-4">
+          <p class="subheader">
+            We have designed result-focused courses in line with job market and
+            in-demand skills
+          </p>
+        </div>
+      </div>
+      <div
+        id="carouselLocationsIndicators"
+        class="carousel slide mb-5"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators ml-3">
+          <li
+            data-target="#carouselLocationsIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselLocationsIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselLocationsIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner container-fluid-sm mt-4" id="cardslocation">
+          <div class="carousel-item active">
+            <div class="row col-md-12 locationsimage">
+              <div class="card col-sm">
+                <img
+                  src="/images/locationsimage.png"
+                  class="p-0 m-0 img-fluid"
+                  alt=""
+                />
+                <div class="py-3 px-4 mainheader3">Lagos, Nigeria</div>
+              </div>
+              <div class="card col-sm d-none d-sm-block">
+                <img
+                  src="images/locationsimage.png"
+                  class="p-0 m-0 img-fluid"
+                  alt=""
+                />
+                <div class="py-3 px-4 mainheader3">Lagos, Nigeria</div>
+              </div>
+              <div class="card col-sm d-none d-md-block">
+                <img
+                  src="images/locationsimage.png"
+                  class="p-0 m-0 img-fluid"
+                  alt=""
+                />
+                <div class="py-3 px-4 mainheader3">Lagos, Nigeria</div>
+              </div>
+              <div class="card col-sm d-none d-md-block">
+                <img
+                  src="images/locationsimage.png"
+                  class="p-0 m-0 img-fluid"
+                  alt=""
+                />
+                <div class="py-3 px-4 mainheader3">Lagos, Nigeria</div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row col-md-12 locationsimage">
+              <div class="card col-sm">
+                <img
+                  src="images/locationsimage.png"
+                  class="p-0 m-0 img-fluid"
+                  alt=""
+                />
+                <div class="py-3 px-4 mainheader3">Abuja, Nigeria</div>
+              </div>
+              <div class="card col-sm d-none d-md-block">
+                <img
+                  src="images/locationsimage.png"
+                  class="p-0 m-0 img-fluid"
+                  alt=""
+                />
+                <div class="py-3 px-4 mainheader3">Abuja, Nigeria</div>
+              </div>
+              <div class="card col-sm d-none d-md-block">
+                <img
+                  src="images/locationsimage.png"
+                  class="p-0 m-0 img-fluid"
+                  alt=""
+                />
+                <div class="py-3 px-4 mainheader3">Abuja, Nigeria</div>
+              </div>
+              <div class="card col-sm d-none d-md-block">
+                <img
+                  src="images/locationsimage.png"
+                  class="p-0 m-0 img-fluid"
+                  alt=""
+                />
+                <div class="py-3 px-4 mainheader3">Abuja, Nigeria</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+    <div class="px-lg-4 mx-lg-5 totalcontainer">
+      <div class="container-fluid-sm my-5 reviews relativecontainer mx-lg-5">
+        <img
+          src="images/backgroundcirclesforreviews.png"
+          alt="backgroundcircles"
+          class="img-fluid reviewcircles"
+        />
+        <div class="row reviewscontent py-lg-5 mx-lg-3 mb-4">
+          <div
+            id="carouselLearningIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators ml-3">
+              <li
+                data-target="#carouselLearningIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselLearningIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselLearningIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div
+              class="carousel-inner container-fluid-sm mt-4"
+              id="cardsreviews"
+            >
+              <div class="carousel-item active">
+                <div class="row col-md-12 mt-lg-4">
+                  <h3 class="mainheader2 maincolor col-lg-12">Course Reviews</h3>
+                  <h1 class="col-lg-12 learningexperts mt-1">
+                    Our team of learning experts have designed a suite of
+                    practical programs that develop both your execution
+                    excellence capabilities and enable you to stay a step
+                    ahead.
+                  </h1>
+                </div>
+
+                <div class="row mt-md-5">
+                  <div class="col-lg-3 mint ml-3">
+                    <h3 class="mainheader2 maincolor">JOHN DEFTERIOUS</h3>
+                  </div>
+                </div>
+
+                <div class="row ml-lg-2">
+                  <p class="col-lg-3 occupation">CEO, Half & Half</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row col-md-12 mt-lg-5">
+                  <h3 class="mainheader2 maincolor col-lg-12">Course Reviews</h3>
+                  <h1 class="col-lg-11 learningexperts mt-1">
+                    We are the best at what we do Lorem ipsum dolor, sit amet
+                    conseicta eveniet voluptatum, obcaecati dignissimos dolor!
+                  </h1>
+                </div>
+
+                <div class="row mt-md-5">
+                  <div class="col-lg-3 mint ml-3">
+                    <h3 class="mainheader2 maincolor">Priscilla Matthews</h3>
+                  </div>
+                </div>
+
+                <div class="row ml-lg-2">
+                  <p class="col-lg-3 occupation">CEO, Figure</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid subscribetonewsletter">
+        <div class="row">
+          <div class="col-lg-7">
+            <p class="newsletter">
+              Subscribe to the Diberr Academy Newsletter
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-lg-8 pt-lg-2">
+            <form class="newsletterform">
+              <div class="form-newsletter">
+                <div class="namenewsletter">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="newsletterinputname"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="emailnewsletter">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="newsletterinputemail"
+                    placeholder="Email"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary d-flex flex-row justify-content-center py-3 px-3"
+                  id="subscribebtn"
+                >
+                  <p class="pt-1">Subscribe</p>
+                  <i class="fas fa-long-arrow-alt-right ml-3 pt-1"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <footer class="footerlargescreens">
+    <div class="px-md-5 mx-md-5 totalcontainer">
+      <div class="row footerlinks mt-4">
+        <div class="col-4 mr-5">
+          <img src="images/altlogo.png" alt="small logo" />
+
+          <div class="generalparagraph">
+            Our founder, Deji Jemiyo has distilled the principles of High
+            Performance in the workplace into practical framework in his
+            best-selling books.
+          </div>
+        </div>
+
+        <div class="col-2">
+          <h6>Products</h6>
+          <ul>
+            <li><a href="#">Result Series</a></li>
+            <li><a href="acepmp.html">ACE PMP</a></li>
+            <li><a href="#">ACE PMP</a></li>
+            <li><a href="#">ACE PGMP</a></li>
+          </ul>
+        </div>
+        <div class="col-2 mr-md-5">
+          <h6>Quick Links</h6>
+          <ul>
+            <li><a href="careers.html">Career</a></li>
+            <li><a href="coursecalender.html">2021 Calender</a></li>
+            <li><a href="#">Get in Touch</a></li>
+          </ul>
+        </div>
+
+        <div class="col-3 justify-content-end">
+          <div class="row justify-content-around">
+            <a href="#"><i class="fab fa-facebook-square fa-2x mint"></i></a>
+            <a href="#"><i class="fab fa-instagram-square fa-2x mint"></i></a>
+            <a href="#"
+              ><i><i class="fab fa-twitter-square fa-2x mint"></i></i
+            ></a>
+            <a href="#"
+              ><i><i class="fab fa-linkedin fa-2x mint"></i></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lastfooter totalcontainer pb-0 mb-0 mt-3 ml-0">
+      <div class="px-lg-4 mx-lg-5 totalcontainer row lastfootercontent py-4">
+        <div class="col-5 mr-3">
+          <a href="#">Diberr Academy is a Subsidiary of Diberr Group</a>
+        </div>
+        <div class="col-2">
+          <a href="#">Diberr Consulting</a>
+        </div>
+        <div class="col">
+          <a href="#">Diberr Performance Management Software</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="smallscreens">
+    <footer class="px-md-5 mx-md-5 totalcontainer container-fluid px-3">
+      <div class="row">
+        <div class="col">
+          <img src="images/logo.png" alt="small logo" class="pb-0 mt-2" />
+
+          <div class="generalparagraph pt-1 pb-4">
+            Our founder, Deji Jemiyo has distilled the principles of High
+            Performance in the workplace into practical framework in his
+            best-selling books.
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="accordion footerlinks footeraccordion"
+        id="accordionExample"
+      >
+        <div class="card">
+          <div class="footercollapsebox" id="mobilefooterheadingOne">
+            <h2 class="mb-0 boxesspacingfooter border-bottom border-top py-2">
+              <button
+                class="btn btn-link btn-block text-left"
+                data-toggle="collapse"
+                data-target="#footercollapseOne"
+                aria-expanded="true"
+                aria-controls="footercollapseOne"
+              >
+                <h6 class="text-dark">Products</h6>
+              </button>
+              <i
+                class="fas fa-long-arrow-alt-up main fa-xs mt-2"
+                style="font-size: 14px"
+                data-toggle="collapse"
+                data-target="#footercollapseOne"
+                aria-expanded="true"
+                aria-controls="footercollapseOne"
+              ></i>
+            </h2>
+          </div>
+
+          <div
+            id="footercollapseOne"
+            class="collapse show"
+            aria-labelledby="mobilefooterheadingOne"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body ml-0">
+              <ul>
+                <li><a href="#">Result Series</a></li>
+                <li><a href="acepmp.html">ACE PMP</a></li>
+                <li><a href="#">ACE PMP</a></li>
+                <li><a href="#">ACE PGMP</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="footercollapsebox" id="footerheadingTwo">
+            <h2 class="mb-0 boxesspacingfooter border-bottom border-top py-2">
+              <button
+                class="btn btn-link btn-block text-left collapsed"
+                data-toggle="collapse"
+                data-target="#footercollapseTwo"
+                aria-expanded="false"
+                aria-controls="footercollapseTwo"
+              >
+                <h6 class="text-dark">Quick Links</h6>
+              </button>
+              <i
+                class="fas fa-long-arrow-alt-up main fa-xs mt-2"
+                style="font-size: 14px"
+                data-toggle="collapse"
+                data-target="#programscollapseTwo"
+                aria-expanded="true"
+                aria-controls="programscollapseTwo"
+              ></i>
+            </h2>
+          </div>
+          <div
+            id="footercollapseTwo"
+            class="collapse"
+            aria-labelledby="footerheadingTwo"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body ml-0">
+              <ul>
+                <li><a href="careers.html">Career</a></li>
+                <li><a href="coursecalender.html">2021 Calender</a></li>
+                <li><a href="#">Get in Touch</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-7 justify-content-start py-4">
+        <div class="row justify-content-between">
+          <a href="#"><i class="fab fa-facebook-square fa-2x mint"></i></a>
+          <a href="#"><i class="fab fa-instagram-square fa-2x mint"></i></a>
+          <a href="#"
+            ><i><i class="fab fa-twitter-square fa-2x mint"></i></i
+          ></a>
+          <a href="#"
+            ><i><i class="fab fa-linkedin fa-2x mint"></i></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <div class="lastfooter px-md-5 mx-md-5 totalcontainer pb-0 mb-0 mt-3">
+      <div class="px-lg-4 mx-lg-5 totalcontainer lastfootercontent py-4">
+        <div class="">
+          <a href="#">Diberr Academy is a Subsidiary of Diberr Group</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+</html>
