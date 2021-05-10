@@ -1171,6 +1171,25 @@ button.readmorebtn:hover {
   text-align: left;
 }
 
+button.enrollnowbtn {
+  background: #fff;
+  color: var(--main);
+  border: 1px solid var(--main);
+  border-radius: 20px;
+  padding: 12px 20px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  transition: transform 0.7s ease-in;
+  letter-spacing: -0.03em;
+}
+button.enrollnowbtn:hover {
+  background: var(--main);
+  border: none;
+  text-decoration: none;
+  color: #fff;
+}
+
 /* colors */
 
 .purple {
