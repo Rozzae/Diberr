@@ -3061,13 +3061,36 @@ a.careersborder{
   cursor: pointer;
 }
 
-.careersborder p{
+.careersborder .generalparagraph{
 color: #000 !important;
 }
 .careersborder:hover{
   text-decoration: none;
   transform: scale(1.03);
 }
+.careersgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px 20px;
+  grid-template-areas:
+    "career1 career2 career3 ."
+    "career4 career5 career6 ."
+    ". . . .";
+}
+
+.career1 { grid-area: career1; }
+
+.career2 { grid-area: career2; }
+
+.career3 { grid-area: career3; }
+
+.career4 { grid-area: career4; }
+
+.career5 { grid-area: career5; }
+
+.career6 { grid-area: career6; }
+
 
 /* executiveassistant */
 
@@ -3172,10 +3195,18 @@ button.applynowbtn:hover {
 
 
 
-@media (max-width: 1475px) {
-a.careersgrid{
-  flex-direction: column;
-}
+@media (max-width: 1275px) {
+  .careersgrid {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "career1 career2 ."
+    "career3 career4 ."
+    "career5 career6 ."
+    ". . . ";
+  }
 
 }
 @media (max-width: 1250px) {
@@ -3989,6 +4020,14 @@ a.careersgrid{
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 30px;
+  }
+  .careersgrid{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  a.careersborder{
+    width: 290px;
   }
 }
 
