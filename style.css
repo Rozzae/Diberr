@@ -88,6 +88,10 @@
   font-weight: 700;
 }
 
+.roundedbackground{
+  border-radius: 20px;
+}
+
 .mainheaderlarge {
   font-family: Roboto;
   font-size: 50px;
@@ -3725,6 +3729,10 @@ a.careersgrid{
   #competencymanagement {
     font-size: 35px;
     line-height: 35px;
+  }
+
+  .upperrow {
+    width: 90%;
   }
 
   .upperrow p.h3.mt-5.mint.formheader {
