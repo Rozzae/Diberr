@@ -2527,6 +2527,12 @@ ol.carousel-indicators {
   justify-content: space-between;
 }
 
+.gridpackages{
+  background: #EDEEEE;
+  border-radius: 10px;
+
+}
+
 /* solutioncompetencymanagement */
 
 .solutionborder {
