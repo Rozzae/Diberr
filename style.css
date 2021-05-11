@@ -12,6 +12,7 @@
   -webkit-appearance: none !important;
 }
 
+
 /* under construction */
 
 .constructionimage {
@@ -31,6 +32,64 @@
   text-align: center;
   height: 80vh;
   justify-content: center;
+}
+
+/* fonts */
+
+.mainheader1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 112.19%;
+  letter-spacing: -0.03em;
+}
+
+.mainheader2 {
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 29px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.mainheader3 {
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+}
+
+.mainheader4 {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  
+}
+.mainheader5 {
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 23px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.roundedbackground{
+  border-radius: 20px;
 }
 
 .mainheaderlarge {
@@ -53,6 +112,8 @@
   text-align: center;
 }
 
+/* end */
+
 .enquires {
   font-family: Roboto;
   font-size: 25px;
@@ -74,6 +135,10 @@
 }
 
 /* end */
+
+.darkerborderbottom{
+  border-bottom: 4px solid #000;
+}
 
 .mainbackground {
   background-color: #f2ffff;
@@ -162,10 +227,55 @@ html {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
+.dropdown-menu.dropmenu6#mainnavmenu {
+  border: none !important;
+  background-color: var(--main) !important;
+  position: absolute;
+  left: -363.5px !important;
+  width: 500px;
+  height: auto;
+  border-radius: none !important;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.dropdown-menu.dropmenutwo#mainnavmenu {
+  border: none !important;
+  background-color: var(--main) !important;
+  position: absolute;
+  left: -56px !important;
+  max-width: 300px;
+  height: auto;
+  border-radius: none !important;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.dropdown-menu.dropmenu5#mainnavmenu {
+  border: none !important;
+  background-color: var(--main) !important;
+  position: absolute;
+  left: -267px !important;
+  width: 500px;
+  height: auto;
+  border-radius: none !important;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
 
 .dropdown-menu#mainnavmenu .dropdowncontents {
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-style: light;
   font-weight: 300;
   line-height: 18px;
@@ -247,7 +357,7 @@ html {
 }
 
 .maincolor {
-  color: var(--main);
+  color: var(--main) !important;
 }
 
 button.navbar-toggler {
@@ -342,14 +452,6 @@ button.btn.navheaderbuttonsmall:hover {
   text-align: left;
 }
 
-.mainheader1 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 112.19%;
-  letter-spacing: -0.03em;
-}
 
 .boxes.box span {
   font-family: Roboto;
@@ -469,24 +571,7 @@ button.btn.navheaderbuttonsmall:hover {
   box-shadow: 0 0.1rem 0.2rem rgb(0 0 0 / 15%) !important;
 }
 
-.mainheader2 {
-  font-family: Roboto;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 29px;
-  letter-spacing: -0.03em;
-  text-align: left;
-}
 
-.mainheader3 {
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 25px;
-  letter-spacing: -0.03em;
-}
 
 .card-title-upcomingcourses {
   font-family: Roboto;
@@ -537,6 +622,22 @@ button.btn.navheaderbuttonsmall:hover {
   border: none;
   width: 100%;
 }
+.selectitems2 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  padding: 14px 12px !important;
+  border: none;
+  min-width: 365px !important;
+}
+
+/* .selectitems2{
+  width: 500px !important;
+} */
 
 select:focus {
   outline: none !important;
@@ -770,7 +871,7 @@ h2.team {
 }
 
 .mint {
-  color: var(--mint);
+  color: var(--mint) !important;
 }
 
 .subscribetonewsletter {
@@ -1072,6 +1173,25 @@ button.readmorebtn:hover {
   line-height: 20px;
   letter-spacing: -0.03em;
   text-align: left;
+}
+
+button.enrollnowbtn {
+  background: #fff;
+  color: var(--main);
+  border: 1px solid var(--main);
+  border-radius: 20px;
+  padding: 12px 20px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  transition: transform 0.7s ease-in;
+  letter-spacing: -0.03em;
+}
+button.enrollnowbtn:hover {
+  background: var(--main);
+  border: none;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* colors */
@@ -1447,13 +1567,13 @@ p.highorganization {
 }
 
 .businessimprovementbox {
-  padding: 1rem;
+  padding: 20px;
   background: var(--mint);
   margin: 10px;
   color: var(--main);
   background: #e2f0f0;
   max-height: 56px;
-  width: 269px;
+  min-width: 269px;
   border-radius: 20px;
 }
 
@@ -1783,27 +1903,6 @@ textarea#attendeestextarea.form-control {
   width: 70px;
 }
 
-.coursecalendersubheader {
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: light;
-  font-weight: 300;
-  line-height: 23px;
-  letter-spacing: -0.03em;
-  text-align: left;
-}
-
-.formheadercoursecalender {
-  font-family: Roboto;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 29px;
-  letter-spacing: -0.03em;
-  text-align: left;
-  color: var(--mint);
-}
-
 .coursecalender h2 {
   font-family: Roboto;
   font-size: 50px;
@@ -1813,6 +1912,20 @@ textarea#attendeestextarea.form-control {
   letter-spacing: -0.03em;
   text-align: left;
   z-index: 2;
+}
+
+.coursecalenderfilter{
+  border-radius: 20px;
+}
+.coursecalendertab a{
+  text-decoration: none;
+}
+.coursecalendertab a.muted{
+  color: #979797;
+  
+}
+.coursecalenderfilter .selectitems{
+  background-color: #fff !important;
 }
 
 /* form */
@@ -2242,13 +2355,21 @@ ol.carousel-indicators {
 #programsheadingOne.card-header,
 #programsheadingTwo.card-header,
 #programsheadingThree.card-header,
-#programsheadingFour.card-header {
+#programsheadingFour.card-header,
+#programsheadingFive.card-header {
   background-color: #fff;
   border: none;
   border-top: 1px solid var(--mint);
+
 }
-#programscollapseFour {
+#programscollapseFour, 
+#programscollapseFive
+ {
   border-bottom: 1px solid var(--mint);
+}
+
+.lastcollapse{
+  border-bottom: 1px solid var(--mint) !important;
 }
 
 .programscollapsebox {
@@ -2406,6 +2527,12 @@ ol.carousel-indicators {
   justify-content: space-between;
 }
 
+.gridpackages{
+  background: #EDEEEE;
+  border-radius: 10px;
+
+}
+
 /* solutioncompetencymanagement */
 
 .solutionborder {
@@ -2456,6 +2583,23 @@ ol.carousel-indicators {
   border-radius: 50%;
   position: absolute;
   display: none;
+}
+
+.circlesbusinesslarge {
+  background-color: #bea9ec;
+  width: 300px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  /* display: none; */
+}
+.circlesbusinesslarge.circletwolarge {
+  background-color: #37a3a5;
+  width: 300px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  /* display: none; */
 }
 
 .circle {
@@ -2906,6 +3050,72 @@ button.acegetstartedbtn:hover {
 
 /* end */
 
+/* careers */
+
+a.careersborder{
+  border: 1px solid var(--main);
+  border-radius: 10px;
+  width: 390px;
+  text-decoration: none;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+
+.careersborder .generalparagraph{
+color: #000 !important;
+}
+.careersborder:hover{
+  text-decoration: none;
+  transform: scale(1.03);
+}
+.careersgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px 20px;
+  grid-template-areas:
+    "career1 career2 career3 ."
+    "career4 career5 career6 ."
+    ". . . .";
+}
+
+.career1 { grid-area: career1; }
+
+.career2 { grid-area: career2; }
+
+.career3 { grid-area: career3; }
+
+.career4 { grid-area: career4; }
+
+.career5 { grid-area: career5; }
+
+.career6 { grid-area: career6; }
+
+
+/* executiveassistant */
+
+button.applynowbtn {
+  color: var(--main);
+  border: 2px solid var(--main);
+  border-radius: 20px;
+  padding: 14px 20px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  transition: transform 0.7s ease-in;
+  letter-spacing: -0.03em;
+}
+button.applynowbtn:hover {
+  color: #fff;
+  background-color: var(--main);
+  border: 2px solid var(--main);
+  cursor: pointer;
+}
+
+
+
+/* end */
+
 /* footer */
 
 .footerlinks {
@@ -2983,6 +3193,22 @@ button.acegetstartedbtn:hover {
   background-color: #c4c4c4;
 }
 
+
+
+@media (max-width: 1275px) {
+  .careersgrid {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "career1 career2 ."
+    "career3 career4 ."
+    "career5 career6 ."
+    ". . . ";
+  }
+
+}
 @media (max-width: 1250px) {
   .cardbackgroundmint {
     left: 14px;
@@ -3041,6 +3267,8 @@ button.acegetstartedbtn:hover {
 
   .cardsicon {
   }
+
+
 }
 
 @media (max-width: 1050px) {
@@ -3557,6 +3785,10 @@ button.acegetstartedbtn:hover {
     line-height: 35px;
   }
 
+  .upperrow {
+    width: 90%;
+  }
+
   .upperrow p.h3.mt-5.mint.formheader {
     font-size: 20px;
   }
@@ -3788,6 +4020,14 @@ button.acegetstartedbtn:hover {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 30px;
+  }
+  .careersgrid{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  a.careersborder{
+    width: 290px;
   }
 }
 
