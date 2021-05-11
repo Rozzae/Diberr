@@ -633,6 +633,11 @@ button.btn.navheaderbuttonsmall:hover {
   padding: 14px 12px !important;
   border: none;
   min-width: 365px !important;
+  width: 70%;
+}
+
+#attendeestextarea{
+  width: 70% !important;
 }
 
 /* .selectitems2{
