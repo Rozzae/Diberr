@@ -633,6 +633,11 @@ button.btn.navheaderbuttonsmall:hover {
   padding: 14px 12px !important;
   border: none;
   min-width: 365px !important;
+  width: 70%;
+}
+
+#attendeestextarea{
+  width: 70% !important;
 }
 
 /* .selectitems2{
@@ -3050,7 +3055,7 @@ button.acegetstartedbtn:hover {
 
 /* end */
 
-/* careers */
+/* careers and downloads*/
 
 a.careersborder{
   border: 1px solid var(--main);
@@ -3061,10 +3066,11 @@ a.careersborder{
   cursor: pointer;
 }
 
-.careersborder .generalparagraph{
+.careersborder .generalparagraph, .downloadborder .generalparagraph{
 color: #000 !important;
 }
-.careersborder:hover{
+.careersborder:hover
+, .downloadborder:hover{
   text-decoration: none;
   transform: scale(1.03);
 }
@@ -3092,7 +3098,24 @@ color: #000 !important;
 .career6 { grid-area: career6; }
 
 
-/* executiveassistant */
+/* download */
+
+a.downloadborder{
+  border: 1px solid var(--main);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  max-width: 300px;
+  max-height: 350px;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+  flex: 0 0 22% !important;
+}
+
+
+/* end */
+
+/* job */
 
 button.applynowbtn {
   color: var(--main);
@@ -3372,6 +3395,10 @@ button.applynowbtn:hover {
     display: block;
   }
 
+  a.downloadborder{
+    flex: 0 0 50% !important;
+  }
+
   /* .collapse{
   -webkit-appearance: none;
 } */
@@ -3482,6 +3509,10 @@ button.applynowbtn:hover {
     line-height: 13px;
     letter-spacing: -0.03em;
     text-align: left;
+  }
+
+  a.downloadborder{
+    flex: 0 0 100% !important;
   }
 
   .eventsdate {
