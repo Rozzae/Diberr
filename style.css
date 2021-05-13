@@ -571,6 +571,24 @@ button.btn.navheaderbuttonsmall:hover {
   box-shadow: 0 0.1rem 0.2rem rgb(0 0 0 / 15%) !important;
 }
 
+.nav-tabs .nav-link{
+  border: none !important;
+  text-decoration: none;
+  color: #c3c3c3;
+}
+
+.nav-tabs .nav-link.disabled {
+  color: #C3C9C9 !important;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: var(--mint) !important;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+
 
 
 .card-title-upcomingcourses {
@@ -634,6 +652,33 @@ button.btn.navheaderbuttonsmall:hover {
   border: none;
   min-width: 365px !important;
   width: 70%;
+
+}
+.selectitems3 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  padding: 14px 12px !important;
+  border: none;
+  width: 70%;
+
+}
+
+.selectitems2::before{
+  /* content: '\f063';
+  font-family: 'FontAwesome';
+  font-size: 16px;
+  color: var(--main);
+  right: 29px;
+  top: 60px;
+  z-index: 4;
+  padding: 0 0 21px;
+  position: absolute;
+  pointer-events: none; */
 }
 
 #attendeestextarea{
@@ -680,6 +725,8 @@ select#inputState {
   pointer-events: none;
   display: block;
 }
+
+
 .generalselectstyle label:after {
   content: '\f063';
   font-family: 'FontAwesome';
@@ -695,6 +742,51 @@ select#inputState {
 .generalselectstyle label:before {
   content: '';
   right: 4px;
+  top: 0px;
+  width: 23px;
+  height: 18px;
+  position: absolute;
+  pointer-events: none;
+  display: block;
+}
+.generalselectstyle2 label:after {
+  content: '\f063';
+  font-family: 'FontAwesome';
+  font-size: 16px;
+  color: var(--main);
+  right: 29px;
+  top: 50px;
+  z-index: 4;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+}
+.generalselectstyle2 label:before {
+  content: '';
+  right: 4px;
+  top: 0px;
+  width: 23px;
+  height: 18px;
+  position: absolute;
+  pointer-events: none;
+  display: block;
+}
+
+.generalselectstyle3 label:after {
+  content: '\f063';
+  font-family: 'FontAwesome';
+  font-size: 16px;
+  color: var(--main);
+  left: 65%;
+  top: 50px;
+  z-index: 4;
+  padding: 0 0 12px;
+  position: absolute;
+  pointer-events: none;
+}
+.generalselectstyle3 label:before {
+  content: '';
+  right: 24px;
   top: 0px;
   width: 23px;
   height: 18px;
