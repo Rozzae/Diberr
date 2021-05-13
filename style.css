@@ -655,6 +655,20 @@ button.btn.navheaderbuttonsmall:hover {
   width: 70%;
 
 }
+.selectitems4 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  padding: 14px 12px !important;
+  border: none;
+  min-width: 335px !important;
+  width: 70%;
+
+}
 .selectitems3 {
   font-family: Roboto;
   font-size: 14px;

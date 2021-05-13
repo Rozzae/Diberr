@@ -1444,14 +1444,14 @@
                   placeholder="Ignore, if booking as an individual"
                 />
               </div>
-              <div class="form-group col-md-4 ml-md-4">
-                <label for="companylocation">Location</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="companylocation"
-                  placeholder="Country, State/Province"
-                />
+              <div class="generalselectstyle2 d-flex flex-wrap m-0 p-0">
+                <div class="form-group col ml-0 pl-md-2 p-0">
+                    <label for="inputState" class="d-block ml-1 ml-lg-4">Location</label>
+                    <select name="selectcoursearea" class="selectitems4 ml-lg-4">
+                      <option selected>Country, State/Province</option>
+                      <option>All</option>
+                    </select>
+                  </div>
               </div>
             </div>
             <div class="form-row mt-4">
@@ -1494,24 +1494,26 @@
                 />
               </div>
             </div>
-            <div class="form-row mt-4">
-              <div class="form-group col-md-4 mr-md-4">
-                <label for="companyname">Select Schedule</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="companyname"
-                  placeholder="Which of the schedules are you booking for?"
-                />
+            <div class="generalselectstyle d-flex flex-wrap mt-4 mb-lg-4">
+              <div
+                class="form-group col-lg-4 pl-0 p-lg-0 m-lg-0 mr-lg-5 pb-3 pb-lg-1"
+              >
+                <label for="inputState">Select Schedule</label>
+                <select id="inputState" class="selectitems mr-5 mt-2">
+                  <option selected>Which of the schedules are you booking for?</option>
+                  <option>USA</option>
+                </select>
               </div>
-              <div class="form-group col-md-4 ml-md-4">
-                <label for="companylocation">Number of Attendees</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="companylocation"
+              <div class="form-group col-lg-4 pl-0 p-lg-0 m-lg-0 pb-3 pb-lg-1">
+                <label for="inputState">Number of Attendees</label>
+                <select
+                  id="inputState"
+                  class="selectitems mr-5 mt-2"
                   placeholder="Select the Number of Attendees"
-                />
+                >
+                  <option selected>Select the Number of Attendees</option>
+                  <option>22</option>
+                </select>
               </div>
             </div>
 
