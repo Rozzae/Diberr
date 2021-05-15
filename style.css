@@ -218,6 +218,7 @@ html {
   position: absolute;
   left: -200px !important;
   width: 600px;
+  /* margin-top: 15px; */
   height: auto;
   border-radius: none !important;
   -webkit-border-bottom-right-radius: 20px;
@@ -327,6 +328,38 @@ html {
   margin-left: 10px;
   margin-right: 20px;
   text-decoration: none;
+}
+
+.currentpagetoggle {
+  background-color: var(--main);
+  color: #fff !important;
+  border-radius: 20px;
+  padding: 10px 0px 10px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.currentpagetoggle:hover {
+  -webkit-border-radius: 2px;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius: 2px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  border-radius: 2px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.currentpagetogglehover {
+  -webkit-border-radius: 2px;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius: 2px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  border-radius: 2px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .dropdown-toggle .fa-arrow-down:hover {
   color: #fff;
@@ -669,6 +702,11 @@ button.btn.navheaderbuttonsmall:hover {
   width: 70%;
 
 }
+
+/* .pda.col-lg-4{
+  flex: 0 0 30% !important;
+
+} */
 .selectitems3 {
   font-family: Roboto;
   font-size: 14px;
@@ -697,7 +735,7 @@ button.btn.navheaderbuttonsmall:hover {
 }
 
 #attendeestextarea{
-  width: 70% !important;
+  width: 70%;
 }
 
 /* .selectitems2{
@@ -1848,7 +1886,7 @@ p.instructorstitle {
 
 .middlerowform {
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: 19px;
@@ -1862,7 +1900,7 @@ input[type='email'] {
   padding: 20px;
   max-width: 360px;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: 19px;
@@ -2050,6 +2088,7 @@ textarea#attendeestextarea.form-control {
   line-height: 19px;
   letter-spacing: -0.03em;
   text-align: left;
+  
 }
 .middlerowform input[type='text'],
 input[type='email'] {
@@ -2058,12 +2097,21 @@ input[type='email'] {
   padding: 25px;
   max-width: 360px;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 19px;
+  line-height: 23px;
   letter-spacing: -0.03em;
   text-align: left;
+  color: #000;
+}
+input[type='text'],
+input[type='email']::placeholder {
+  color: #000 !important;
+}
+
+::placeholder {
+  color: #000 !important;
 }
 
 #headingOne.card-header,
@@ -2517,7 +2565,7 @@ ol.carousel-indicators {
   width: 330px;
   margin-top: -300px;
   border-radius: none;
-  height: 400px;
+  max-height: 400px;
   z-index: 6;
 }
 
@@ -3336,6 +3384,9 @@ button.applynowbtn:hover {
     "career3 career4 ."
     "career5 career6 ."
     ". . . ";
+  }
+  #attendeestextarea{
+    width: 100% !important;
   }
 
 }

@@ -124,12 +124,26 @@
       $('.dropace').removeClass('hoveredace');
     }
   );
+  // $('.dropdown-toggle').hover(
+  //   function () {
+  //     $('.drop1').removeClass('currentpagetoggle');
+      
+  //   },
+  //   function () {
+  //     $('.drop1').addClass('currentpagetogglehover');
+      
+  //   },
+  // );
   $('.dropmenu1').hover(
     function () {
       $('.drop1').addClass('hovered');
+      $('.drop1').addClass('currentpagetogglehover');
+      
     },
     function () {
       $('.drop1').removeClass('hovered');
+      $('.drop1').removeClass('currentpagetogglehover');
+      
     }
   );
 
