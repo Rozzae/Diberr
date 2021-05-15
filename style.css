@@ -4199,12 +4199,12 @@ button.applynowbtn:hover {
 /* business courses responsive */
 
 @media (max-width: 780px) {
-  .allcoursescards {
+  /* .allcoursescards {
     display: flex;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 30px;
-  }
+  } */
   .careersgrid{
     display: flex;
     flex-direction: column;
