@@ -2638,7 +2638,7 @@ ol.carousel-indicators {
   letter-spacing: -0.03em;
   text-align: left;
 }
-
+/* 
 .programsbusinesssimprovementcollapsebox h3 {
   font-family: Roboto;
   font-size: 20px;
@@ -2648,7 +2648,7 @@ ol.carousel-indicators {
   letter-spacing: -0.03em;
   text-align: left;
   color: #000;
-}
+} */
 
 .programbusinessbox {
   background: #e2f0f0;
@@ -3389,6 +3389,11 @@ button.applynowbtn:hover {
     width: 100% !important;
   }
 
+  .selectitems3 {
+    width: 80%;
+  
+  }
+  
 }
 @media (max-width: 1250px) {
   .cardbackgroundmint {
@@ -3642,6 +3647,11 @@ button.applynowbtn:hover {
     font-style: bold;
     line-height: 46px;
     text-align: left;
+  }
+
+  .selectitems3 {
+    width: 100%;
+  
   }
 
   body {
@@ -4090,16 +4100,16 @@ button.applynowbtn:hover {
     line-height: 19px;
   }
 
-  .programsbusinesssimprovementcollapsebox h3 {
+  /* .programsbusinesssimprovementcollapsebox h3 {
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 16px;
     font-style: bold;
     font-weight: 900;
     line-height: 23px;
     letter-spacing: -0.03em;
     text-align: left;
     color: #000;
-  }
+  } */
 
   .backgroundprogramstwo {
     position: absolute;
@@ -4216,8 +4226,10 @@ button.applynowbtn:hover {
 }
 
 @media (max-width: 768px) {
-  .explorecoursesimg {
+  body {
+    overflow-x: hidden !important;
   }
+
 
   .cardbackgroundmint {
     left: 14px;
@@ -4325,8 +4337,9 @@ button.applynowbtn:hover {
 }
 @media (max-width: 750px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
+
 
   .globalborderbottom .header {
     font-size: 20px;
