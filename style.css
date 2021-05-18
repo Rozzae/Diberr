@@ -2014,7 +2014,7 @@ textarea#attendeestextarea.form-control {
 /* end */
 
 /* course calender */
-.coursecalender {
+/* .coursecalender {
   position: absolute;
   width: 1211px;
   height: 322px;
@@ -2023,7 +2023,7 @@ textarea#attendeestextarea.form-control {
   top: 40px;
   border-radius: 0px;
   padding: 30 100px;
-}
+} */
 
 /* .explorecoursestext h2 {
   font-family: Roboto;
@@ -2549,7 +2549,7 @@ ol.carousel-indicators {
   align-items: center;
 }
 
-.programscollapsebox h2 {
+/* .programscollapsebox h2 {
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
@@ -2557,7 +2557,7 @@ ol.carousel-indicators {
   line-height: 23px;
   letter-spacing: -0.03em;
   text-align: left;
-}
+} */
 
 /* #programsheadingFour.borderbottomcollapse {
   border-bottom: 1px solid var(--mint);
@@ -3650,6 +3650,10 @@ button.applynowbtn:hover {
     text-align: left;
   }
 
+  .programscollapsebox .fa-arrow-up, .programscollapsebox .fa-arrow-down  {
+   font-size: 14px;
+  }
+
   .selectitems3 {
     width: 100%;
   
@@ -4164,6 +4168,10 @@ button.applynowbtn:hover {
   }
 
   .businessesentialcourses h2 {
+    font-size: 35px;
+    line-height: 36px;
+  }
+  .coursecalender h2 {
     font-size: 35px;
     line-height: 36px;
   }
