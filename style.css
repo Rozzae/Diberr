@@ -3652,6 +3652,13 @@ button.applynowbtn:hover {
 
   }
 
+  button.registerbtn {
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.03em;
+  }
+
   body {
     margin-top: 50px;
     z-index: 2;
