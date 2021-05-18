@@ -552,6 +552,15 @@ button.btn.navheaderbuttonsmall:hover {
   letter-spacing: -0.03em;
   text-align: left;
 }
+.formparagraph2 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
 
 .cardimage {
   width: 100%;
@@ -4034,6 +4043,10 @@ button.applynowbtn:hover {
   .formparagraph {
     border-bottom: 1px solid var(--mint);
     padding-top: 30px;
+  }
+  .formparagraph2 {
+    padding-top: 30px;
+    margin-bottom: 20px;
   }
 
   .teamlearning {
