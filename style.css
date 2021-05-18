@@ -3636,6 +3636,7 @@ button.applynowbtn:hover {
 } */
 }
 
+
 @media (max-width: 601px) {
   .logoimage {
     margin-top: 55px;
@@ -4256,7 +4257,6 @@ button.applynowbtn:hover {
     overflow-x: hidden !important;
   }
 
-
   .cardbackgroundmint {
     left: 14px;
     width: 230px;
@@ -4379,6 +4379,12 @@ button.applynowbtn:hover {
 @media (max-width: 750px) {
   body {
     overflow-x: hidden !important;
+  }
+
+  
+  .acepmplogo {
+    width: 100px;
+    height: 100px;
   }
 
 
