@@ -3215,7 +3215,8 @@ button.acegetstartedbtn:hover {
 a.careersborder{
   border: 1px solid var(--main);
   border-radius: 10px;
-  width: 390px;
+  min-width: 250px;
+  max-width: 250px;
   text-decoration: none;
   transition: 0.5s ease-in;
   cursor: pointer;
@@ -3232,15 +3233,11 @@ color: #000 !important;
 .careersgrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
   gap: 20px 20px;
-  grid-template-areas:
-    "career1 career2 career3 ."
-    "career4 career5 career6 ."
-    ". . . .";
 }
 
-.career1 { grid-area: career1; }
+/* .career1 { grid-area: career1; }
 
 .career2 { grid-area: career2; }
 
@@ -3250,7 +3247,7 @@ color: #000 !important;
 
 .career5 { grid-area: career5; }
 
-.career6 { grid-area: career6; }
+.career6 { grid-area: career6; } */
 
 
 /* download */
@@ -3374,17 +3371,7 @@ button.applynowbtn:hover {
 
 
 @media (max-width: 1275px) {
-  .careersgrid {
-    /* display: flex;
-    flex-wrap: wrap; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "career1 career2 ."
-    "career3 career4 ."
-    "career5 career6 ."
-    ". . . ";
-  }
+
   #attendeestextarea{
     width: 100% !important;
   }
@@ -3404,6 +3391,11 @@ button.applynowbtn:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+    .careersgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .programbusinessboxes {
@@ -3652,6 +3644,12 @@ button.applynowbtn:hover {
   .selectitems3 {
     width: 100%;
   
+  }
+
+  .careersgrid {
+    display: flex !important;
+    flex-direction: column;
+
   }
 
   body {
@@ -4215,11 +4213,11 @@ button.applynowbtn:hover {
     justify-items: center;
     gap: 30px;
   } */
-  .careersgrid{
+  /* .careersgrid{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  }
+  } */
   a.careersborder{
     width: 290px;
   }
@@ -4248,6 +4246,21 @@ button.applynowbtn:hover {
   .relativecontainercardstwo {
     height: 200px;
   }
+}
+
+@media (max-width: 878px) {  
+  .careersgrid {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-areas:
+    "career1 career2 ."
+    "career3 career4 ."
+    "career5 career6 ."
+    ". . . "; */
+  }
+
 }
 
 @media (max-width: 850px) {  
