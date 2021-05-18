@@ -3629,7 +3629,7 @@ button.applynowbtn:hover {
 
 @media (max-width: 601px) {
   .logoimage {
-    margin-top: 70px;
+    margin-top: 55px;
     width: 100px;
     height: 100px;
   }
