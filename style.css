@@ -228,6 +228,11 @@ html {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
+.dropdown-menu.dropmenu3#mainnavmenu, 
+.dropdown-menu.dropmenu4#mainnavmenu {
+  width: 500px !important;
+
+}
 .dropdown-menu.dropmenu6#mainnavmenu {
   border: none !important;
   background-color: var(--main) !important;
@@ -258,6 +263,7 @@ html {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
+
 .dropdown-menu.dropmenu5#mainnavmenu {
   border: none !important;
   background-color: var(--main) !important;
@@ -289,6 +295,7 @@ html {
   color: #fff !important;
   border-radius: 15px;
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 .dropdownselected {
@@ -328,6 +335,7 @@ html {
   margin-left: 10px;
   margin-right: 20px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .currentpagetoggle {
@@ -349,6 +357,7 @@ html {
   border-radius: 2px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  cursor: pointer;
 }
 .currentpagetogglehover {
   -webkit-border-radius: 2px;
@@ -1143,6 +1152,7 @@ input[type='email'] {
 #subscribebtn:hover {
   background-color: var(--mint);
   color: var(--main);
+  cursor: pointer;
 }
 
 /* .newsletterform label {
@@ -1186,6 +1196,7 @@ input[type='email'] {
   color: var(--main);
   cursor: pointer;
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 a.darkparagraph {
@@ -3082,6 +3093,7 @@ a.aceloginbtn {
 .pmpdropdowntext:hover {
   /* top | right | bottom | left */
   padding: 13px 5px 60px 30px;
+  cursor: pointer;
 }
 
 .acepmpcontainer {
