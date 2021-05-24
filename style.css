@@ -2132,6 +2132,14 @@ input[type='email']::placeholder {
 
 ::placeholder {
   color: #000 !important;
+  font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 22px;
+letter-spacing: -0.03em;
+text-align: left;
+
 }
 
 #headingOne.card-header,
