@@ -3185,6 +3185,32 @@ button.acegetstartedbtn:hover {
   border: 1px solid #f39927;
 }
 
+.acenewsletterform input[type='text'] {
+  padding: 25px;
+  height: 20px;
+  width: 100%;
+  outline: none;
+  background: #edeeee;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: -0.03em;
+}
+.acenewsletterform input[type='text']::placeholder {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: -0.03em;
+}
+
 .card.acepmpcard {
   border: 2px solid #f39927;
   width: 380px;
