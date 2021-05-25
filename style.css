@@ -3004,6 +3004,10 @@ ol.carousel-indicators {
   padding: 10px 25px;
 }
 
+.acesliderimages{
+  overflow: hidden !important;
+}
+
 .dropdownselected {
   background-color: var(--main);
   color: #fff !important;
@@ -3512,7 +3516,7 @@ button.applynowbtn:hover {
     line-height: 14px;
   }
 
-  .carousel-inner img {
+  .carousel-inner .maincarous img {
     height: 45vh;
   }
 
