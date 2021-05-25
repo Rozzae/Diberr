@@ -4470,6 +4470,7 @@ button.applynowbtn:hover {
   .acepmplogo {
     width: 100px;
     height: 100px;
+    object-fit: contain;
   }
 
   .globalborderbottom .header {
