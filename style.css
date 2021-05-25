@@ -12,7 +12,6 @@
   -webkit-appearance: none !important;
 }
 
-
 /* under construction */
 
 .constructionimage {
@@ -72,7 +71,6 @@
   line-height: 14px;
   letter-spacing: -0.03em;
   text-align: left;
-  
 }
 .mainheader5 {
   font-family: Roboto;
@@ -84,11 +82,11 @@
   text-align: left;
 }
 
-.bold{
+.bold {
   font-weight: 700;
 }
 
-.roundedbackground{
+.roundedbackground {
   border-radius: 20px;
 }
 
@@ -136,7 +134,7 @@
 
 /* end */
 
-.darkerborderbottom{
+.darkerborderbottom {
   border-bottom: 4px solid #000;
 }
 
@@ -228,10 +226,9 @@ html {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-.dropdown-menu.dropmenu3#mainnavmenu, 
+.dropdown-menu.dropmenu3#mainnavmenu,
 .dropdown-menu.dropmenu4#mainnavmenu {
   width: 500px !important;
-
 }
 .dropdown-menu.dropmenu6#mainnavmenu {
   border: none !important;
@@ -494,7 +491,6 @@ button.btn.navheaderbuttonsmall:hover {
   text-align: left;
 }
 
-
 .boxes.box span {
   font-family: Roboto;
   font-style: normal;
@@ -622,7 +618,7 @@ button.btn.navheaderbuttonsmall:hover {
   box-shadow: 0 0.1rem 0.2rem rgb(0 0 0 / 15%) !important;
 }
 
-.nav-tabs .nav-link{
+.nav-tabs .nav-link {
   border: none !important;
   text-decoration: none;
   color: #c3c3c3;
@@ -630,7 +626,7 @@ button.btn.navheaderbuttonsmall:hover {
 }
 
 .nav-tabs .nav-link.disabled {
-  color: #C3C9C9 !important;
+  color: #c3c9c9 !important;
 }
 
 .nav-tabs .nav-link.active,
@@ -639,9 +635,6 @@ button.btn.navheaderbuttonsmall:hover {
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
-
-
-
 
 .card-title-upcomingcourses {
   font-family: Roboto;
@@ -704,7 +697,6 @@ button.btn.navheaderbuttonsmall:hover {
   border: none;
   min-width: 365px !important;
   width: 70%;
-
 }
 .selectitems4 {
   font-family: Roboto;
@@ -718,7 +710,6 @@ button.btn.navheaderbuttonsmall:hover {
   border: none;
   min-width: 335px !important;
   width: 70%;
-
 }
 
 /* .pda.col-lg-4{
@@ -736,10 +727,9 @@ button.btn.navheaderbuttonsmall:hover {
   padding: 14px 12px !important;
   border: none;
   width: 70%;
-
 }
 
-.selectitems2::before{
+.selectitems2::before {
   /* content: '\f063';
   font-family: 'FontAwesome';
   font-size: 16px;
@@ -752,7 +742,7 @@ button.btn.navheaderbuttonsmall:hover {
   pointer-events: none; */
 }
 
-#attendeestextarea{
+#attendeestextarea {
   width: 70%;
 }
 
@@ -796,7 +786,6 @@ select#inputState {
   pointer-events: none;
   display: block;
 }
-
 
 .generalselectstyle label:after {
   content: '\f063';
@@ -1117,6 +1106,12 @@ input[type='email'] {
 }
 .newsletterform input[type='text'] {
   width: 90%;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: -0.03em;
 }
 .form-newsletter {
   display: flex;
@@ -2084,17 +2079,16 @@ textarea#attendeestextarea.form-control {
   z-index: 2;
 }
 
-.coursecalenderfilter{
+.coursecalenderfilter {
   border-radius: 20px;
 }
-.coursecalendertab a{
+.coursecalendertab a {
   text-decoration: none;
 }
-.coursecalendertab a.muted{
+.coursecalendertab a.muted {
   color: #979797;
-  
 }
-.coursecalenderfilter .selectitems{
+.coursecalenderfilter .selectitems {
   background-color: #fff !important;
 }
 
@@ -2108,7 +2102,6 @@ textarea#attendeestextarea.form-control {
   line-height: 19px;
   letter-spacing: -0.03em;
   text-align: left;
-  
 }
 .middlerowform input[type='text'],
 input[type='email'] {
@@ -2133,13 +2126,12 @@ input[type='email']::placeholder {
 ::placeholder {
   color: #000 !important;
   font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 300;
-line-height: 22px;
-letter-spacing: -0.03em;
-text-align: left;
-
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: -0.03em;
+  text-align: left;
 }
 
 #headingOne.card-header,
@@ -2203,9 +2195,9 @@ text-align: left;
   justify-content: space-between;
 }
 .boxesspacing a:hover {
-text-decoration: none;
-color: var(--mint);
-cursor: pointer;
+  text-decoration: none;
+  color: var(--mint);
+  cursor: pointer;
 }
 
 /* i[aria-expanded=true] .fas .fa-arrow-up {
@@ -2548,15 +2540,13 @@ ol.carousel-indicators {
   background-color: #fff;
   border: none;
   border-top: 1px solid var(--mint);
-
 }
-#programscollapseFour, 
-#programscollapseFive
- {
+#programscollapseFour,
+#programscollapseFive {
   border-bottom: 1px solid var(--mint);
 }
 
-.lastcollapse{
+.lastcollapse {
   border-bottom: 1px solid var(--mint) !important;
 }
 
@@ -2715,10 +2705,9 @@ ol.carousel-indicators {
   justify-content: space-between;
 }
 
-.gridpackages{
-  background: #EDEEEE;
+.gridpackages {
+  background: #edeeee;
   border-radius: 10px;
-
 }
 
 /* solutioncompetencymanagement */
@@ -3004,7 +2993,7 @@ ol.carousel-indicators {
   padding: 10px 25px;
 }
 
-.acesliderimages{
+.acesliderimages {
   overflow: hidden !important;
 }
 
@@ -3148,7 +3137,6 @@ button.acemainbtn:hover {
   background: #fff;
   border: 1px solid #f39927;
   color: #f39927;
-
 }
 button.acelightbtn {
   width: 141px;
@@ -3259,11 +3247,9 @@ button.acegetstartedbtn:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .acecontent > li {
-
   list-style-type: none;
 }
 
@@ -3271,7 +3257,7 @@ button.acegetstartedbtn:hover {
 
 /* careers and downloads*/
 
-a.careersborder{
+a.careersborder {
   border: 1px solid var(--main);
   border-radius: 10px;
   min-width: 250px;
@@ -3281,11 +3267,12 @@ a.careersborder{
   cursor: pointer;
 }
 
-.careersborder .generalparagraph, .downloadborder .generalparagraph{
-color: #000 !important;
+.careersborder .generalparagraph,
+.downloadborder .generalparagraph {
+  color: #000 !important;
 }
-.careersborder:hover
-, .downloadborder:hover{
+.careersborder:hover,
+.downloadborder:hover {
   text-decoration: none;
   transform: scale(1.03);
 }
@@ -3308,10 +3295,9 @@ color: #000 !important;
 
 .career6 { grid-area: career6; } */
 
-
 /* download */
 
-a.downloadborder{
+a.downloadborder {
   border: 1px solid var(--main);
   border-radius: 10px;
   overflow: hidden;
@@ -3322,7 +3308,6 @@ a.downloadborder{
   cursor: pointer;
   flex: 0 0 22% !important;
 }
-
 
 /* end */
 
@@ -3345,8 +3330,6 @@ button.applynowbtn:hover {
   border: 2px solid var(--main);
   cursor: pointer;
 }
-
-
 
 /* end */
 
@@ -3427,19 +3410,14 @@ button.applynowbtn:hover {
   background-color: #c4c4c4;
 }
 
-
-
 @media (max-width: 1275px) {
-
-  #attendeestextarea{
+  #attendeestextarea {
     width: 100% !important;
   }
 
   .selectitems3 {
     width: 80%;
-  
   }
-  
 }
 @media (max-width: 1250px) {
   .cardbackgroundmint {
@@ -3452,7 +3430,7 @@ button.applynowbtn:hover {
     justify-content: space-between;
   }
 
-    .careersgrid {
+  .careersgrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -3504,8 +3482,6 @@ button.applynowbtn:hover {
 
   .cardsicon {
   }
-
-
 }
 
 @media (max-width: 1050px) {
@@ -3546,13 +3522,13 @@ button.applynowbtn:hover {
     height: 45vh;
   }
 
-  .potraitacepmp{
+  .potraitacepmp {
     width: 100px;
     height: 100px;
     object-fit: contain;
   }
 
-  #reviewsimageparagraph{
+  #reviewsimageparagraph {
     max-height: 240px;
   }
 }
@@ -3609,7 +3585,7 @@ button.applynowbtn:hover {
     display: block;
   }
 
-  a.downloadborder{
+  a.downloadborder {
     flex: 0 0 50% !important;
   }
 
@@ -3686,7 +3662,6 @@ button.applynowbtn:hover {
 } */
 }
 
-
 @media (max-width: 601px) {
   .logoimage {
     margin-top: 55px;
@@ -3701,19 +3676,18 @@ button.applynowbtn:hover {
     text-align: left;
   }
 
-  .programscollapsebox .fa-arrow-up, .programscollapsebox .fa-arrow-down  {
-   font-size: 14px;
+  .programscollapsebox .fa-arrow-up,
+  .programscollapsebox .fa-arrow-down {
+    font-size: 14px;
   }
 
   .selectitems3 {
     width: 100%;
-  
   }
 
   .careersgrid {
     display: flex !important;
     flex-direction: column;
-
   }
 
   button.registerbtn {
@@ -3748,7 +3722,7 @@ button.applynowbtn:hover {
     text-align: left;
   }
 
-  a.downloadborder{
+  a.downloadborder {
     flex: 0 0 100% !important;
   }
 
@@ -4020,7 +3994,6 @@ button.applynowbtn:hover {
     display: flex;
     align-items: center;
   }
-
 
   .boxesspacing {
     display: flex;
@@ -4297,7 +4270,7 @@ button.applynowbtn:hover {
     flex-direction: column;
     flex-wrap: wrap;
   } */
-  a.careersborder{
+  a.careersborder {
     width: 290px;
   }
 }
@@ -4326,7 +4299,7 @@ button.applynowbtn:hover {
   }
 }
 
-@media (max-width: 878px) {  
+@media (max-width: 878px) {
   .careersgrid {
     /* display: flex;
     flex-wrap: wrap; */
@@ -4338,105 +4311,100 @@ button.applynowbtn:hover {
     "career5 career6 ."
     ". . . "; */
   }
-
 }
 
-@media (max-width: 850px) {  
-  
+@media (max-width: 850px) {
   .imagebehindbusinessimprovement .factoryworkers {
-  /* left: -50px;
+    /* left: -50px;
   height: 300px; */
-  position: relative;
-  left: -190px;
-  z-index: -3;
-  height: auto;
-  top: -350px;
-  object-fit: cover;
-  bottom: 20px;
-  max-width: 600px;
-  height: 400px;
-}
+    position: relative;
+    left: -190px;
+    z-index: -3;
+    height: auto;
+    top: -350px;
+    object-fit: cover;
+    bottom: 20px;
+    max-width: 600px;
+    height: 400px;
+  }
 
-.roundimages {
-  display: none !important;
-  position: relative;
+  .roundimages {
+    display: none !important;
+    position: relative;
 
-  /* margin-left: 30px; */
-}
-.businessimprovementcourses {
-  position: absolute;
-  width: 100%;
-  height: 322px;
-  background: none;
-  left: -35px;
-  right: 20px;
-  top: 20px;
-  border-radius: 0px;
-  padding: 30 100px;
+    /* margin-left: 30px; */
+  }
+  .businessimprovementcourses {
+    position: absolute;
+    width: 100%;
+    height: 322px;
+    background: none;
+    left: -35px;
+    right: 20px;
+    top: 20px;
+    border-radius: 0px;
+    padding: 30 100px;
 
-  /* background-color: rgba(255, 255, 255, 0.5); */
-  color: #fff;
-}
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    color: #fff;
+  }
 
-.businessimprovementcourses h2 {
-  font-size: 30px;
-  line-height: 30px;
-}
+  .businessimprovementcourses h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
 
-.businessimprovementcourses .subheader {
-  color: #fff;
-  font-size: 12px;
-  line-height: 20px;
-}
+  .businessimprovementcourses .subheader {
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+  }
 
-.businessimprovementcourses::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 81%;
-  background-image: url(images/Factoryworkers.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -2;
-}
+  .businessimprovementcourses::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 81%;
+    background-image: url(images/Factoryworkers.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+  }
 
-.businessimprovementcourses::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 81%;
-  background: rgba(56, 56, 56, 0.7);
-  z-index: -1;
-}
-.businessimprovementcourses img {
-  /* position: absolute;
+  .businessimprovementcourses::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 81%;
+    background: rgba(56, 56, 56, 0.7);
+    z-index: -1;
+  }
+  .businessimprovementcourses img {
+    /* position: absolute;
   z-index: -1;
   height: 18px;
   width: 476px;
   left: -199px;
   border-radius: 0px; */
-}
+  }
 
-.relativecontainerbusinessimprovement {
-  overflow: hidden;
-}
-
+  .relativecontainerbusinessimprovement {
+    overflow: hidden;
+  }
 }
 @media (max-width: 750px) {
   body {
     overflow-x: hidden !important;
   }
 
-  
   .acepmplogo {
     width: 100px;
     height: 100px;
   }
-
 
   .globalborderbottom .header {
     font-size: 20px;
@@ -4456,7 +4424,6 @@ button.applynowbtn:hover {
     display: flex;
     flex-direction: row;
   }
-
 
   .instructorheader {
     font-size: 15px;
