@@ -540,6 +540,7 @@ button.btn.navheaderbuttonsmall:hover {
   line-height: 19px;
   letter-spacing: -0.03em;
 }
+
 .form {
   background-color: #fff;
   display: flex;
@@ -3491,15 +3492,15 @@ button.applynowbtn:hover {
 
   .carousel-caption.main {
     display: block;
-    background-color: rgba(233, 233, 233, 0.9);
+    background-color: #fff;
     color: #000;
     width: 100%;
     right: 0%;
     bottom: -220px;
     left: 0%;
     z-index: 10;
-    padding-top: 20px;
-    text-align: center;
+    padding: 20px;
+    text-align: left;
   }
 
   .carousel-caption.main.mint {
@@ -3519,7 +3520,7 @@ button.applynowbtn:hover {
   }
 
   .carousel-inner .maincarous img {
-    height: 45vh;
+    height: 40vh;
   }
 
   .potraitacepmp {
@@ -4105,7 +4106,7 @@ button.applynowbtn:hover {
   }
   .mainheader3 {
     font-size: 15px;
-    line-height: 27px;
+    line-height: 22px;
   }
 
   .dates {
