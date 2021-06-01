@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="flickity.css" media="screen">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light p-0 m-0">
@@ -731,10 +732,6 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="pl-1">
-                <a class="hovernodropdown" href="eventsandupdates.html"> Updates </a>
-              </div> -->
-              <!-- <a href="#" class=""> Blog</a> -->
             </div>
           </div>
         </div>
@@ -742,13 +739,13 @@
 
       <div class="container-fluid-sm">
         <div class="container-fluid-sm relativecontainer">
-          <div class="row mt-md-5">
+          <div class="row  mt-3 mt-md-5">
             <img
               src="images/backgroundcircles.png"
               alt=""
               class="backgroundcirclesoneimage img-fluid"
             />
-            <div class="col-sm-7 coursecalender mx-lg-5">
+            <div class="col-lg-7 coursecalender mx-lg-5">
               <h2 class="">Course Calendar</h2>
               <p class="subheader mt-4">
                 Our team of learning experts have designed a suite of practical
@@ -766,33 +763,12 @@
           <a href="coursecalenderondemand.html" class="mainheader3 muted mb-4 ml-lg-3"></a>
         </div>
 
-      <div class="row mx-4 px-2 pb-2 darkborderbottom coursecalendertab">
-        <a href="coursecalender.html" class="mainheader3 muted mb-4 ml-lg-3 col-12 col-md-3">Scheduled Courses</a>
-        <a href="coursecalenderondemand.html" class="mainheader3 mint mb-4 ml-lg-3  col-12 col-md-4">On-Demand Courses</a>
+      <div class="mt-3 mt-md-0 row mx-4 px-2 pb-2 darkborderbottom coursecalendertab">
+        <a href="coursecalender.html" class="mainheader3 muted mb-4 ml-lg-3 col-5 col-md-3">Scheduled Courses</a>
+        <a href="coursecalenderondemand.html" class="mainheader3 mint mb-4 ml-lg-3 col-5 col-md-4">On-Demand Courses</a>
       </div>
       <div class="container-fluid mt-lg-0 mt-sm-5 mx-lg-4">
         <div class="mt-4">
-
-          <!-- <div class="generalselectstyle px-4 py-1 coursecalenderfilter d-flex flex-wrap align-items-center mintbackground mr-5">
-            <div class="maincolor mainheader3">Schedule Filter</div>
-            <div class="form-group col-lg-3 pt-3">
-              <select id="inputState" class="selectitems mr-5">
-                <option selected>Select course Area</option>
-                <option>All</option>
-              </select>
-            </div>
-            <div class="form-group col-lg-3 pt-3">
-              <select id="inputState" class="selectitems" placeholder="all">
-                <option selected>Select Location</option>
-                <option>All</option>
-              </select>
-            </div>
-            <div class="form-group col-md-2 mb-2 pt-2">
-              <button type="button" class="btn btn-dark" id="mainbutton">
-                Go
-              </button>
-            </div>
-    </div> -->
   </div>
     </div>
       <div class="container-fluid-sm mx-lg-2 pt-5 mx-lg-5">
@@ -1134,94 +1110,35 @@
           </p>
         </div>
       </div>
-      <div
-        id="carouselLocationsIndicators"
-        class="carousel slide mb-5"
-        data-ride="carousel"
-      >
-        <ol class="carousel-indicators ml-3">
-          <li
-            data-target="#carouselLocationsIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselLocationsIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselLocationsIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner container-fluid-sm mt-4" id="cardslocation">
-          <div class="carousel-item active">
-            <div class="row col-md-12 locationsimage">
-              <div class="card col-sm">
-                <img
-                  src="/images/locationsimage.png"
-                  class="p-0 m-0 img-fluid"
-                  alt=""
-                />
-                <div class="py-3 px-4 mainheader3">Lagos, Nigeria</div>
-              </div>
-              <div class="card col-sm d-none d-sm-block">
-                <img
-                  src="images/locationsimage.png"
-                  class="p-0 m-0 img-fluid"
-                  alt=""
-                />
-                <div class="py-3 px-4 mainheader3">Lagos, Nigeria</div>
-              </div>
-              <div class="card col-sm d-none d-md-block">
-                <img
-                  src="images/locationsimage.png"
-                  class="p-0 m-0 img-fluid"
-                  alt=""
-                />
-                <div class="py-3 px-4 mainheader3">Lagos, Nigeria</div>
-              </div>
-              <div class="card col-sm d-none d-md-block">
-                <img
-                  src="images/locationsimage.png"
-                  class="p-0 m-0 img-fluid"
-                  alt=""
-                />
-                <div class="py-3 px-4 mainheader3">Lagos, Nigeria</div>
-              </div>
+      <div class="main-carousel mx-md-4" 
+      data-flickity=
+      '{ "wrapAround": "true", "autoPlay": 2500, "freeScroll": true, "contain": true, "prevNextButtons": false, "resize": true }'>
+        <div class="carousel-cell col-lg-3 mx-3 maincarous">
+            <div class="card">
+              <img src="images/locationsimage.png" class="img-fluid h-50" alt="" />
+              <div class="py-3 px-4 mainheader3">Lagos, Nigeria</div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row col-md-12 locationsimage">
-              <div class="card col-sm">
-                <img
-                  src="images/locationsimage.png"
-                  class="p-0 m-0 img-fluid"
-                  alt=""
-                />
-                <div class="py-3 px-4 mainheader3">Abuja, Nigeria</div>
-              </div>
-              <div class="card col-sm d-none d-md-block">
-                <img
-                  src="images/locationsimage.png"
-                  class="p-0 m-0 img-fluid"
-                  alt=""
-                />
-                <div class="py-3 px-4 mainheader3">Abuja, Nigeria</div>
-              </div>
-              <div class="card col-sm d-none d-md-block">
-                <img
-                  src="images/locationsimage.png"
-                  class="p-0 m-0 img-fluid"
-                  alt=""
-                />
-                <div class="py-3 px-4 mainheader3">Abuja, Nigeria</div>
-              </div>
-              <div class="card col-sm d-none d-md-block">
-                <img
-                  src="images/locationsimage.png"
-                  class="p-0 m-0 img-fluid"
-                  alt=""
-                />
-                <div class="py-3 px-4 mainheader3">Abuja, Nigeria</div>
-              </div>
-            </div>
+          
+        </div>
+        <div class="carousel-cell col-lg-3 mx-3 maincarous">
+          <div class="card">
+            <img src="images/locationsimage.png" class="img-fluid h-50" alt="" />
+            <div class="py-3 px-4 mainheader3">Lagos, Nigeria</div>
           </div>
         </div>
+        <div class="carousel-cell col-lg-3 mx-3 maincarous">
+          <div class="card">
+            <img src="images/locationsimage.png" class="img-fluid h-50" alt="" />
+            <div class="py-3 px-4 mainheader3">Lagos, Nigeria</div>
+          </div>
+        </div>
+        <div class="carousel-cell col-lg-3 mx-3 maincarous">
+          <div class="card">
+            <img src="images/locationsimage.png" class="img-fluid h-50" alt="" />
+            <div class="py-3 px-4 mainheader3">Lagos, Nigeria</div>
+          </div>
+        </div>
+        
       </div>
     </div>
     </div>
@@ -1537,4 +1454,5 @@
   <script src="jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
   <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </html>
