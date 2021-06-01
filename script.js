@@ -78,7 +78,7 @@
     
     $('.main-carousel').flickity({
       // options
-      autoPlay: 1000,
+      autoPlay: 2500,
     });
 
      //this code makes dropdown occur on hover rather than on click

@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,700&display=swap"
     rel="stylesheet" />
+    <link rel="stylesheet" href="flickity.css" media="screen">
 </head>
 
 <body>
@@ -934,54 +935,36 @@
           </p>
         </div>
       </div>
-      <div id="carouselLocationsIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators ml-3">
-          <li data-target="#carouselLocationsIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselLocationsIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselLocationsIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner container-fluid-sm mt-4" id="cardslocation">
-          <div class="carousel-item active">
-            <div class="row locationsimage">
-              <div class="card col col-lg-3">
-                <img src="images/locationsimage.png" class="p-0 m-0 img-fluid" alt="" />
-                <div class="purple py-3 px-4 mainheader3">Lagos, Nigeria</div>
-              </div>
-              <div class="card col-6 col-lg-3 d-none d-sm-block">
-                <img src="images/locationsimage.png" class="p-0 m-0 img-fluid" alt="" />
-                <div class="purple py-3 px-4 mainheader3">Lagos, Nigeria</div>
-              </div>
-              <div class="card col-6 col-lg-3 d-none d-md-block">
-                <img src="images/locationsimage.png" class="p-0 m-0 img-fluid" alt="" />
-                <div class="purple py-3 px-4 mainheader3">Lagos, Nigeria</div>
-              </div>
-              <div class="card col-6 col-lg-3 d-none d-md-block">
-                <img src="images/locationsimage.png" class="p-0 m-0 img-fluid" alt="" />
-                <div class="purple py-3 px-4 mainheader3">Lagos, Nigeria</div>
-              </div>
+
+      <div class="main-carousel" 
+      data-flickity=
+      '{ "wrapAround": "true", "autoPlay": 2500, "freeScroll": true, "contain": true, "prevNextButtons": false, "resize": true }'>
+        <div class="carousel-cell col-lg-3 mx-3 maincarous">
+            <div class="card">
+              <img src="images/locationsimage.png" class="img-fluid h-50" alt="" />
+              <div class="purple py-3 px-4 mainheader3">Lagos, Nigeria</div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row locationsimage">
-              <div class="card col col-lg-3">
-                <img src="images/locationsimage.png" class="p-0 m-0 img-fluid" alt="" />
-                <div class="purple py-3 px-4 mainheader3">Abuja, Nigeria</div>
-              </div>
-              <div class="card col-6 col-lg-3 d-none d-sm-block">
-                <img src="images/locationsimage.png" class="p-0 m-0 img-fluid" alt="" />
-                <div class="purple py-3 px-4 mainheader3">Abuja, Nigeria</div>
-              </div>
-              <div class="card col-6 col-lg-3 d-none d-md-block">
-                <img src="images/locationsimage.png" class="p-0 m-0 img-fluid" alt="" />
-                <div class="purple py-3 px-4 mainheader3">Abuja, Nigeria</div>
-              </div>
-              <div class="card col-6 col-lg-3 d-none d-md-block">
-                <img src="images/locationsimage.png" class="p-0 m-0 img-fluid" alt="" />
-                <div class="purple py-3 px-4 mainheader3">Abuja, Nigeria</div>
-              </div>
-            </div>
+          
+        </div>
+        <div class="carousel-cell col-lg-3 mx-3 maincarous">
+          <div class="card">
+            <img src="images/locationsimage.png" class="img-fluid h-50" alt="" />
+            <div class="purple py-3 px-4 mainheader3">Lagos, Nigeria</div>
           </div>
         </div>
+        <div class="carousel-cell col-lg-3 mx-3 maincarous">
+          <div class="card">
+            <img src="images/locationsimage.png" class="img-fluid h-50" alt="" />
+            <div class="purple py-3 px-4 mainheader3">Lagos, Nigeria</div>
+          </div>
+        </div>
+        <div class="carousel-cell col-lg-3 mx-3 maincarous">
+          <div class="card">
+            <img src="images/locationsimage.png" class="img-fluid h-50" alt="" />
+            <div class="purple py-3 px-4 mainheader3">Lagos, Nigeria</div>
+          </div>
+        </div>
+        
       </div>
     </div>
 
@@ -1212,5 +1195,5 @@
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
-
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </html>
