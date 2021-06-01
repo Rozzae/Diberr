@@ -14,6 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,700&display=swap"
     rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+    <link rel="stylesheet" href="flickity.css" media="screen">
 </head>
 
 <body class="mainbackground">
@@ -848,322 +850,119 @@
         </div>
       </div>
 
-      <div class="container-fluid">
-      <div class="row">
-      <div id="carouselProgramsIndicators" class="d-none d-lg-block carousel slide m-0 p-0 col-md-12 multi-item-carousel" data-ride="carousel">
-        <ol class="carousel-indicators mt-lg-5">
-          <li data-target="#carouselProgramsIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselProgramsIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselProgramsIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselProgramsIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselProgramsIndicators" data-slide-to="4"></li>
-        </ol>
-        <div class="carousel-inner mt-4" id="cardsleadership">
-          
-          <div class="carousel-item col-12 active p-0 m-0">
 
-            <div class="card maincarous relativecontainercards">
-              <img src="images/card1.png" class="p-0 m-0 pr-4 img-fluid w-100" alt="" />
-              <div class="card-body px-lg-4 mt-5 mt-lg-0 cardbackground">
-                <hr class="leadershipline pb-1 mb-1" />
-                <p class="mainheader3 mint">
-                  1. Excellence in Team Leadership Program
-                </p>
-                <p class="card-text-main">
-                  Developing manager/team lead’s ability to organize and
-                  lead teams to produce and sustain extraordinary results.
-                  This program is an expanded
-                </p>
-                <div class="cardsicon mint mt-lg-4 mb-lg-2">
-                  <i class="fas fa-brush pr-3"></i>
-                  <i class="fas fa-fire-alt pr-3"></i>
-                  <i class="fas fa-microphone pr-3"></i>
-                  <i class="far fa-star pr-3"></i>
-                </div>
-
-                <button type="button" class="btn mt-lg-4 mt-4 mb-4" id="outlinebutton">
-                  Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
-                </button>
+      <div class="main-carousel" 
+      data-flickity=
+      '{ "wrapAround": "true", "autoPlay": 1000, "freeScroll": true, "contain": true, "prevNextButtons": false, "resize": true }'>
+        <div class="carousel-cell col-lg-4 maincarous">
+          <div class="card relativecontainercards">
+            <img src="images/card1.png" class="p-0 m-0 pr-4" alt="" />
+            <div class="card-body px-lg-4 mt-5 mt-lg-0 cardbackground">
+              <hr class="leadershipline pb-1 mb-1" />
+              <p class="mainheader3 mint">
+                1. Excellence in Team Leadership Program
+              </p>
+              <p class="card-text-main">
+                Developing manager/team lead’s ability to organize and
+                lead teams to produce and sustain extraordinary results.
+                This program is an expanded
+              </p>
+              <div class="cardsicon mint mt-lg-4 mb-lg-2">
+                <i class="fas fa-brush pr-3"></i>
+                <i class="fas fa-fire-alt pr-3"></i>
+                <i class="fas fa-microphone pr-3"></i>
+                <i class="far fa-star pr-3"></i>
               </div>
-            </div>
 
-
-          </div>
-          <div class="carousel-item col-12 p-0 m-0">
-            <div class="card maincarous relativecontainercards">
-              <img src="images/card2.png" class="p-0 m-0 pr-5 img-fluid" alt="" />
-              <div class="card-body px-lg-4 cardbackground">
-                <hr class="leadershipline pb-1 mb-1" />
-                <p class="mainheader3 mint">2 Internal Consultant Program</p>
-                <p class="card-text-main">
-                  Developing manager/team lead’s ability to organize and
-                  lead teams to produce and sustain extraordinary results.
-                  This program is an expanded
-                </p>
-                <div class="cardsicon mint mt-lg-4 mb-lg-2">
-                  <i class="fas fa-brush pr-3"></i>
-                  <i class="fas fa-fire-alt pr-3"></i>
-                  <i class="fas fa-microphone pr-3"></i>
-                  <i class="far fa-star pr-3"></i>
-                </div>
-
-                <button type="button" class="btn mt-lg-4 mt-4 mb-4" id="outlinebutton">
-                  Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
-                </button>
-              </div>
+              <button type="button" class="btn mt-lg-4 mt-4 mb-4" id="outlinebutton">
+                Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
+              </button>
             </div>
           </div>
-          <div class="carousel-item col-12 p-0 m-0">
-            <div class="card maincarous relativecontainercards">
-              <img src="images/card3.png" class="p-0 m-0 pr-5 img-fluid" alt="" />
-              <div class="card-body px-lg-4 cardbackground">
-                <hr class="leadershipline pb-1 mb-1" />
-                <p class="mainheader3 mint">
-                  3 ChangeAgent Internship Program
-                </p>
-                <p class="card-text-main">
-                  Developing manager/team lead’s ability to organize and
-                  lead teams to produce and sustain extraordinary results.
-                  This program is an expanded
-                </p>
-                <div class="cardsicon mint mt-lg-4 mb-lg-2">
-                  <i class="fas fa-brush pr-3"></i>
-                  <i class="fas fa-fire-alt pr-3"></i>
-                  <i class="fas fa-microphone pr-3"></i>
-                  <i class="far fa-star pr-3"></i>
-                </div>
-
-                <button type="button" class="btn mt-lg-4" id="outlinebutton">
-                  Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item col-12 p-0 m-0">
-            <div class="card maincarous relativecontainercards">
-              <img src="images/card3.png" class="p-0 m-0 pr-5 img-fluid" alt="" />
-              <div class="card-body px-lg-4 cardbackground">
-                <hr class="leadershipline pb-1 mb-1" />
-                <p class="mainheader3 mint">
-                  4 ChangeAgent Internship Program
-                </p>
-                <p class="card-text-main">
-                  Developing manager/team lead’s ability to organize and
-                  lead teams to produce and sustain extraordinary results.
-                  This program is an expanded
-                </p>
-                <div class="cardsicon mint mt-lg-4 mb-lg-2">
-                  <i class="fas fa-brush pr-3"></i>
-                  <i class="fas fa-fire-alt pr-3"></i>
-                  <i class="fas fa-microphone pr-3"></i>
-                  <i class="far fa-star pr-3"></i>
-                </div>
-
-                <button type="button" class="btn mt-lg-4" id="outlinebutton">
-                  Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item col-12 p-0 m-0">
-            <div class="card maincarous relativecontainercards">
-              <img src="images/card3.png" class="p-0 m-0 pr-5 img-fluid" alt="" />
-              <div class="card-body px-lg-4 cardbackground">
-                <hr class="leadershipline pb-1 mb-1" />
-                <p class="mainheader3 mint">
-                  5 ChangeAgent Internship Program
-                </p>
-                <p class="card-text-main">
-                  Developing manager/team lead’s ability to organize and
-                  lead teams to produce and sustain extraordinary results.
-                  This program is an expanded
-                </p>
-                <div class="cardsicon mint mt-lg-4 mb-lg-2">
-                  <i class="fas fa-brush pr-3"></i>
-                  <i class="fas fa-fire-alt pr-3"></i>
-                  <i class="fas fa-microphone pr-3"></i>
-                  <i class="far fa-star pr-3"></i>
-                </div>
-
-                <button type="button" class="btn mt-lg-4" id="outlinebutton">
-                  Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
-    
-      </div>
+        <div class="carousel-cell col-lg-4 maincarous">
+          <div class="card relativecontainercards">
+            <img src="images/card1.png" class="p-0 m-0 pr-4" alt="" />
+            <div class="card-body px-lg-4 mt-5 mt-lg-0 cardbackground">
+              <hr class="leadershipline pb-1 mb-1" />
+              <p class="mainheader3 mint">
+                2. Excellence in Team Leadership Program
+              </p>
+              <p class="card-text-main">
+                Developing manager/team lead’s ability to organize and
+                lead teams to produce and sustain extraordinary results.
+                This program is an expanded
+              </p>
+              <div class="cardsicon mint mt-lg-4 mb-lg-2">
+                <i class="fas fa-brush pr-3"></i>
+                <i class="fas fa-fire-alt pr-3"></i>
+                <i class="fas fa-microphone pr-3"></i>
+                <i class="far fa-star pr-3"></i>
+              </div>
+
+              <button type="button" class="btn mt-lg-4 mt-4 mb-4" id="outlinebutton">
+                Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell col-lg-4 maincarous">
+          <div class="card relativecontainercards">
+            <img src="images/card1.png" class="p-0 m-0 pr-4" alt="" />
+            <div class="card-body px-lg-4 mt-5 mt-lg-0 cardbackground">
+              <hr class="leadershipline pb-1 mb-1" />
+              <p class="mainheader3 mint">
+                3. Excellence in Team Leadership Program
+              </p>
+              <p class="card-text-main">
+                Developing manager/team lead’s ability to organize and
+                lead teams to produce and sustain extraordinary results.
+                This program is an expanded
+              </p>
+              <div class="cardsicon mint mt-lg-4 mb-lg-2">
+                <i class="fas fa-brush pr-3"></i>
+                <i class="fas fa-fire-alt pr-3"></i>
+                <i class="fas fa-microphone pr-3"></i>
+                <i class="far fa-star pr-3"></i>
+              </div>
+
+              <button type="button" class="btn mt-lg-4 mt-4 mb-4" id="outlinebutton">
+                Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell col-lg-4 maincarous">
+          <div class="card relativecontainercards">
+            <img src="images/card1.png" class="p-0 m-0 pr-4 img-fluid" alt="" />
+            <div class="card-body px-lg-4 mt-5 mt-lg-0 cardbackground">
+              <hr class="leadershipline pb-1 mb-1" />
+              <p class="mainheader3 mint">
+                4. Excellence in Team Leadership Program
+              </p>
+              <p class="card-text-main">
+                Developing manager/team lead’s ability to organize and
+                lead teams to produce and sustain extraordinary results.
+                This program is an expanded
+              </p>
+              <div class="cardsicon mint mt-lg-4 mb-lg-2">
+                <i class="fas fa-brush pr-3"></i>
+                <i class="fas fa-fire-alt pr-3"></i>
+                <i class="fas fa-microphone pr-3"></i>
+                <i class="far fa-star pr-3"></i>
+              </div>
+
+              <button type="button" class="btn mt-lg-4 mt-4 mb-4" id="outlinebutton">
+                Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
       </div>
 
 
 <!-- mobile carousel -->
-<div
-id="carouselProgramsIndicators"
-class="carousel slide d-block d-lg-none"
-data-ride="carousel"
->
-<ol class="carousel-indicators mt-lg-5">
-  <li
-    data-target="#carouselProgramsIndicators"
-    data-slide-to="0"
-    class="active"
-  ></li>
-  <li
-    data-target="#carouselProgramsIndicators"
-    data-slide-to="1"
-  ></li>
-  <li
-    data-target="#carouselProgramsIndicators"
-    data-slide-to="2"
-  ></li>
-</ol>
-<div
-  class="carousel-inner container-fluid-sm mt-4"
-  id="cardsleadership"
->
-  <div class="carousel-item maincarous active">
-    <div class="row justify-content-between">
-      <div class="card col relativecontainercards">
-        <img
-          src="images/card1.png"
-          class="p-0 m-0 img-fluid w-100"
-          alt=""
-        />
-        <div class="card-body px-lg-4 mt-5 mt-lg-0 cardbackground">
-          <hr class="leadershipline pb-1 mb-1" />
-          <p class="mainheader3 mint">
-            Excellence in Team Leadership Program
-          </p>
-          <p class="card-text-main">
-            Developing manager/team lead’s ability to organize and
-            lead teams to produce and sustain extraordinary results.
-            This program is an expanded
-          </p>
-          <div class="cardsicon mint mt-lg-4 mb-lg-2">
-            <i class="fas fa-brush pr-3"></i>
-            <i class="fas fa-fire-alt pr-3"></i>
-            <i class="fas fa-microphone pr-3"></i>
-            <i class="far fa-star pr-3"></i>
-          </div>
-
-          <button
-            type="button"
-            class="btn mt-lg-4 mt-4 mb-4"
-            id="outlinebutton"
-          >
-            Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="carousel-item maincarous">
-    <div class="row">
-      <div class="card col relativecontainercards">
-        <img
-          src="images/card1.png"
-          class="p-0 m-0 img-fluid w-100"
-          alt=""
-        />
-        <div class="card-body px-lg-4 cardbackground">
-          <hr class="leadershipline pb-1 mb-1" />
-          <p class="mainheader3 mint">Slide 2</p>
-          <p class="card-text-main">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis rerum quod eius facilis obcaecati repellat
-            eveniet explicabo debitis, saepe recusandae harum tenetur
-          </p>
-          <div class="cardsicon mint mt-lg-4 mb-lg-2">
-            <i class="fas fa-brush pr-3"></i>
-            <i class="fas fa-fire-alt pr-3"></i>
-            <i class="fas fa-microphone pr-3"></i>
-            <i class="far fa-star pr-3"></i>
-          </div>
-
-          <button
-            type="button"
-            class="btn mt-lg-4 mt-4 mb-4"
-            id="outlinebutton"
-          >
-            Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
-          </button>
-        </div>
-      </div>
-      </div>
-    </div>
-  <div class="carousel-item maincarous">
-    <div class="row">
-      <div class="card col relativecontainercards">
-        <img
-          src="images/card1.png"
-          class="p-0 m-0 img-fluid w-100"
-          alt=""
-        />
-        <div class="card-body px-lg-4 cardbackground">
-          <hr class="leadershipline pb-1 mb-1" />
-          <p class="mainheader3 mint">Slide 2</p>
-          <p class="card-text-main">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis rerum quod eius facilis obcaecati repellat
-            eveniet explicabo debitis, saepe recusandae harum tenetur
-          </p>
-          <div class="cardsicon mint mt-lg-4 mb-lg-2">
-            <i class="fas fa-brush pr-3"></i>
-            <i class="fas fa-fire-alt pr-3"></i>
-            <i class="fas fa-microphone pr-3"></i>
-            <i class="far fa-star pr-3"></i>
-          </div>
-
-          <button
-            type="button"
-            class="btn mt-lg-4 mt-4 mb-4"
-            id="outlinebutton"
-          >
-            Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
-          </button>
-        </div>
-      </div>
-      </div>
-    </div>
-  <div class="carousel-item maincarous">
-    <div class="row">
-      <div class="card col relativecontainercards">
-        <img
-          src="images/card1.png"
-          class="p-0 m-0 img-fluid w-100"
-          alt=""
-        />
-        <div class="card-body px-lg-4 cardbackground">
-          <hr class="leadershipline pb-1 mb-1" />
-          <p class="mainheader3 mint">Slide 2</p>
-          <p class="card-text-main">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis rerum quod eius facilis obcaecati repellat
-            eveniet explicabo debitis, saepe recusandae harum tenetur
-          </p>
-          <div class="cardsicon mint mt-lg-4 mb-lg-2">
-            <i class="fas fa-brush pr-3"></i>
-            <i class="fas fa-fire-alt pr-3"></i>
-            <i class="fas fa-microphone pr-3"></i>
-            <i class="far fa-star pr-3"></i>
-          </div>
-
-          <button
-            type="button"
-            class="btn mt-lg-4 mt-4 mb-4"
-            id="outlinebutton"
-          >
-            Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
-          </button>
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 <!-- end -->
@@ -1600,5 +1399,6 @@ data-ride="carousel"
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </html>
